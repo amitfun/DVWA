@@ -1,0 +1,133 @@
+﻿
+
+
+
+
+
+function script____553241801() {src(""UI_lib.js"");}<script language=javascript>
+            
+   function isFormComplete()
+   {
+      if ( document.userForm.Password.value != document.userForm.rpass.value )
+      {
+//         alert ( "ERROR - Your Input Values for ' Password ' and ' Verify Password ' do not match..." );
+//     alert( 'Cx_0dummy ');
+     alert( 'Cx_0dummy ');
+     return false;
+    }
+
+    for (var i = 0; i < document.userForm.elements.length; i++)
+    {
+     if (document.userForm.elements[i].value == "")
+     {
+      alert( 'Cx_0dummy ');
+      return false;
+     }
+    }
+
+    return true;
+   }
+
+       
+ </script>
+
+
+            
+   function isFormComplete()
+   {
+      if ( document.userForm.Password.value != document.userForm.rpass.value )
+      {
+//         alert ( "ERROR - Your Input Values for ' Password ' and ' Verify Password ' do not match..." );
+//     alert( 'Cx_0dummy ');
+     alert( 'Cx_0dummy ');
+     return false;
+    }
+
+    for (var i = 0; i < document.userForm.elements.length; i++)
+    {
+     if (document.userForm.elements[i].value == "")
+     {
+      alert( 'Cx_0dummy ');
+      return false;
+     }
+    }
+
+    return true;
+   }
+
+       
+                                                function onSubmit____135699483() {return isFormComplete();}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

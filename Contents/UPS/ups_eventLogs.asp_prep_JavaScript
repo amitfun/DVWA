@@ -1,0 +1,289 @@
+﻿
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function script____1025755212() {src(""../UI_lib.js"");}<script language="javascript1.1">
+              
+    function verifyClear()
+    {
+     return confirm("Cx_0dummy");
+    }
+
+    function refreshPage()
+    {
+     window.location = window.location;
+    }
+
+ function doRequest(col, sortcol, sortord)
+ {
+  //sortord=1: ascending sortord=2: descending
+  if ( col == sortcol && "1" ==  sortord )
+  {
+   top.main.window.location = "ups_eventLogs.asp?SORTCOL=" + col + "&SORTORD=2" + "&TIME=" + Cx_0dummy + "&PAGE=1&ITEMSPERPAGE=" + Cx_0dummy;
+  }
+  else
+  {
+   top.main.window.location = "ups_eventLogs.asp?SORTCOL=" + col + "&SORTORD=1" + "&TIME=" + Cx_0dummy + "&PAGE=1&ITEMSPERPAGE=" + Cx_0dummy;
+  }
+ }
+
+ function doExport()
+ {
+  //generalDialog = openCenteredWindow('exportLogs.asp?logType=Event', 'exportEventLogs', 550, 225, '', 'true', '', 'opener');
+  window.location = 'exportLogs.asp?logType=Event';
+ }
+
+         
+   </script>
+
+
+              
+    function verifyClear()
+    {
+     return confirm("Cx_0dummy");
+    }
+
+    function refreshPage()
+    {
+     window.location = window.location;
+    }
+
+ function doRequest(col, sortcol, sortord)
+ {
+  //sortord=1: ascending sortord=2: descending
+  if ( col == sortcol && "1" ==  sortord )
+  {
+   top.main.window.location = "ups_eventLogs.asp?SORTCOL=" + col + "&SORTORD=2" + "&TIME=" + Cx_0dummy + "&PAGE=1&ITEMSPERPAGE=" + Cx_0dummy;
+  }
+  else
+  {
+   top.main.window.location = "ups_eventLogs.asp?SORTCOL=" + col + "&SORTORD=1" + "&TIME=" + Cx_0dummy + "&PAGE=1&ITEMSPERPAGE=" + Cx_0dummy;
+  }
+ }
+
+ function doExport()
+ {
+  //generalDialog = openCenteredWindow('exportLogs.asp?logType=Event', 'exportEventLogs', 550, 225, '', 'true', '', 'opener');
+  window.location = 'exportLogs.asp?logType=Event';
+ }
+
+         
+   
+
+
+
+
+
+
+
+
+
+                                 function href____1498690255() {doRequest('0', 'Cx_0dummy', 'Cx_0dummy');}
+
+
+                                   function href___458763468() {doRequest('1', 'Cx_0dummy', 'Cx_0dummy');}
+
+
+                                  function href___1298123623() {doRequest('2', 'Cx_0dummy', 'Cx_0dummy');}
+
+
+                                  function href___1298123623() {doRequest('2', 'Cx_0dummy', 'Cx_0dummy');}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                    function onclick___844495314() {top.main.window.location = "ups_eventLogs.asp?SORTCOL=" + Cx_0dummy + "&SORTORD=" + Cx_0dummy + "&TIME=0" + "&PAGE=1&ITEMSPERPAGE=" + Cx_0dummy}
+                                                                                                function onClick____855896779() {doExport();}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

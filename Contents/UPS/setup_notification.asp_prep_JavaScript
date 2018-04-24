@@ -1,0 +1,1132 @@
+﻿
+
+
+
+
+
+
+
+function script____1025755212() {src(""../UI_lib.js"");}<script language="javascript1.1">
+              
+
+  function SendTestMessage()
+  {
+   if (!ValidateData())
+    return;
+
+   var URL = '/goform/formSendTestNotify?Type=Cx_0dummy';
+     if ("Cx_0dummy" == "EMail")
+   {
+    URL += '&Server=' + document.formSetNotificationRecip.Server.value;
+    URL += '&From_Address=' + document.formSetNotificationRecip.From_Address.value;
+   
+
+
+
+   }
+   else if ("Cx_0dummy" == "SNMP")
+   {
+    URL += '&Community_String=' + document.formSetNotificationRecip.Community_String.value;
+   }
+
+   URL += '&Section=' + document.formSetNotificationRecip.Section.value;
+   URL += '&Redirect=' + document.formSetNotificationRecip.Redirect.value;
+   URL += '&Critical_Enabled=' + document.formSetNotificationRecip.Critical_Enabled.value;
+   URL += '&Warning_Enabled=' + document.formSetNotificationRecip.Warning_Enabled.value;
+   URL += '&Information_Enabled=' + document.formSetNotificationRecip.Information_Enabled.value;
+   URL += '&User1_Enabled=' + document.formSetNotificationRecip.User1_Enabled.value;
+   URL += '&User2_Enabled=' + document.formSetNotificationRecip.User2_Enabled.value;
+   URL += '&Critical_List_Count=' + document.formSetNotificationRecip.Critical_List_Count.value;
+   URL += '&Warning_List_Count=' + document.formSetNotificationRecip.Warning_List_Count.value;
+   URL += '&Information_List_Count=' + document.formSetNotificationRecip.Information_List_Count.value;
+   URL += '&User1_List_Count=' + document.formSetNotificationRecip.User1_List_Count.value;
+   URL += '&User2_List_Count=' + document.formSetNotificationRecip.User2_List_Count.value;
+   URL += '&Critical_List_0=' + document.formSetNotificationRecip.Critical_List_0.value;
+   URL += '&Critical_List_1=' + document.formSetNotificationRecip.Critical_List_1.value;
+   URL += '&Critical_List_2=' + document.formSetNotificationRecip.Critical_List_2.value;
+   URL += '&Critical_List_3=' + document.formSetNotificationRecip.Critical_List_3.value;
+   URL += '&Critical_List_4=' + document.formSetNotificationRecip.Critical_List_4.value;
+   URL += '&Critical_List_5=' + document.formSetNotificationRecip.Critical_List_5.value;
+   URL += '&Critical_Delay=' + document.formSetNotificationRecip.Critical_Delay.value;
+   URL += '&Warning_List_0=' + document.formSetNotificationRecip.Warning_List_0.value;
+   URL += '&Warning_List_1=' + document.formSetNotificationRecip.Warning_List_1.value;
+   URL += '&Warning_List_2=' + document.formSetNotificationRecip.Warning_List_2.value;
+   URL += '&Warning_List_3=' + document.formSetNotificationRecip.Warning_List_3.value;
+   URL += '&Warning_List_4=' + document.formSetNotificationRecip.Warning_List_4.value;
+   URL += '&Warning_List_5=' + document.formSetNotificationRecip.Warning_List_5.value;
+   URL += '&Warning_Delay=' + document.formSetNotificationRecip.Warning_Delay.value;
+   URL += '&Information_List_0=' + document.formSetNotificationRecip.Information_List_0.value;
+   URL += '&Information_List_1=' + document.formSetNotificationRecip.Information_List_1.value;
+   URL += '&Information_List_2=' + document.formSetNotificationRecip.Information_List_2.value;
+   URL += '&Information_List_3=' + document.formSetNotificationRecip.Information_List_3.value;
+   URL += '&Information_List_4=' + document.formSetNotificationRecip.Information_List_4.value;
+   URL += '&Information_List_5=' + document.formSetNotificationRecip.Information_List_5.value;
+   URL += '&Information_Delay=' + document.formSetNotificationRecip.Information_Delay.value;
+   URL += '&User1_List_0=' + document.formSetNotificationRecip.User1_List_0.value;
+   URL += '&User1_List_1=' + document.formSetNotificationRecip.User1_List_1.value;
+   URL += '&User1_List_2=' + document.formSetNotificationRecip.User1_List_2.value;
+   URL += '&User1_List_3=' + document.formSetNotificationRecip.User1_List_3.value;
+   URL += '&User1_List_4=' + document.formSetNotificationRecip.User1_List_4.value;
+   URL += '&User1_List_5=' + document.formSetNotificationRecip.User1_List_5.value;
+   URL += '&User1_Delay=' + document.formSetNotificationRecip.User1_Delay.value;
+   URL += '&User2_List_0=' + document.formSetNotificationRecip.User2_List_0.value;
+   URL += '&User2_List_1=' + document.formSetNotificationRecip.User2_List_1.value;
+   URL += '&User2_List_2=' + document.formSetNotificationRecip.User2_List_2.value;
+   URL += '&User2_List_3=' + document.formSetNotificationRecip.User2_List_3.value;
+   URL += '&User2_List_4=' + document.formSetNotificationRecip.User2_List_4.value;
+   URL += '&User2_List_5=' + document.formSetNotificationRecip.User2_List_5.value;
+   URL += '&User2_Delay=' + document.formSetNotificationRecip.User2_Delay.value;
+
+   dialog = openCenteredWindow( URL, 'TestSend', 500, 500, '', 'yes', 'opener');
+  }
+
+    function ValidateData()
+    {
+  if (document.formSetNotificationRecip.CRITICAL_ENABLED.checked && document.formSetNotificationRecip.Critical_List_0.value == ""
+  && document.formSetNotificationRecip.Critical_List_1.value == "" && document.formSetNotificationRecip.Critical_List_2.value == ""
+  && document.formSetNotificationRecip.Critical_List_3.value == "" && document.formSetNotificationRecip.Critical_List_4.value == ""
+  && document.formSetNotificationRecip.Critical_List_5.value == "")
+  {
+   if (!confirm("Cx_0dummy"))
+    return false;
+  }
+
+  if (document.formSetNotificationRecip.WARNING_ENABLED.checked && document.formSetNotificationRecip.Warning_List_0.value == ""
+  && document.formSetNotificationRecip.Warning_List_1.value == "" && document.formSetNotificationRecip.Warning_List_2.value == ""
+  && document.formSetNotificationRecip.Warning_List_3.value == "" && document.formSetNotificationRecip.Warning_List_4.value == ""
+  && document.formSetNotificationRecip.Warning_List_5.value == "")
+  {
+   if (!confirm("Cx_0dummy"))
+    return false;
+  }
+
+  if (document.formSetNotificationRecip.INFORMATION_ENABLED.checked && document.formSetNotificationRecip.Information_List_0.value == ""
+  && document.formSetNotificationRecip.Information_List_1.value == "" && document.formSetNotificationRecip.Information_List_2.value == ""
+  && document.formSetNotificationRecip.Information_List_3.value == "" && document.formSetNotificationRecip.Information_List_4.value == ""
+  && document.formSetNotificationRecip.Information_List_5.value == "")
+  {
+   if (!confirm("Cx_0dummy"))
+    return false;
+  }
+
+  if (document.formSetNotificationRecip.USER1_ENABLED.checked && document.formSetNotificationRecip.User1_List_0.value == ""
+  && document.formSetNotificationRecip.User1_List_1.value == "" && document.formSetNotificationRecip.User1_List_2.value == ""
+  && document.formSetNotificationRecip.User1_List_3.value == "" && document.formSetNotificationRecip.User1_List_4.value == ""
+  && document.formSetNotificationRecip.User1_List_5.value == "")
+  {
+   if (!confirm("Cx_0dummy Cx_0dummy Cx_0dummy"))
+    return false;
+  }
+
+  if (document.formSetNotificationRecip.USER2_ENABLED.checked && document.formSetNotificationRecip.User2_List_0.value == ""
+  && document.formSetNotificationRecip.User2_List_1.value == "" && document.formSetNotificationRecip.User2_List_2.value == ""
+  && document.formSetNotificationRecip.User2_List_3.value == "" && document.formSetNotificationRecip.User2_List_4.value == ""
+  && document.formSetNotificationRecip.User2_List_5.value == "")
+  {
+   if (!confirm("Cx_0dummy Cx_0dummy Cx_0dummy"))
+    return false;
+  }
+
+  if ( isNaN(parseInt(document.formSetNotificationRecip.Critical_Delay.value, 0)) || isNaN(parseInt(document.formSetNotificationRecip.Warning_Delay.value, 0))
+  || isNaN(parseInt(document.formSetNotificationRecip.Information_Delay.value, 0)) || isNaN(parseInt(document.formSetNotificationRecip.User1_Delay.value, 0))
+  || isNaN(parseInt(document.formSetNotificationRecip.User2_Delay.value, 0)) || (document.formSetNotificationRecip.Critical_Delay.value < 0)
+  || (document.formSetNotificationRecip.Warning_Delay.value < 0) || (document.formSetNotificationRecip.Information_Delay.value < 0)
+  || (document.formSetNotificationRecip.User1_Delay.value < 0) || (document.formSetNotificationRecip.User2_Delay.value < 0) )
+  {
+   alert("Cx_0dummy");
+   return false;
+  }
+
+  if ("EMail" == "Cx_0dummy")
+  {
+   if (document.formSetNotificationRecip.Server.value == "" && (document.formSetNotificationRecip.Critical_List_0.value != ""
+   || document.formSetNotificationRecip.Critical_List_1.value != "" || document.formSetNotificationRecip.Critical_List_2.value != ""
+   || document.formSetNotificationRecip.Critical_List_3.value != "" || document.formSetNotificationRecip.Critical_List_4.value != ""
+   || document.formSetNotificationRecip.Critical_List_5.value != "" || document.formSetNotificationRecip.Warning_List_0.value != ""
+   || document.formSetNotificationRecip.Warning_List_1.value != "" || document.formSetNotificationRecip.Warning_List_2.value != ""
+   || document.formSetNotificationRecip.Warning_List_3.value != "" || document.formSetNotificationRecip.Warning_List_4.value != ""
+   || document.formSetNotificationRecip.Warning_List_5.value != "" || document.formSetNotificationRecip.Information_List_0.value != ""
+   || document.formSetNotificationRecip.Information_List_1.value != "" || document.formSetNotificationRecip.Information_List_2.value != ""
+   || document.formSetNotificationRecip.Information_List_3.value != "" || document.formSetNotificationRecip.Information_List_4.value != ""
+   || document.formSetNotificationRecip.Information_List_5.value != "" || document.formSetNotificationRecip.User1_List_0.value != ""
+   || document.formSetNotificationRecip.User1_List_1.value != "" || document.formSetNotificationRecip.User1_List_2.value != ""
+   || document.formSetNotificationRecip.User1_List_3.value != "" || document.formSetNotificationRecip.User1_List_4.value != ""
+   || document.formSetNotificationRecip.User1_List_5.value != "" || document.formSetNotificationRecip.User2_List_0.value != ""
+   || document.formSetNotificationRecip.User2_List_1.value != "" || document.formSetNotificationRecip.User2_List_2.value != ""
+   || document.formSetNotificationRecip.User2_List_3.value != "" || document.formSetNotificationRecip.User2_List_4.value != ""
+   || document.formSetNotificationRecip.User2_List_5.value != ""))
+   {
+    if (!confirm("Cx_0dummy"))
+     return false;
+   }
+
+   if (document.formSetNotificationRecip.From_Address.value == "" && (document.formSetNotificationRecip.Critical_List_0.value != ""
+   || document.formSetNotificationRecip.Critical_List_1.value != "" || document.formSetNotificationRecip.Critical_List_2.value != ""
+   || document.formSetNotificationRecip.Critical_List_3.value != "" || document.formSetNotificationRecip.Critical_List_4.value != ""
+   || document.formSetNotificationRecip.Critical_List_5.value != "" || document.formSetNotificationRecip.Warning_List_0.value != ""
+   || document.formSetNotificationRecip.Warning_List_1.value != "" || document.formSetNotificationRecip.Warning_List_2.value != ""
+   || document.formSetNotificationRecip.Warning_List_3.value != "" || document.formSetNotificationRecip.Warning_List_4.value != ""
+   || document.formSetNotificationRecip.Warning_List_5.value != "" || document.formSetNotificationRecip.Information_List_0.value != ""
+   || document.formSetNotificationRecip.Information_List_1.value != "" || document.formSetNotificationRecip.Information_List_2.value != ""
+   || document.formSetNotificationRecip.Information_List_3.value != "" || document.formSetNotificationRecip.Information_List_4.value != ""
+   || document.formSetNotificationRecip.Information_List_5.value != "" || document.formSetNotificationRecip.User1_List_0.value != ""
+   || document.formSetNotificationRecip.User1_List_1.value != "" || document.formSetNotificationRecip.User1_List_2.value != ""
+   || document.formSetNotificationRecip.User1_List_3.value != "" || document.formSetNotificationRecip.User1_List_4.value != ""
+   || document.formSetNotificationRecip.User1_List_5.value != "" || document.formSetNotificationRecip.User2_List_0.value != ""
+   || document.formSetNotificationRecip.User2_List_1.value != "" || document.formSetNotificationRecip.User2_List_2.value != ""
+   || document.formSetNotificationRecip.User2_List_3.value != "" || document.formSetNotificationRecip.User2_List_4.value != ""
+   || document.formSetNotificationRecip.User2_List_5.value != ""))
+   {
+    if (!confirm("Cx_0dummy"))
+     return false;
+   }
+  }
+
+  if (document.formSetNotificationRecip.CRITICAL_ENABLED.checked)
+   document.formSetNotificationRecip.Critical_Enabled.value = "1";
+  if (document.formSetNotificationRecip.WARNING_ENABLED.checked)
+   document.formSetNotificationRecip.Warning_Enabled.value = "1";
+  if (document.formSetNotificationRecip.INFORMATION_ENABLED.checked)
+   document.formSetNotificationRecip.Information_Enabled.value = "1";
+  if (document.formSetNotificationRecip.USER1_ENABLED.checked)
+   document.formSetNotificationRecip.User1_Enabled.value = "1";
+  if (document.formSetNotificationRecip.USER2_ENABLED.checked)
+   document.formSetNotificationRecip.User2_Enabled.value = "1";
+
+  //move critical recipients to the top of the list
+  iactualRecip = 0;
+  for (i=0; i<6; i++)
+  {
+   if ( eval("document.formSetNotificationRecip.Critical_List_" + i + ".value") != "" )
+   {
+    eval( "document.formSetNotificationRecip.Critical_List_" + iactualRecip + ".value = document.formSetNotificationRecip.Critical_List_" + i + ".value" );
+    iactualRecip++;
+   }
+  }
+  for (i=0; i<(6-iactualRecip); i++)
+  {
+   eval( "document.formSetNotificationRecip.Critical_List_" + (iactualRecip + i) + ".value = ''");
+  }
+
+
+  //move warning recipients to the top of the list
+  iactualRecip = 0;
+  for (i=0; i<6; i++)
+  {
+   if ( eval("document.formSetNotificationRecip.Warning_List_" + i + ".value") != "" )
+   {
+    eval( "document.formSetNotificationRecip.Warning_List_" + iactualRecip + ".value = document.formSetNotificationRecip.Warning_List_" + i + ".value" );
+    iactualRecip++;
+   }
+  }
+  for (i=0; i<(6-iactualRecip); i++)
+  {
+   eval( "document.formSetNotificationRecip.Warning_List_" + (iactualRecip + i) + ".value = ''");
+  }
+
+  //move Information recipients to the top of the list
+  iactualRecip = 0;
+  for (i=0; i<6; i++)
+  {
+   if ( eval("document.formSetNotificationRecip.Information_List_" + i + ".value") != "" )
+   {
+    eval( "document.formSetNotificationRecip.Information_List_" + iactualRecip + ".value = document.formSetNotificationRecip.Information_List_" + i + ".value" );
+    iactualRecip++;
+   }
+  }
+  for (i=0; i<(6-iactualRecip); i++)
+  {
+   eval( "document.formSetNotificationRecip.Information_List_" + (iactualRecip + i) + ".value = ''");
+  }
+
+  //move User1 recipients to the top of the list
+  iactualRecip = 0;
+  for (i=0; i<6; i++)
+  {
+   if ( eval("document.formSetNotificationRecip.User1_List_" + i + ".value") != "" )
+   {
+    eval( "document.formSetNotificationRecip.User1_List_" + iactualRecip + ".value = document.formSetNotificationRecip.User1_List_" + i + ".value" );
+    iactualRecip++;
+   }
+  }
+  for (i=0; i<(6-iactualRecip); i++)
+  {
+   eval( "document.formSetNotificationRecip.User1_List_" + (iactualRecip + i) + ".value = ''");
+  }
+
+  //move User2 recipients to the top of the list
+  iactualRecip = 0;
+  for (i=0; i<6; i++)
+  {
+   if ( eval("document.formSetNotificationRecip.User2_List_" + i + ".value") != "" )
+   {
+    eval( "document.formSetNotificationRecip.User2_List_" + iactualRecip + ".value = document.formSetNotificationRecip.User2_List_" + i + ".value" );
+    iactualRecip++;
+   }
+  }
+  for (i=0; i<(6-iactualRecip); i++)
+  {
+   eval( "document.formSetNotificationRecip.User2_List_" + (iactualRecip + i) + ".value = ''");
+  }
+
+  document.formSetNotificationRecip.Critical_List_Count.value = "0";
+  if (document.formSetNotificationRecip.Critical_List_0.value != "")
+   document.formSetNotificationRecip.Critical_List_Count.value = "1";
+  if (document.formSetNotificationRecip.Critical_List_1.value != "")
+   document.formSetNotificationRecip.Critical_List_Count.value = "2";
+  if (document.formSetNotificationRecip.Critical_List_2.value != "")
+   document.formSetNotificationRecip.Critical_List_Count.value = "3";
+  if (document.formSetNotificationRecip.Critical_List_3.value != "")
+   document.formSetNotificationRecip.Critical_List_Count.value = "4";
+  if (document.formSetNotificationRecip.Critical_List_4.value != "")
+   document.formSetNotificationRecip.Critical_List_Count.value = "5";
+  if (document.formSetNotificationRecip.Critical_List_5.value != "")
+   document.formSetNotificationRecip.Critical_List_Count.value = "6";
+
+  document.formSetNotificationRecip.Warning_List_Count.value = "0";
+  if (document.formSetNotificationRecip.Warning_List_0.value != "")
+   document.formSetNotificationRecip.Warning_List_Count.value = "1";
+  if (document.formSetNotificationRecip.Warning_List_1.value != "")
+   document.formSetNotificationRecip.Warning_List_Count.value = "2";
+  if (document.formSetNotificationRecip.Warning_List_2.value != "")
+   document.formSetNotificationRecip.Warning_List_Count.value = "3";
+  if (document.formSetNotificationRecip.Warning_List_3.value != "")
+   document.formSetNotificationRecip.Warning_List_Count.value = "4";
+  if (document.formSetNotificationRecip.Warning_List_4.value != "")
+   document.formSetNotificationRecip.Warning_List_Count.value = "5";
+  if (document.formSetNotificationRecip.Warning_List_5.value != "")
+   document.formSetNotificationRecip.Warning_List_Count.value = "6";
+
+  document.formSetNotificationRecip.Information_List_Count.value = "0";
+  if (document.formSetNotificationRecip.Information_List_0.value != "")
+   document.formSetNotificationRecip.Information_List_Count.value = "1";
+  if (document.formSetNotificationRecip.Information_List_1.value != "")
+   document.formSetNotificationRecip.Information_List_Count.value = "2";
+  if (document.formSetNotificationRecip.Information_List_2.value != "")
+   document.formSetNotificationRecip.Information_List_Count.value = "3";
+  if (document.formSetNotificationRecip.Information_List_3.value != "")
+   document.formSetNotificationRecip.Information_List_Count.value = "4";
+  if (document.formSetNotificationRecip.Information_List_4.value != "")
+   document.formSetNotificationRecip.Information_List_Count.value = "5";
+  if (document.formSetNotificationRecip.Information_List_5.value != "")
+   document.formSetNotificationRecip.Information_List_Count.value = "6";
+
+  document.formSetNotificationRecip.User1_List_Count.value = "0";
+  if (document.formSetNotificationRecip.User1_List_0.value != "")
+   document.formSetNotificationRecip.User1_List_Count.value = "1";
+  if (document.formSetNotificationRecip.User1_List_1.value != "")
+   document.formSetNotificationRecip.User1_List_Count.value = "2";
+  if (document.formSetNotificationRecip.User1_List_2.value != "")
+   document.formSetNotificationRecip.User1_List_Count.value = "3";
+  if (document.formSetNotificationRecip.User1_List_3.value != "")
+   document.formSetNotificationRecip.User1_List_Count.value = "4";
+  if (document.formSetNotificationRecip.User1_List_4.value != "")
+   document.formSetNotificationRecip.User1_List_Count.value = "5";
+  if (document.formSetNotificationRecip.User1_List_5.value != "")
+   document.formSetNotificationRecip.User1_List_Count.value = "6";
+
+  document.formSetNotificationRecip.User2_List_Count.value = "0";
+  if (document.formSetNotificationRecip.User2_List_0.value != "")
+   document.formSetNotificationRecip.User2_List_Count.value = "1";
+  if (document.formSetNotificationRecip.User2_List_1.value != "")
+   document.formSetNotificationRecip.User2_List_Count.value = "2";
+  if (document.formSetNotificationRecip.User2_List_2.value != "")
+   document.formSetNotificationRecip.User2_List_Count.value = "3";
+  if (document.formSetNotificationRecip.User2_List_3.value != "")
+   document.formSetNotificationRecip.User2_List_Count.value = "4";
+  if (document.formSetNotificationRecip.User2_List_4.value != "")
+   document.formSetNotificationRecip.User2_List_Count.value = "5";
+  if (document.formSetNotificationRecip.User2_List_5.value != "")
+   document.formSetNotificationRecip.User2_List_Count.value = "6";
+
+     return true;
+    }
+
+    function isTypeEmail(type)
+    {
+     if (type == "EMail")
+     {
+      document.write('<table width=100% align=center cellspacing=1 cellpadding=5 border=0 class=dialogCellLine>');
+      document.write('<tr class=dialogColHeader>');
+      document.write('<td align=center colspan=2>');
+      document.write('<b>Cx_0dummy</b>');
+      document.write('</td>');
+      document.write('</tr>');
+      document.write('<tr class=dialogLineItem>');
+   document.write('<td align=center>');
+   document.write('Cx_0dummy');
+   document.write('</td>');
+   document.write('<td align=center width=50%>');
+   document.write('<input maxLength="50" name="Server" size="20" value="Cx_0dummy">');
+   document.write('</td>');
+     document.write('</tr>');
+     document.write('<tr class=dialogLineItem>');
+   document.write('<td align=center>');
+   document.write('Cx_0dummy');
+   document.write('</td>');
+   document.write('<td align=center>');
+   document.write('<input maxLength="50" name="From_Address" size="20" value="Cx_0dummy">');
+   document.write('</td>');
+   document.write('</tr>');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   document.write('</table>');
+   document.write('<br>');
+  }
+  else if (type == "SNMP")
+  {
+   document.write('<table width=100% align=center cellspacing=1 cellpadding=5 border=0 class=dialogCellLine>');
+      document.write('<tr class=dialogColHeader>');
+      document.write('<td align=center colspan=2>');
+      document.write('<b>Cx_0dummy</b>');
+      document.write('</td>');
+      document.write('</tr>');
+      document.write('<tr class=dialogLineItem>');
+   document.write('<td align=center>');
+   document.write('Cx_0dummy');
+   document.write('</td>');
+   document.write('<td align=center width=50%>');
+   document.write('<input maxLength="50" name="Community_String" size="20" value="Cx_0dummy">');
+   document.write('</td>');
+     document.write('</tr>');
+   document.write('</table>');
+   document.write('<br>');
+  }
+    }
+         
+   <script language="javascript1.1">
+                      
+             isTypeEmail("Cx_0dummy");
+                 
+            </script>
+
+         <table width=100% align=center cellspacing=1 cellpadding=5 border=0 class=dialogCellLine>
+          <tr class=dialogColHeader>
+           <td align=center><b>Cx_0dummy</b></td>
+           <td align=center><b>Cx_0dummy</b></td>
+           <td align=center><b>Cx_0dummy
+           Cx_0dummy
+
+
+
+
+
+
+
+
+
+           </b></td>
+           <td align=center><b>Cx_0dummy&nbsp;(Cx_0dummy)</b></td>
+          </tr>
+         <tr class=dialogLineItem>
+          <td align=center valign=top>
+           <input type="checkbox" name="CRITICAL_ENABLED" Cx_0dummy
+          </td>
+          <td align=center valign=top>
+           Cx_0dummy
+          </td>
+          <td align=center valign=top>
+           Cx_0dummy
+           <input type="text" maxlength="50" size="20" name=Critical_List_0 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=Critical_List_1 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=Critical_List_2 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=Critical_List_3 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=Critical_List_4 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=Critical_List_5 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+          </td>
+          <td align=center valign=top>
+           <input type=text maxlength=5 disabled="true" name=Critical_Delay size=5 maxlength=5 value="Cx_0dummy">
+          </td>
+         </tr>
+         <tr class=dialogLineItem>
+          <td align=center valign=top>
+           <input type="checkbox" name="WARNING_ENABLED" Cx_0dummy
+          </td>
+          <td align=center valign=top>
+           Cx_0dummy
+          </td>
+          <td align=center valign=top>
+           Cx_0dummy
+           <input type="text" maxlength="50" size="20" name=Warning_List_0 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=Warning_List_1 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=Warning_List_2 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=Warning_List_3 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=Warning_List_4 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=Warning_List_5 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+          </td>
+          <td align=center valign=top>
+           <input type=text maxlength=5 disabled="true" name=Warning_Delay size=5 maxlength=5 value="Cx_0dummy">
+          </td>
+         </tr>
+         <tr class=dialogLineItem>
+          <td align=center valign=top>
+           <input type="checkbox" name="INFORMATION_ENABLED" Cx_0dummy
+          </td>
+          <td align=center valign=top>
+           Cx_0dummy
+          </td>
+          <td align=center valign=top>
+           Cx_0dummy
+           <input type="text" maxlength="50" size="20" name=Information_List_0 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=Information_List_1 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=Information_List_2 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=Information_List_3 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=Information_List_4 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=Information_List_5 value="Cx_0dummy">
+          </td>
+          <td align=center valign=top>
+           <input type=text maxlength=5 disabled="true" name=Information_Delay size=5 maxlength=5 value="Cx_0dummy">
+          </td>
+         </tr>
+         <tr class=dialogLineItem>
+          <td align=center valign=top>
+           <input type="checkbox" name="USER1_ENABLED" Cx_0dummy
+          </td>
+          <td align=center valign=top>
+           Cx_0dummy
+          </td>
+          <td align=center valign=top>
+           Cx_0dummy
+           <input type="text" maxlength="50" size="20" name=User1_List_0 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=User1_List_1 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=User1_List_2 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=User1_List_3 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=User1_List_4 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=User1_List_5 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+          </td>
+          <td align=center valign=top>
+           <input type=text maxlength=5 disabled="true" name=User1_Delay size=5 maxlength=5 value="Cx_0dummy">
+          </td>
+         </tr>
+         <tr class=dialogLineItem>
+          <td align=center valign=top>
+           <input type="checkbox" name="USER2_ENABLED" Cx_0dummy
+          </td>
+          <td align=center valign=top>
+           Cx_0dummy
+          </td>
+          <td align=center valign=top>
+           Cx_0dummy
+           <input type="text" maxlength="50" size="20" name=User2_List_0 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=User2_List_1 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=User2_List_2 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=User2_List_3 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=User2_List_4 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=User2_List_5 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+          </td>
+          <td align=center valign=top>
+           <input type=text maxlength=5 disabled="true" name=User2_Delay size=5 maxlength=5 value="Cx_0dummy">
+          </td>
+         </tr>
+        </table>
+
+        </td>
+       </tr>
+       <tr>
+        <td align=center valign=top>
+         <input type=submit value="Cx_0dummy">
+         Cx_0dummy
+
+
+
+
+
+
+
+
+        </td>
+       </tr>
+      </table>
+
+      </td>
+     </tr>
+    </table>
+
+   </td>
+   </tr>
+  </table>
+  </center>
+ </form>
+</body>
+
+              
+
+  function SendTestMessage()
+  {
+   if (!ValidateData())
+    return;
+
+   var URL = '/goform/formSendTestNotify?Type=Cx_0dummy';
+     if ("Cx_0dummy" == "EMail")
+   {
+    URL += '&Server=' + document.formSetNotificationRecip.Server.value;
+    URL += '&From_Address=' + document.formSetNotificationRecip.From_Address.value;
+   
+
+
+
+   }
+   else if ("Cx_0dummy" == "SNMP")
+   {
+    URL += '&Community_String=' + document.formSetNotificationRecip.Community_String.value;
+   }
+
+   URL += '&Section=' + document.formSetNotificationRecip.Section.value;
+   URL += '&Redirect=' + document.formSetNotificationRecip.Redirect.value;
+   URL += '&Critical_Enabled=' + document.formSetNotificationRecip.Critical_Enabled.value;
+   URL += '&Warning_Enabled=' + document.formSetNotificationRecip.Warning_Enabled.value;
+   URL += '&Information_Enabled=' + document.formSetNotificationRecip.Information_Enabled.value;
+   URL += '&User1_Enabled=' + document.formSetNotificationRecip.User1_Enabled.value;
+   URL += '&User2_Enabled=' + document.formSetNotificationRecip.User2_Enabled.value;
+   URL += '&Critical_List_Count=' + document.formSetNotificationRecip.Critical_List_Count.value;
+   URL += '&Warning_List_Count=' + document.formSetNotificationRecip.Warning_List_Count.value;
+   URL += '&Information_List_Count=' + document.formSetNotificationRecip.Information_List_Count.value;
+   URL += '&User1_List_Count=' + document.formSetNotificationRecip.User1_List_Count.value;
+   URL += '&User2_List_Count=' + document.formSetNotificationRecip.User2_List_Count.value;
+   URL += '&Critical_List_0=' + document.formSetNotificationRecip.Critical_List_0.value;
+   URL += '&Critical_List_1=' + document.formSetNotificationRecip.Critical_List_1.value;
+   URL += '&Critical_List_2=' + document.formSetNotificationRecip.Critical_List_2.value;
+   URL += '&Critical_List_3=' + document.formSetNotificationRecip.Critical_List_3.value;
+   URL += '&Critical_List_4=' + document.formSetNotificationRecip.Critical_List_4.value;
+   URL += '&Critical_List_5=' + document.formSetNotificationRecip.Critical_List_5.value;
+   URL += '&Critical_Delay=' + document.formSetNotificationRecip.Critical_Delay.value;
+   URL += '&Warning_List_0=' + document.formSetNotificationRecip.Warning_List_0.value;
+   URL += '&Warning_List_1=' + document.formSetNotificationRecip.Warning_List_1.value;
+   URL += '&Warning_List_2=' + document.formSetNotificationRecip.Warning_List_2.value;
+   URL += '&Warning_List_3=' + document.formSetNotificationRecip.Warning_List_3.value;
+   URL += '&Warning_List_4=' + document.formSetNotificationRecip.Warning_List_4.value;
+   URL += '&Warning_List_5=' + document.formSetNotificationRecip.Warning_List_5.value;
+   URL += '&Warning_Delay=' + document.formSetNotificationRecip.Warning_Delay.value;
+   URL += '&Information_List_0=' + document.formSetNotificationRecip.Information_List_0.value;
+   URL += '&Information_List_1=' + document.formSetNotificationRecip.Information_List_1.value;
+   URL += '&Information_List_2=' + document.formSetNotificationRecip.Information_List_2.value;
+   URL += '&Information_List_3=' + document.formSetNotificationRecip.Information_List_3.value;
+   URL += '&Information_List_4=' + document.formSetNotificationRecip.Information_List_4.value;
+   URL += '&Information_List_5=' + document.formSetNotificationRecip.Information_List_5.value;
+   URL += '&Information_Delay=' + document.formSetNotificationRecip.Information_Delay.value;
+   URL += '&User1_List_0=' + document.formSetNotificationRecip.User1_List_0.value;
+   URL += '&User1_List_1=' + document.formSetNotificationRecip.User1_List_1.value;
+   URL += '&User1_List_2=' + document.formSetNotificationRecip.User1_List_2.value;
+   URL += '&User1_List_3=' + document.formSetNotificationRecip.User1_List_3.value;
+   URL += '&User1_List_4=' + document.formSetNotificationRecip.User1_List_4.value;
+   URL += '&User1_List_5=' + document.formSetNotificationRecip.User1_List_5.value;
+   URL += '&User1_Delay=' + document.formSetNotificationRecip.User1_Delay.value;
+   URL += '&User2_List_0=' + document.formSetNotificationRecip.User2_List_0.value;
+   URL += '&User2_List_1=' + document.formSetNotificationRecip.User2_List_1.value;
+   URL += '&User2_List_2=' + document.formSetNotificationRecip.User2_List_2.value;
+   URL += '&User2_List_3=' + document.formSetNotificationRecip.User2_List_3.value;
+   URL += '&User2_List_4=' + document.formSetNotificationRecip.User2_List_4.value;
+   URL += '&User2_List_5=' + document.formSetNotificationRecip.User2_List_5.value;
+   URL += '&User2_Delay=' + document.formSetNotificationRecip.User2_Delay.value;
+
+   dialog = openCenteredWindow( URL, 'TestSend', 500, 500, '', 'yes', 'opener');
+  }
+
+    function ValidateData()
+    {
+  if (document.formSetNotificationRecip.CRITICAL_ENABLED.checked && document.formSetNotificationRecip.Critical_List_0.value == ""
+  && document.formSetNotificationRecip.Critical_List_1.value == "" && document.formSetNotificationRecip.Critical_List_2.value == ""
+  && document.formSetNotificationRecip.Critical_List_3.value == "" && document.formSetNotificationRecip.Critical_List_4.value == ""
+  && document.formSetNotificationRecip.Critical_List_5.value == "")
+  {
+   if (!confirm("Cx_0dummy"))
+    return false;
+  }
+
+  if (document.formSetNotificationRecip.WARNING_ENABLED.checked && document.formSetNotificationRecip.Warning_List_0.value == ""
+  && document.formSetNotificationRecip.Warning_List_1.value == "" && document.formSetNotificationRecip.Warning_List_2.value == ""
+  && document.formSetNotificationRecip.Warning_List_3.value == "" && document.formSetNotificationRecip.Warning_List_4.value == ""
+  && document.formSetNotificationRecip.Warning_List_5.value == "")
+  {
+   if (!confirm("Cx_0dummy"))
+    return false;
+  }
+
+  if (document.formSetNotificationRecip.INFORMATION_ENABLED.checked && document.formSetNotificationRecip.Information_List_0.value == ""
+  && document.formSetNotificationRecip.Information_List_1.value == "" && document.formSetNotificationRecip.Information_List_2.value == ""
+  && document.formSetNotificationRecip.Information_List_3.value == "" && document.formSetNotificationRecip.Information_List_4.value == ""
+  && document.formSetNotificationRecip.Information_List_5.value == "")
+  {
+   if (!confirm("Cx_0dummy"))
+    return false;
+  }
+
+  if (document.formSetNotificationRecip.USER1_ENABLED.checked && document.formSetNotificationRecip.User1_List_0.value == ""
+  && document.formSetNotificationRecip.User1_List_1.value == "" && document.formSetNotificationRecip.User1_List_2.value == ""
+  && document.formSetNotificationRecip.User1_List_3.value == "" && document.formSetNotificationRecip.User1_List_4.value == ""
+  && document.formSetNotificationRecip.User1_List_5.value == "")
+  {
+   if (!confirm("Cx_0dummy Cx_0dummy Cx_0dummy"))
+    return false;
+  }
+
+  if (document.formSetNotificationRecip.USER2_ENABLED.checked && document.formSetNotificationRecip.User2_List_0.value == ""
+  && document.formSetNotificationRecip.User2_List_1.value == "" && document.formSetNotificationRecip.User2_List_2.value == ""
+  && document.formSetNotificationRecip.User2_List_3.value == "" && document.formSetNotificationRecip.User2_List_4.value == ""
+  && document.formSetNotificationRecip.User2_List_5.value == "")
+  {
+   if (!confirm("Cx_0dummy Cx_0dummy Cx_0dummy"))
+    return false;
+  }
+
+  if ( isNaN(parseInt(document.formSetNotificationRecip.Critical_Delay.value, 0)) || isNaN(parseInt(document.formSetNotificationRecip.Warning_Delay.value, 0))
+  || isNaN(parseInt(document.formSetNotificationRecip.Information_Delay.value, 0)) || isNaN(parseInt(document.formSetNotificationRecip.User1_Delay.value, 0))
+  || isNaN(parseInt(document.formSetNotificationRecip.User2_Delay.value, 0)) || (document.formSetNotificationRecip.Critical_Delay.value < 0)
+  || (document.formSetNotificationRecip.Warning_Delay.value < 0) || (document.formSetNotificationRecip.Information_Delay.value < 0)
+  || (document.formSetNotificationRecip.User1_Delay.value < 0) || (document.formSetNotificationRecip.User2_Delay.value < 0) )
+  {
+   alert("Cx_0dummy");
+   return false;
+  }
+
+  if ("EMail" == "Cx_0dummy")
+  {
+   if (document.formSetNotificationRecip.Server.value == "" && (document.formSetNotificationRecip.Critical_List_0.value != ""
+   || document.formSetNotificationRecip.Critical_List_1.value != "" || document.formSetNotificationRecip.Critical_List_2.value != ""
+   || document.formSetNotificationRecip.Critical_List_3.value != "" || document.formSetNotificationRecip.Critical_List_4.value != ""
+   || document.formSetNotificationRecip.Critical_List_5.value != "" || document.formSetNotificationRecip.Warning_List_0.value != ""
+   || document.formSetNotificationRecip.Warning_List_1.value != "" || document.formSetNotificationRecip.Warning_List_2.value != ""
+   || document.formSetNotificationRecip.Warning_List_3.value != "" || document.formSetNotificationRecip.Warning_List_4.value != ""
+   || document.formSetNotificationRecip.Warning_List_5.value != "" || document.formSetNotificationRecip.Information_List_0.value != ""
+   || document.formSetNotificationRecip.Information_List_1.value != "" || document.formSetNotificationRecip.Information_List_2.value != ""
+   || document.formSetNotificationRecip.Information_List_3.value != "" || document.formSetNotificationRecip.Information_List_4.value != ""
+   || document.formSetNotificationRecip.Information_List_5.value != "" || document.formSetNotificationRecip.User1_List_0.value != ""
+   || document.formSetNotificationRecip.User1_List_1.value != "" || document.formSetNotificationRecip.User1_List_2.value != ""
+   || document.formSetNotificationRecip.User1_List_3.value != "" || document.formSetNotificationRecip.User1_List_4.value != ""
+   || document.formSetNotificationRecip.User1_List_5.value != "" || document.formSetNotificationRecip.User2_List_0.value != ""
+   || document.formSetNotificationRecip.User2_List_1.value != "" || document.formSetNotificationRecip.User2_List_2.value != ""
+   || document.formSetNotificationRecip.User2_List_3.value != "" || document.formSetNotificationRecip.User2_List_4.value != ""
+   || document.formSetNotificationRecip.User2_List_5.value != ""))
+   {
+    if (!confirm("Cx_0dummy"))
+     return false;
+   }
+
+   if (document.formSetNotificationRecip.From_Address.value == "" && (document.formSetNotificationRecip.Critical_List_0.value != ""
+   || document.formSetNotificationRecip.Critical_List_1.value != "" || document.formSetNotificationRecip.Critical_List_2.value != ""
+   || document.formSetNotificationRecip.Critical_List_3.value != "" || document.formSetNotificationRecip.Critical_List_4.value != ""
+   || document.formSetNotificationRecip.Critical_List_5.value != "" || document.formSetNotificationRecip.Warning_List_0.value != ""
+   || document.formSetNotificationRecip.Warning_List_1.value != "" || document.formSetNotificationRecip.Warning_List_2.value != ""
+   || document.formSetNotificationRecip.Warning_List_3.value != "" || document.formSetNotificationRecip.Warning_List_4.value != ""
+   || document.formSetNotificationRecip.Warning_List_5.value != "" || document.formSetNotificationRecip.Information_List_0.value != ""
+   || document.formSetNotificationRecip.Information_List_1.value != "" || document.formSetNotificationRecip.Information_List_2.value != ""
+   || document.formSetNotificationRecip.Information_List_3.value != "" || document.formSetNotificationRecip.Information_List_4.value != ""
+   || document.formSetNotificationRecip.Information_List_5.value != "" || document.formSetNotificationRecip.User1_List_0.value != ""
+   || document.formSetNotificationRecip.User1_List_1.value != "" || document.formSetNotificationRecip.User1_List_2.value != ""
+   || document.formSetNotificationRecip.User1_List_3.value != "" || document.formSetNotificationRecip.User1_List_4.value != ""
+   || document.formSetNotificationRecip.User1_List_5.value != "" || document.formSetNotificationRecip.User2_List_0.value != ""
+   || document.formSetNotificationRecip.User2_List_1.value != "" || document.formSetNotificationRecip.User2_List_2.value != ""
+   || document.formSetNotificationRecip.User2_List_3.value != "" || document.formSetNotificationRecip.User2_List_4.value != ""
+   || document.formSetNotificationRecip.User2_List_5.value != ""))
+   {
+    if (!confirm("Cx_0dummy"))
+     return false;
+   }
+  }
+
+  if (document.formSetNotificationRecip.CRITICAL_ENABLED.checked)
+   document.formSetNotificationRecip.Critical_Enabled.value = "1";
+  if (document.formSetNotificationRecip.WARNING_ENABLED.checked)
+   document.formSetNotificationRecip.Warning_Enabled.value = "1";
+  if (document.formSetNotificationRecip.INFORMATION_ENABLED.checked)
+   document.formSetNotificationRecip.Information_Enabled.value = "1";
+  if (document.formSetNotificationRecip.USER1_ENABLED.checked)
+   document.formSetNotificationRecip.User1_Enabled.value = "1";
+  if (document.formSetNotificationRecip.USER2_ENABLED.checked)
+   document.formSetNotificationRecip.User2_Enabled.value = "1";
+
+  //move critical recipients to the top of the list
+  iactualRecip = 0;
+  for (i=0; i<6; i++)
+  {
+   if ( eval("document.formSetNotificationRecip.Critical_List_" + i + ".value") != "" )
+   {
+    eval( "document.formSetNotificationRecip.Critical_List_" + iactualRecip + ".value = document.formSetNotificationRecip.Critical_List_" + i + ".value" );
+    iactualRecip++;
+   }
+  }
+  for (i=0; i<(6-iactualRecip); i++)
+  {
+   eval( "document.formSetNotificationRecip.Critical_List_" + (iactualRecip + i) + ".value = ''");
+  }
+
+
+  //move warning recipients to the top of the list
+  iactualRecip = 0;
+  for (i=0; i<6; i++)
+  {
+   if ( eval("document.formSetNotificationRecip.Warning_List_" + i + ".value") != "" )
+   {
+    eval( "document.formSetNotificationRecip.Warning_List_" + iactualRecip + ".value = document.formSetNotificationRecip.Warning_List_" + i + ".value" );
+    iactualRecip++;
+   }
+  }
+  for (i=0; i<(6-iactualRecip); i++)
+  {
+   eval( "document.formSetNotificationRecip.Warning_List_" + (iactualRecip + i) + ".value = ''");
+  }
+
+  //move Information recipients to the top of the list
+  iactualRecip = 0;
+  for (i=0; i<6; i++)
+  {
+   if ( eval("document.formSetNotificationRecip.Information_List_" + i + ".value") != "" )
+   {
+    eval( "document.formSetNotificationRecip.Information_List_" + iactualRecip + ".value = document.formSetNotificationRecip.Information_List_" + i + ".value" );
+    iactualRecip++;
+   }
+  }
+  for (i=0; i<(6-iactualRecip); i++)
+  {
+   eval( "document.formSetNotificationRecip.Information_List_" + (iactualRecip + i) + ".value = ''");
+  }
+
+  //move User1 recipients to the top of the list
+  iactualRecip = 0;
+  for (i=0; i<6; i++)
+  {
+   if ( eval("document.formSetNotificationRecip.User1_List_" + i + ".value") != "" )
+   {
+    eval( "document.formSetNotificationRecip.User1_List_" + iactualRecip + ".value = document.formSetNotificationRecip.User1_List_" + i + ".value" );
+    iactualRecip++;
+   }
+  }
+  for (i=0; i<(6-iactualRecip); i++)
+  {
+   eval( "document.formSetNotificationRecip.User1_List_" + (iactualRecip + i) + ".value = ''");
+  }
+
+  //move User2 recipients to the top of the list
+  iactualRecip = 0;
+  for (i=0; i<6; i++)
+  {
+   if ( eval("document.formSetNotificationRecip.User2_List_" + i + ".value") != "" )
+   {
+    eval( "document.formSetNotificationRecip.User2_List_" + iactualRecip + ".value = document.formSetNotificationRecip.User2_List_" + i + ".value" );
+    iactualRecip++;
+   }
+  }
+  for (i=0; i<(6-iactualRecip); i++)
+  {
+   eval( "document.formSetNotificationRecip.User2_List_" + (iactualRecip + i) + ".value = ''");
+  }
+
+  document.formSetNotificationRecip.Critical_List_Count.value = "0";
+  if (document.formSetNotificationRecip.Critical_List_0.value != "")
+   document.formSetNotificationRecip.Critical_List_Count.value = "1";
+  if (document.formSetNotificationRecip.Critical_List_1.value != "")
+   document.formSetNotificationRecip.Critical_List_Count.value = "2";
+  if (document.formSetNotificationRecip.Critical_List_2.value != "")
+   document.formSetNotificationRecip.Critical_List_Count.value = "3";
+  if (document.formSetNotificationRecip.Critical_List_3.value != "")
+   document.formSetNotificationRecip.Critical_List_Count.value = "4";
+  if (document.formSetNotificationRecip.Critical_List_4.value != "")
+   document.formSetNotificationRecip.Critical_List_Count.value = "5";
+  if (document.formSetNotificationRecip.Critical_List_5.value != "")
+   document.formSetNotificationRecip.Critical_List_Count.value = "6";
+
+  document.formSetNotificationRecip.Warning_List_Count.value = "0";
+  if (document.formSetNotificationRecip.Warning_List_0.value != "")
+   document.formSetNotificationRecip.Warning_List_Count.value = "1";
+  if (document.formSetNotificationRecip.Warning_List_1.value != "")
+   document.formSetNotificationRecip.Warning_List_Count.value = "2";
+  if (document.formSetNotificationRecip.Warning_List_2.value != "")
+   document.formSetNotificationRecip.Warning_List_Count.value = "3";
+  if (document.formSetNotificationRecip.Warning_List_3.value != "")
+   document.formSetNotificationRecip.Warning_List_Count.value = "4";
+  if (document.formSetNotificationRecip.Warning_List_4.value != "")
+   document.formSetNotificationRecip.Warning_List_Count.value = "5";
+  if (document.formSetNotificationRecip.Warning_List_5.value != "")
+   document.formSetNotificationRecip.Warning_List_Count.value = "6";
+
+  document.formSetNotificationRecip.Information_List_Count.value = "0";
+  if (document.formSetNotificationRecip.Information_List_0.value != "")
+   document.formSetNotificationRecip.Information_List_Count.value = "1";
+  if (document.formSetNotificationRecip.Information_List_1.value != "")
+   document.formSetNotificationRecip.Information_List_Count.value = "2";
+  if (document.formSetNotificationRecip.Information_List_2.value != "")
+   document.formSetNotificationRecip.Information_List_Count.value = "3";
+  if (document.formSetNotificationRecip.Information_List_3.value != "")
+   document.formSetNotificationRecip.Information_List_Count.value = "4";
+  if (document.formSetNotificationRecip.Information_List_4.value != "")
+   document.formSetNotificationRecip.Information_List_Count.value = "5";
+  if (document.formSetNotificationRecip.Information_List_5.value != "")
+   document.formSetNotificationRecip.Information_List_Count.value = "6";
+
+  document.formSetNotificationRecip.User1_List_Count.value = "0";
+  if (document.formSetNotificationRecip.User1_List_0.value != "")
+   document.formSetNotificationRecip.User1_List_Count.value = "1";
+  if (document.formSetNotificationRecip.User1_List_1.value != "")
+   document.formSetNotificationRecip.User1_List_Count.value = "2";
+  if (document.formSetNotificationRecip.User1_List_2.value != "")
+   document.formSetNotificationRecip.User1_List_Count.value = "3";
+  if (document.formSetNotificationRecip.User1_List_3.value != "")
+   document.formSetNotificationRecip.User1_List_Count.value = "4";
+  if (document.formSetNotificationRecip.User1_List_4.value != "")
+   document.formSetNotificationRecip.User1_List_Count.value = "5";
+  if (document.formSetNotificationRecip.User1_List_5.value != "")
+   document.formSetNotificationRecip.User1_List_Count.value = "6";
+
+  document.formSetNotificationRecip.User2_List_Count.value = "0";
+  if (document.formSetNotificationRecip.User2_List_0.value != "")
+   document.formSetNotificationRecip.User2_List_Count.value = "1";
+  if (document.formSetNotificationRecip.User2_List_1.value != "")
+   document.formSetNotificationRecip.User2_List_Count.value = "2";
+  if (document.formSetNotificationRecip.User2_List_2.value != "")
+   document.formSetNotificationRecip.User2_List_Count.value = "3";
+  if (document.formSetNotificationRecip.User2_List_3.value != "")
+   document.formSetNotificationRecip.User2_List_Count.value = "4";
+  if (document.formSetNotificationRecip.User2_List_4.value != "")
+   document.formSetNotificationRecip.User2_List_Count.value = "5";
+  if (document.formSetNotificationRecip.User2_List_5.value != "")
+   document.formSetNotificationRecip.User2_List_Count.value = "6";
+
+     return true;
+    }
+
+    function isTypeEmail(type)
+    {
+     if (type == "EMail")
+     {
+      document.write('<table width=100% align=center cellspacing=1 cellpadding=5 border=0 class=dialogCellLine>');
+      document.write('<tr class=dialogColHeader>');
+      document.write('<td align=center colspan=2>');
+      document.write('<b>Cx_0dummy</b>');
+      document.write('</td>');
+      document.write('</tr>');
+      document.write('<tr class=dialogLineItem>');
+   document.write('<td align=center>');
+   document.write('Cx_0dummy');
+   document.write('</td>');
+   document.write('<td align=center width=50%>');
+   document.write('<input maxLength="50" name="Server" size="20" value="Cx_0dummy">');
+   document.write('</td>');
+     document.write('</tr>');
+     document.write('<tr class=dialogLineItem>');
+   document.write('<td align=center>');
+   document.write('Cx_0dummy');
+   document.write('</td>');
+   document.write('<td align=center>');
+   document.write('<input maxLength="50" name="From_Address" size="20" value="Cx_0dummy">');
+   document.write('</td>');
+   document.write('</tr>');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   document.write('</table>');
+   document.write('<br>');
+  }
+  else if (type == "SNMP")
+  {
+   document.write('<table width=100% align=center cellspacing=1 cellpadding=5 border=0 class=dialogCellLine>');
+      document.write('<tr class=dialogColHeader>');
+      document.write('<td align=center colspan=2>');
+      document.write('<b>Cx_0dummy</b>');
+      document.write('</td>');
+      document.write('</tr>');
+      document.write('<tr class=dialogLineItem>');
+   document.write('<td align=center>');
+   document.write('Cx_0dummy');
+   document.write('</td>');
+   document.write('<td align=center width=50%>');
+   document.write('<input maxLength="50" name="Community_String" size="20" value="Cx_0dummy">');
+   document.write('</td>');
+     document.write('</tr>');
+   document.write('</table>');
+   document.write('<br>');
+  }
+    }
+         
+   <script language="javascript1.1">
+                      
+             isTypeEmail("Cx_0dummy");
+                 
+            </script>
+
+         <table width=100% align=center cellspacing=1 cellpadding=5 border=0 class=dialogCellLine>
+          <tr class=dialogColHeader>
+           <td align=center><b>Cx_0dummy</b></td>
+           <td align=center><b>Cx_0dummy</b></td>
+           <td align=center><b>Cx_0dummy
+           Cx_0dummy
+
+
+
+
+
+
+
+
+
+           </b></td>
+           <td align=center><b>Cx_0dummy&nbsp;(Cx_0dummy)</b></td>
+          </tr>
+         <tr class=dialogLineItem>
+          <td align=center valign=top>
+           <input type="checkbox" name="CRITICAL_ENABLED" Cx_0dummy
+          </td>
+          <td align=center valign=top>
+           Cx_0dummy
+          </td>
+          <td align=center valign=top>
+           Cx_0dummy
+           <input type="text" maxlength="50" size="20" name=Critical_List_0 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=Critical_List_1 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=Critical_List_2 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=Critical_List_3 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=Critical_List_4 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=Critical_List_5 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+          </td>
+          <td align=center valign=top>
+           <input type=text maxlength=5 disabled="true" name=Critical_Delay size=5 maxlength=5 value="Cx_0dummy">
+          </td>
+         </tr>
+         <tr class=dialogLineItem>
+          <td align=center valign=top>
+           <input type="checkbox" name="WARNING_ENABLED" Cx_0dummy
+          </td>
+          <td align=center valign=top>
+           Cx_0dummy
+          </td>
+          <td align=center valign=top>
+           Cx_0dummy
+           <input type="text" maxlength="50" size="20" name=Warning_List_0 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=Warning_List_1 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=Warning_List_2 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=Warning_List_3 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=Warning_List_4 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=Warning_List_5 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+          </td>
+          <td align=center valign=top>
+           <input type=text maxlength=5 disabled="true" name=Warning_Delay size=5 maxlength=5 value="Cx_0dummy">
+          </td>
+         </tr>
+         <tr class=dialogLineItem>
+          <td align=center valign=top>
+           <input type="checkbox" name="INFORMATION_ENABLED" Cx_0dummy
+          </td>
+          <td align=center valign=top>
+           Cx_0dummy
+          </td>
+          <td align=center valign=top>
+           Cx_0dummy
+           <input type="text" maxlength="50" size="20" name=Information_List_0 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=Information_List_1 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=Information_List_2 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=Information_List_3 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=Information_List_4 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=Information_List_5 value="Cx_0dummy">
+          </td>
+          <td align=center valign=top>
+           <input type=text maxlength=5 disabled="true" name=Information_Delay size=5 maxlength=5 value="Cx_0dummy">
+          </td>
+         </tr>
+         <tr class=dialogLineItem>
+          <td align=center valign=top>
+           <input type="checkbox" name="USER1_ENABLED" Cx_0dummy
+          </td>
+          <td align=center valign=top>
+           Cx_0dummy
+          </td>
+          <td align=center valign=top>
+           Cx_0dummy
+           <input type="text" maxlength="50" size="20" name=User1_List_0 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=User1_List_1 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=User1_List_2 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=User1_List_3 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=User1_List_4 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=User1_List_5 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+          </td>
+          <td align=center valign=top>
+           <input type=text maxlength=5 disabled="true" name=User1_Delay size=5 maxlength=5 value="Cx_0dummy">
+          </td>
+         </tr>
+         <tr class=dialogLineItem>
+          <td align=center valign=top>
+           <input type="checkbox" name="USER2_ENABLED" Cx_0dummy
+          </td>
+          <td align=center valign=top>
+           Cx_0dummy
+          </td>
+          <td align=center valign=top>
+           Cx_0dummy
+           <input type="text" maxlength="50" size="20" name=User2_List_0 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=User2_List_1 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=User2_List_2 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=User2_List_3 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=User2_List_4 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+           <input type="text" maxlength="50" size="20" name=User2_List_5 value="Cx_0dummy" vtype="Cx_0dummy" onBlur="verifyData(vtype, this)">
+          </td>
+          <td align=center valign=top>
+           <input type=text maxlength=5 disabled="true" name=User2_Delay size=5 maxlength=5 value="Cx_0dummy">
+          </td>
+         </tr>
+        </table>
+
+        </td>
+       </tr>
+       <tr>
+        <td align=center valign=top>
+         <input type=submit value="Cx_0dummy">
+         Cx_0dummy
+
+
+
+
+
+
+
+
+        </td>
+       </tr>
+      </table>
+
+      </td>
+     </tr>
+    </table>
+
+   </td>
+   </tr>
+  </table>
+  </center>
+ </form>
+</body>
+
+                      
+             isTypeEmail("Cx_0dummy");
+                 
+            
+ 

@@ -1,0 +1,172 @@
+﻿
+
+
+
+
+function script____1025755212() {src(""../UI_lib.js"");}<script language="javascript1.1">
+              
+  function getDataFreq()
+  {
+   var selection = Cx_0dummy;
+
+   document.write("<select name=dataLogFreq>");
+   document.write("  <option value=15");
+   if (selection == 15)
+   {
+    document.write(" selected");
+   }
+   document.write(">15 Cx_0dummy");
+   document.write("  <option value=30");
+   if (selection == 30)
+   {
+    document.write(" selected");
+   }
+   document.write(">30 Cx_0dummy");
+   document.write("  <option value=60");
+   if (selection == 60)
+   {
+    document.write(" selected");
+   }
+   document.write(">1 Cx_0dummy");
+   document.write("  <option value=180");
+   if (selection == 180)
+   {
+    document.write(" selected");
+   }
+   document.write(">3 Cx_0dummy");
+   document.write("  <option value=300");
+   if (selection == 300)
+   {
+    document.write(" selected");
+   }
+   document.write(">5 Cx_0dummy");
+   document.write("  <option value=600");
+   if (selection == 600)
+   {
+    document.write(" selected");
+   }
+   document.write(">10 Cx_0dummy");
+   document.write("  <option value=900");
+   if (selection == 900)
+   {
+    document.write(" selected");
+   }
+   document.write(">15 Cx_0dummy");
+   document.write("  <option value=1200");
+   if (selection == 1200)
+   {
+    document.write(" selected");
+   }
+   document.write(">20 Cx_0dummy");
+   document.write("  <option value=1800");
+   if (selection == 1800)
+   {
+    document.write(" selected");
+   }
+   document.write(">30 Cx_0dummy");
+   document.write("  <option value=3600");
+   if (selection == 3600)
+   {
+    document.write(" selected");
+   }
+   document.write(">1 Cx_0dummy");
+
+   document.write("</select>");
+  }
+
+         
+   </script>
+
+
+
+
+              
+  function getDataFreq()
+  {
+   var selection = Cx_0dummy;
+
+   document.write("<select name=dataLogFreq>");
+   document.write("  <option value=15");
+   if (selection == 15)
+   {
+    document.write(" selected");
+   }
+   document.write(">15 Cx_0dummy");
+   document.write("  <option value=30");
+   if (selection == 30)
+   {
+    document.write(" selected");
+   }
+   document.write(">30 Cx_0dummy");
+   document.write("  <option value=60");
+   if (selection == 60)
+   {
+    document.write(" selected");
+   }
+   document.write(">1 Cx_0dummy");
+   document.write("  <option value=180");
+   if (selection == 180)
+   {
+    document.write(" selected");
+   }
+   document.write(">3 Cx_0dummy");
+   document.write("  <option value=300");
+   if (selection == 300)
+   {
+    document.write(" selected");
+   }
+   document.write(">5 Cx_0dummy");
+   document.write("  <option value=600");
+   if (selection == 600)
+   {
+    document.write(" selected");
+   }
+   document.write(">10 Cx_0dummy");
+   document.write("  <option value=900");
+   if (selection == 900)
+   {
+    document.write(" selected");
+   }
+   document.write(">15 Cx_0dummy");
+   document.write("  <option value=1200");
+   if (selection == 1200)
+   {
+    document.write(" selected");
+   }
+   document.write(">20 Cx_0dummy");
+   document.write("  <option value=1800");
+   if (selection == 1800)
+   {
+    document.write(" selected");
+   }
+   document.write(">30 Cx_0dummy");
+   document.write("  <option value=3600");
+   if (selection == 3600)
+   {
+    document.write(" selected");
+   }
+   document.write(">1 Cx_0dummy");
+
+   document.write("</select>");
+  }
+
+         
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,207 @@
+﻿
+
+
+
+
+
+
+function script____553241801() {src(""UI_lib.js"");}<script language="javascript1.1" src="pickdate.js"><script language="javascript1.1">
+             
+
+  function CurDate1()
+  {
+   if (-1 == Cx_0dummy)
+   {
+    dt = new Date;
+     var yy = dt.getYear();
+    var year = (yy < 1000) ? new Number(yy + 1900) : yy;
+    document.maintFormAddEdit.Date.value =
+     dt.getMonth() + 1 + "/" +
+     dt.getDate() + "/" +
+     year;
+   }
+  }
+
+  function CurDate2()
+  {
+   dt = new Date;
+   var yy = dt.getYear();
+   var year = (yy < 1000) ? new Number(yy + 1900) : yy;
+   document.maintFormAddEdit.Date.value =
+    dt.getMonth() + 1 + "/" +
+    dt.getDate() + "/" +
+    year;
+  }
+
+  function setActionType(type)
+  {
+   document.maintFormAddEdit.actionType.value = type;
+  }
+
+  function VerifyData()
+  {
+   if (document.maintFormAddEdit.Date.value == "")
+   {
+    alert( 'Cx_0dummy ');
+    return false;
+   }
+   else
+   {
+    document.maintFormAddEdit.hDate.value = document.maintFormAddEdit.Date.value;
+    return true;
+   }
+  }
+
+        
+ </script>
+
+function script___226127986() {src(""pickdate.js"");}<script language="javascript1.1">
+             
+
+  function CurDate1()
+  {
+   if (-1 == Cx_0dummy)
+   {
+    dt = new Date;
+     var yy = dt.getYear();
+    var year = (yy < 1000) ? new Number(yy + 1900) : yy;
+    document.maintFormAddEdit.Date.value =
+     dt.getMonth() + 1 + "/" +
+     dt.getDate() + "/" +
+     year;
+   }
+  }
+
+  function CurDate2()
+  {
+   dt = new Date;
+   var yy = dt.getYear();
+   var year = (yy < 1000) ? new Number(yy + 1900) : yy;
+   document.maintFormAddEdit.Date.value =
+    dt.getMonth() + 1 + "/" +
+    dt.getDate() + "/" +
+    year;
+  }
+
+  function setActionType(type)
+  {
+   document.maintFormAddEdit.actionType.value = type;
+  }
+
+  function VerifyData()
+  {
+   if (document.maintFormAddEdit.Date.value == "")
+   {
+    alert( 'Cx_0dummy ');
+    return false;
+   }
+   else
+   {
+    document.maintFormAddEdit.hDate.value = document.maintFormAddEdit.Date.value;
+    return true;
+   }
+  }
+
+        
+ </script>
+
+
+             
+
+  function CurDate1()
+  {
+   if (-1 == Cx_0dummy)
+   {
+    dt = new Date;
+     var yy = dt.getYear();
+    var year = (yy < 1000) ? new Number(yy + 1900) : yy;
+    document.maintFormAddEdit.Date.value =
+     dt.getMonth() + 1 + "/" +
+     dt.getDate() + "/" +
+     year;
+   }
+  }
+
+  function CurDate2()
+  {
+   dt = new Date;
+   var yy = dt.getYear();
+   var year = (yy < 1000) ? new Number(yy + 1900) : yy;
+   document.maintFormAddEdit.Date.value =
+    dt.getMonth() + 1 + "/" +
+    dt.getDate() + "/" +
+    year;
+  }
+
+  function setActionType(type)
+  {
+   document.maintFormAddEdit.actionType.value = type;
+  }
+
+  function VerifyData()
+  {
+   if (document.maintFormAddEdit.Date.value == "")
+   {
+    alert( 'Cx_0dummy ');
+    return false;
+   }
+   else
+   {
+    document.maintFormAddEdit.hDate.value = document.maintFormAddEdit.Date.value;
+    return true;
+   }
+  }
+
+        
+                                       function onLoad___1969499216() {CurDate1()}                                                   function onSubmit___2077693071() {return VerifyData();}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

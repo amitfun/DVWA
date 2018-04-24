@@ -1,0 +1,109 @@
+﻿
+
+
+
+function script____1025755212() {src(""../UI_lib.js"");}<script language="javascript1.1">
+            
+ function setActionType( type)
+ {
+  document.userForm.actionType.value = type;
+ }
+
+ function checkNow()
+ {
+  var url = "Cx_0dummy" +
+    "?MFG=" + escape( "Cx_0dummy") +
+    "&VER=" + escape( "Cx_0dummy");
+
+
+  openFullChromeWindow( url, "new", "old");
+ }
+       
+  </script>
+
+
+            
+ function setActionType( type)
+ {
+  document.userForm.actionType.value = type;
+ }
+
+ function checkNow()
+ {
+  var url = "Cx_0dummy" +
+    "?MFG=" + escape( "Cx_0dummy") +
+    "&VER=" + escape( "Cx_0dummy");
+
+
+  openFullChromeWindow( url, "new", "old");
+ }
+       
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

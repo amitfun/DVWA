@@ -1,0 +1,458 @@
+﻿
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function script____1025755212() {src(""../UI_lib.js"");}<script language="javascript1.1">
+            
+   function refreshPage()
+      {
+       window.location = window.location;
+      }
+
+   function minUPS()
+   {
+    minups = 0;
+    Cx_0dummy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   }
+
+   function doAdvanced()
+   {
+    var thisPlatform = navigator.platform.substring( 0, 5 );
+
+    if( thisPlatform == "HP-UX" )
+    {
+     openCenteredWindow2( 'advshut.asp', 'Advanced', 400, 390, '', '', 'opener');
+    }
+    else
+    {
+     openCenteredWindow2( 'advshut.asp', 'Advanced', 400, 310, '', '', 'opener');
+
+    }
+   }
+
+   function fixUPSDelay()
+   {
+    Cx_0dummy
+    minups = Number( minUPS());
+    if (timeups < minups)
+     Cx_0dummy
+   }
+
+   function checkSettings()
+   {
+    Cx_0dummy
+    minups = Number( minUPS());
+    if (timeups < minups)
+    {
+     if (document.theForm.MSType[0].checked)
+     {
+      if ("1" == "Cx_0dummy")
+       alert( 'Cx_0dummy' + minups + '.');
+      if ("2" == "Cx_0dummy")
+       alert( 'Cx_0dummy' + minups + '.');
+      else
+       alert( 'Cx_0dummy' + minups + '.');
+      fixUPSDelay();
+     }
+    }
+
+    return true;
+   }
+
+   function Relink()
+   {
+    top.left.location="../menu.asp?id=4";
+    top.main.location="devices.asp";
+   }
+          
+ </script>
+
+            
+   function refreshPage()
+      {
+       window.location = window.location;
+      }
+
+   function minUPS()
+   {
+    minups = 0;
+    Cx_0dummy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   }
+
+   function doAdvanced()
+   {
+    var thisPlatform = navigator.platform.substring( 0, 5 );
+
+    if( thisPlatform == "HP-UX" )
+    {
+     openCenteredWindow2( 'advshut.asp', 'Advanced', 400, 390, '', '', 'opener');
+    }
+    else
+    {
+     openCenteredWindow2( 'advshut.asp', 'Advanced', 400, 310, '', '', 'opener');
+
+    }
+   }
+
+   function fixUPSDelay()
+   {
+    Cx_0dummy
+    minups = Number( minUPS());
+    if (timeups < minups)
+     Cx_0dummy
+   }
+
+   function checkSettings()
+   {
+    Cx_0dummy
+    minups = Number( minUPS());
+    if (timeups < minups)
+    {
+     if (document.theForm.MSType[0].checked)
+     {
+      if ("1" == "Cx_0dummy")
+       alert( 'Cx_0dummy' + minups + '.');
+      if ("2" == "Cx_0dummy")
+       alert( 'Cx_0dummy' + minups + '.');
+      else
+       alert( 'Cx_0dummy' + minups + '.');
+      fixUPSDelay();
+     }
+    }
+
+    return true;
+   }
+
+   function Relink()
+   {
+    top.left.location="../menu.asp?id=4";
+    top.main.location="devices.asp";
+   }
+          
+                                                   function onSubmit___1665829023() {return checkSettings();}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                 function onclick___523602035() {doAdvanced();}
+
+
+
+
+
+
+
+
+
+                            function onClick___309008893() {Relink();}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                     function onclick___1339748554() {refreshPage();}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

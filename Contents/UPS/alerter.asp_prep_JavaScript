@@ -1,0 +1,35 @@
+﻿
+
+
+
+function script____1722803090() {src(""AC_RunActiveContent.js"");}<script type="text/javascript">
+  AC_FL_RunContent(
+   'codebase',  'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0',
+   'width',     '120',
+   'height',    '52',
+   'align',  'top',
+   'menu',   'false',
+   'salign',  'T',
+   'bgcolor',      '#FFFFFF',
+   'src',       'alertBox2',
+   'quality',   'high',
+   'pluginspage', 'http://www.macromedia.com/go/getflashplayer',
+   'movie',       'alertBox2');
+  </script>
+  </center>
+ </body>
+
+  AC_FL_RunContent(
+   'codebase',  'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0',
+   'width',     '120',
+   'height',    '52',
+   'align',  'top',
+   'menu',   'false',
+   'salign',  'T',
+   'bgcolor',      '#FFFFFF',
+   'src',       'alertBox2',
+   'quality',   'high',
+   'pluginspage', 'http://www.macromedia.com/go/getflashplayer',
+   'movie',       'alertBox2');
+  
+ 

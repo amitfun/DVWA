@@ -1,0 +1,164 @@
+﻿
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function script____1025755212() {src(""../UI_lib.js"");}<script language="javascript1.1" src="../pickdate.js"><script language="javascript1.1">
+            
+
+   function fixUPSDelay()
+   {
+    timeups = Number(document.theForm.Delay.value);
+    if (timeups < Cx_0dummy)
+     document.theForm.Delay.value = Cx_0dummy;
+   }
+
+   function checkSettings()
+   {
+    timeups = Number(document.theForm.Delay.value);
+    if (timeups < Cx_0dummy)
+    {
+     if (document.theForm.Battery[0].checked)
+     {
+      if ("2" == "Cx_0dummy")
+       alert( 'Cx_0dummy' + Cx_0dummy + '.');
+      else
+       alert( 'Cx_0dummy' + Cx_0dummy + '.');
+      fixUPSDelay();
+     }
+    }
+
+    return true;
+   }
+          
+ </script>
+function script___186578037() {src(""../pickdate.js"");}<script language="javascript1.1">
+            
+
+   function fixUPSDelay()
+   {
+    timeups = Number(document.theForm.Delay.value);
+    if (timeups < Cx_0dummy)
+     document.theForm.Delay.value = Cx_0dummy;
+   }
+
+   function checkSettings()
+   {
+    timeups = Number(document.theForm.Delay.value);
+    if (timeups < Cx_0dummy)
+    {
+     if (document.theForm.Battery[0].checked)
+     {
+      if ("2" == "Cx_0dummy")
+       alert( 'Cx_0dummy' + Cx_0dummy + '.');
+      else
+       alert( 'Cx_0dummy' + Cx_0dummy + '.');
+      fixUPSDelay();
+     }
+    }
+
+    return true;
+   }
+          
+ </script>
+
+            
+
+   function fixUPSDelay()
+   {
+    timeups = Number(document.theForm.Delay.value);
+    if (timeups < Cx_0dummy)
+     document.theForm.Delay.value = Cx_0dummy;
+   }
+
+   function checkSettings()
+   {
+    timeups = Number(document.theForm.Delay.value);
+    if (timeups < Cx_0dummy)
+    {
+     if (document.theForm.Battery[0].checked)
+     {
+      if ("2" == "Cx_0dummy")
+       alert( 'Cx_0dummy' + Cx_0dummy + '.');
+      else
+       alert( 'Cx_0dummy' + Cx_0dummy + '.');
+      fixUPSDelay();
+     }
+    }
+
+    return true;
+   }
+          
+                                             function onSubmit___1665829023() {return checkSettings();}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,127 @@
+﻿
+
+
+
+
+function script____1025755212() {src(""../UI_lib.js"");}<script language="javascript1.1">
+              
+  function doAdd()
+  {
+   window.location = 'addScheduledShutdown.asp';
+  }
+
+  function verifyData(form)
+  {
+   var total = 0;
+   var max = 0;
+   if (form.ScheduledEvent)  // if there are no checkboxes then ScheduledEvent is not defined.
+   {
+    if (form.ScheduledEvent.length)  // if there are multiple checkboxes
+    {
+     max = form.ScheduledEvent.length;   // figure out how many there are
+     for (var idx = 0; idx < max; idx++) 
+     {
+      // check each one
+      if (eval("document.theForm.ScheduledEvent[" + idx + "].checked") == true) 
+      {
+       total += 1;
+      }
+     }
+    }
+    else // if only one checkbox exists 
+    {    // check it
+     if (eval("document.theForm.ScheduledEvent.checked") == true) 
+     {
+      total = 1;
+     }
+    }
+   }
+
+
+   if ( total == 0 )
+   {
+    alert("Cx_0dummy");
+    return false;
+   }
+   else
+   {
+    return confirm("Cx_0dummy");
+   }
+  }
+
+
+         
+   </script>
+
+
+
+
+              
+  function doAdd()
+  {
+   window.location = 'addScheduledShutdown.asp';
+  }
+
+  function verifyData(form)
+  {
+   var total = 0;
+   var max = 0;
+   if (form.ScheduledEvent)  // if there are no checkboxes then ScheduledEvent is not defined.
+   {
+    if (form.ScheduledEvent.length)  // if there are multiple checkboxes
+    {
+     max = form.ScheduledEvent.length;   // figure out how many there are
+     for (var idx = 0; idx < max; idx++) 
+     {
+      // check each one
+      if (eval("document.theForm.ScheduledEvent[" + idx + "].checked") == true) 
+      {
+       total += 1;
+      }
+     }
+    }
+    else // if only one checkbox exists 
+    {    // check it
+     if (eval("document.theForm.ScheduledEvent.checked") == true) 
+     {
+      total = 1;
+     }
+    }
+   }
+
+
+   if ( total == 0 )
+   {
+    alert("Cx_0dummy");
+    return false;
+   }
+   else
+   {
+    return confirm("Cx_0dummy");
+   }
+  }
+
+
+         
+                                                    function onSubmit___2027259349() {return verifyData(this);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

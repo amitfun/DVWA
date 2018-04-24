@@ -1,0 +1,904 @@
+﻿
+
+
+
+
+
+
+function script____2035229222() {src(""meter.js"");}<script language='javascript'>
+
+   setInterval( "makeRequest('overviewData.asp')", 5000 );
+
+              section config    
+
+   Cx_0dummy
+;
+   sectionColHead  = [ 'Cx_0dummy', 'Cx_0dummy', 'Cx_0dummy' ];
+
+              begin meter config    
+
+               meter 1    
+     Cx_0dummy
+
+
+
+
+
+
+
+               meter 2    
+
+     Cx_0dummy
+
+
+
+
+
+
+
+               meter 3    
+
+     Cx_0dummy
+
+
+
+
+
+
+
+              end meter config    
+
+
+   function initMeters()
+   {
+
+    setMeterType( "m1", m1_paramCount );
+    setMeterType( "m2", m2_paramCount );
+    setMeterType( "m3", m3_paramCount );
+    setMeterUnitLabels();
+    var agent = navigator.userAgent.toLowerCase();
+    if (agent.indexOf("msie") != -1 )
+    {
+     setColorBarWidth();
+     document.getElementById("rightContainer").style.top = "10px";
+     document.getElementById("m1_header").style.width = "90px";
+     document.getElementById("m2_header").style.width = "90px";
+     document.getElementById("m3_header").style.width = "90px";
+     document.getElementById("m1_meterContainer").style.top = "31px";
+     document.getElementById("m2_meterContainer").style.top = "31px";
+     document.getElementById("m3_meterContainer").style.top = "31px";
+     document.getElementById("m1_value").style.width = "78px";
+     document.getElementById("m2_value").style.width = "78px";
+     document.getElementById("m3_value").style.width = "78px";
+    }
+
+   }
+
+   function setColorBarWidth()
+   {
+    document.getElementById( "m1_colorBar_0" ).style.width = "10px";
+    document.getElementById( "m1_colorBar_1" ).style.width = "10px";
+    document.getElementById( "m1_colorBar_2" ).style.width = "10px";
+    document.getElementById( "m2_colorBar_0" ).style.width = "10px";
+    document.getElementById( "m2_colorBar_1" ).style.width = "10px";
+    document.getElementById( "m2_colorBar_2" ).style.width = "10px";
+    document.getElementById( "m3_colorBar_0" ).style.width = "10px";
+    document.getElementById( "m3_colorBar_1" ).style.width = "10px";
+    document.getElementById( "m3_colorBar_2" ).style.width = "10px";
+   }
+
+   function setMeterUnitLabels()
+   {
+    document.getElementById( "m1_units" ).innerHTML = m1_unitLabel;
+    document.getElementById( "m2_units" ).innerHTML = m2_unitLabel;
+    document.getElementById( "m3_units" ).innerHTML = m3_unitLabel;
+   }
+
+   function setPointerPosition( pointerRef, pointerValue )
+   {
+    var pointerPosition = 337 - ( pointerValue * 3 );
+    if ( pointerPosition <script language='javascript'>paintColorBar( m1_colors, m1_percent );<script language='javascript'>paintColorBar( m1_colors, m1_percent );<script language='javascript'>paintColorBar( m1_colors, m1_percent );<script language='javascript'>paintYticks();<script language='javascript'>paintYlabels( m1_yMin, m1_yMax );<script language='javascript'>paintColorBar( m2_colors, m2_percent );<script language='javascript'>paintColorBar( m2_colors, m2_percent );<script language='javascript'>paintColorBar( m2_colors, m2_percent );<script language='javascript'>paintYticks();<script language='javascript'>paintYlabels( m2_yMin, m2_yMax );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintYticks();<script language='javascript'>paintYlabels( m3_yMin, m3_yMax );<script language="javascript">
+
+      for ( i = 0; i < sectionLabels.length; i++ )
+      {
+       document.write("<thead>");
+       document.write("<tr class='captionRow'>");
+       document.write("<th colspan='3' width='60' style='border-bottom: 1px solid #efefef;'>" + sectionLabels[i] + "</th>");
+       document.write("</tr>");
+
+       document.write("<tr class='captionRow'>");
+       document.write("<th width='60'>" + sectionColHead[0] + "</th>");
+       document.write("<th>" + sectionColHead[1] + "</th>");
+       document.write("<th width='120'>" + sectionColHead[2] + "</th>");
+       document.write("</tr>");
+       document.write("</thead>");
+
+       document.write("<tbody>");
+
+       for ( j = 0; j < sectionRowCount[i]; j++ )
+       {
+        if ( j > 0 && j % 2 == 1 ) { rowClass = "<tr class='altRowColor' style='height:19px;'>" } else { rowClass = "<tr style='height:19px;'>" }
+        document.write(rowClass);
+        document.write("<td><img border='0' src='../../CImage/blank.gif' name='s" + i + "r" + j + "c1'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c2'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c3'></div></td>");
+        document.write("</tr>");
+       }
+
+       document.write("</tbody>");
+      }
+
+     </script>
+
+    </table>
+
+   </div>
+
+  </form>
+
+ </body>
+
+
+   setInterval( "makeRequest('overviewData.asp')", 5000 );
+
+              section config    
+
+   Cx_0dummy
+;
+   sectionColHead  = [ 'Cx_0dummy', 'Cx_0dummy', 'Cx_0dummy' ];
+
+              begin meter config    
+
+               meter 1    
+     Cx_0dummy
+
+
+
+
+
+
+
+               meter 2    
+
+     Cx_0dummy
+
+
+
+
+
+
+
+               meter 3    
+
+     Cx_0dummy
+
+
+
+
+
+
+
+              end meter config    
+
+
+   function initMeters()
+   {
+
+    setMeterType( "m1", m1_paramCount );
+    setMeterType( "m2", m2_paramCount );
+    setMeterType( "m3", m3_paramCount );
+    setMeterUnitLabels();
+    var agent = navigator.userAgent.toLowerCase();
+    if (agent.indexOf("msie") != -1 )
+    {
+     setColorBarWidth();
+     document.getElementById("rightContainer").style.top = "10px";
+     document.getElementById("m1_header").style.width = "90px";
+     document.getElementById("m2_header").style.width = "90px";
+     document.getElementById("m3_header").style.width = "90px";
+     document.getElementById("m1_meterContainer").style.top = "31px";
+     document.getElementById("m2_meterContainer").style.top = "31px";
+     document.getElementById("m3_meterContainer").style.top = "31px";
+     document.getElementById("m1_value").style.width = "78px";
+     document.getElementById("m2_value").style.width = "78px";
+     document.getElementById("m3_value").style.width = "78px";
+    }
+
+   }
+
+   function setColorBarWidth()
+   {
+    document.getElementById( "m1_colorBar_0" ).style.width = "10px";
+    document.getElementById( "m1_colorBar_1" ).style.width = "10px";
+    document.getElementById( "m1_colorBar_2" ).style.width = "10px";
+    document.getElementById( "m2_colorBar_0" ).style.width = "10px";
+    document.getElementById( "m2_colorBar_1" ).style.width = "10px";
+    document.getElementById( "m2_colorBar_2" ).style.width = "10px";
+    document.getElementById( "m3_colorBar_0" ).style.width = "10px";
+    document.getElementById( "m3_colorBar_1" ).style.width = "10px";
+    document.getElementById( "m3_colorBar_2" ).style.width = "10px";
+   }
+
+   function setMeterUnitLabels()
+   {
+    document.getElementById( "m1_units" ).innerHTML = m1_unitLabel;
+    document.getElementById( "m2_units" ).innerHTML = m2_unitLabel;
+    document.getElementById( "m3_units" ).innerHTML = m3_unitLabel;
+   }
+
+   function setPointerPosition( pointerRef, pointerValue )
+   {
+    var pointerPosition = 337 - ( pointerValue * 3 );
+    if ( pointerPosition <script language='javascript'>paintColorBar( m1_colors, m1_percent );<script language='javascript'>paintColorBar( m1_colors, m1_percent );<script language='javascript'>paintColorBar( m1_colors, m1_percent );<script language='javascript'>paintYticks();<script language='javascript'>paintYlabels( m1_yMin, m1_yMax );<script language='javascript'>paintColorBar( m2_colors, m2_percent );<script language='javascript'>paintColorBar( m2_colors, m2_percent );<script language='javascript'>paintColorBar( m2_colors, m2_percent );<script language='javascript'>paintYticks();<script language='javascript'>paintYlabels( m2_yMin, m2_yMax );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintYticks();<script language='javascript'>paintYlabels( m3_yMin, m3_yMax );<script language="javascript">
+
+      for ( i = 0; i < sectionLabels.length; i++ )
+      {
+       document.write("<thead>");
+       document.write("<tr class='captionRow'>");
+       document.write("<th colspan='3' width='60' style='border-bottom: 1px solid #efefef;'>" + sectionLabels[i] + "</th>");
+       document.write("</tr>");
+
+       document.write("<tr class='captionRow'>");
+       document.write("<th width='60'>" + sectionColHead[0] + "</th>");
+       document.write("<th>" + sectionColHead[1] + "</th>");
+       document.write("<th width='120'>" + sectionColHead[2] + "</th>");
+       document.write("</tr>");
+       document.write("</thead>");
+
+       document.write("<tbody>");
+
+       for ( j = 0; j < sectionRowCount[i]; j++ )
+       {
+        if ( j > 0 && j % 2 == 1 ) { rowClass = "<tr class='altRowColor' style='height:19px;'>" } else { rowClass = "<tr style='height:19px;'>" }
+        document.write(rowClass);
+        document.write("<td><img border='0' src='../../CImage/blank.gif' name='s" + i + "r" + j + "c1'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c2'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c3'></div></td>");
+        document.write("</tr>");
+       }
+
+       document.write("</tbody>");
+      }
+
+     </script>
+
+    </table>
+
+   </div>
+
+  </form>
+
+ </body>
+                                                                                                  paintColorBar( m1_colors, m1_percent );<script language='javascript'>paintColorBar( m1_colors, m1_percent );<script language='javascript'>paintColorBar( m1_colors, m1_percent );<script language='javascript'>paintYticks();<script language='javascript'>paintYlabels( m1_yMin, m1_yMax );<script language='javascript'>paintColorBar( m2_colors, m2_percent );<script language='javascript'>paintColorBar( m2_colors, m2_percent );<script language='javascript'>paintColorBar( m2_colors, m2_percent );<script language='javascript'>paintYticks();<script language='javascript'>paintYlabels( m2_yMin, m2_yMax );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintYticks();<script language='javascript'>paintYlabels( m3_yMin, m3_yMax );<script language="javascript">
+
+      for ( i = 0; i < sectionLabels.length; i++ )
+      {
+       document.write("<thead>");
+       document.write("<tr class='captionRow'>");
+       document.write("<th colspan='3' width='60' style='border-bottom: 1px solid #efefef;'>" + sectionLabels[i] + "</th>");
+       document.write("</tr>");
+
+       document.write("<tr class='captionRow'>");
+       document.write("<th width='60'>" + sectionColHead[0] + "</th>");
+       document.write("<th>" + sectionColHead[1] + "</th>");
+       document.write("<th width='120'>" + sectionColHead[2] + "</th>");
+       document.write("</tr>");
+       document.write("</thead>");
+
+       document.write("<tbody>");
+
+       for ( j = 0; j < sectionRowCount[i]; j++ )
+       {
+        if ( j > 0 && j % 2 == 1 ) { rowClass = "<tr class='altRowColor' style='height:19px;'>" } else { rowClass = "<tr style='height:19px;'>" }
+        document.write(rowClass);
+        document.write("<td><img border='0' src='../../CImage/blank.gif' name='s" + i + "r" + j + "c1'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c2'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c3'></div></td>");
+        document.write("</tr>");
+       }
+
+       document.write("</tbody>");
+      }
+
+     </script>
+
+    </table>
+
+   </div>
+
+  </form>
+
+ </body>
+                                                                                                  paintColorBar( m1_colors, m1_percent );<script language='javascript'>paintColorBar( m1_colors, m1_percent );<script language='javascript'>paintYticks();<script language='javascript'>paintYlabels( m1_yMin, m1_yMax );<script language='javascript'>paintColorBar( m2_colors, m2_percent );<script language='javascript'>paintColorBar( m2_colors, m2_percent );<script language='javascript'>paintColorBar( m2_colors, m2_percent );<script language='javascript'>paintYticks();<script language='javascript'>paintYlabels( m2_yMin, m2_yMax );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintYticks();<script language='javascript'>paintYlabels( m3_yMin, m3_yMax );<script language="javascript">
+
+      for ( i = 0; i < sectionLabels.length; i++ )
+      {
+       document.write("<thead>");
+       document.write("<tr class='captionRow'>");
+       document.write("<th colspan='3' width='60' style='border-bottom: 1px solid #efefef;'>" + sectionLabels[i] + "</th>");
+       document.write("</tr>");
+
+       document.write("<tr class='captionRow'>");
+       document.write("<th width='60'>" + sectionColHead[0] + "</th>");
+       document.write("<th>" + sectionColHead[1] + "</th>");
+       document.write("<th width='120'>" + sectionColHead[2] + "</th>");
+       document.write("</tr>");
+       document.write("</thead>");
+
+       document.write("<tbody>");
+
+       for ( j = 0; j < sectionRowCount[i]; j++ )
+       {
+        if ( j > 0 && j % 2 == 1 ) { rowClass = "<tr class='altRowColor' style='height:19px;'>" } else { rowClass = "<tr style='height:19px;'>" }
+        document.write(rowClass);
+        document.write("<td><img border='0' src='../../CImage/blank.gif' name='s" + i + "r" + j + "c1'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c2'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c3'></div></td>");
+        document.write("</tr>");
+       }
+
+       document.write("</tbody>");
+      }
+
+     </script>
+
+    </table>
+
+   </div>
+
+  </form>
+
+ </body>
+                                                                                                  paintColorBar( m1_colors, m1_percent );<script language='javascript'>paintYticks();<script language='javascript'>paintYlabels( m1_yMin, m1_yMax );<script language='javascript'>paintColorBar( m2_colors, m2_percent );<script language='javascript'>paintColorBar( m2_colors, m2_percent );<script language='javascript'>paintColorBar( m2_colors, m2_percent );<script language='javascript'>paintYticks();<script language='javascript'>paintYlabels( m2_yMin, m2_yMax );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintYticks();<script language='javascript'>paintYlabels( m3_yMin, m3_yMax );<script language="javascript">
+
+      for ( i = 0; i < sectionLabels.length; i++ )
+      {
+       document.write("<thead>");
+       document.write("<tr class='captionRow'>");
+       document.write("<th colspan='3' width='60' style='border-bottom: 1px solid #efefef;'>" + sectionLabels[i] + "</th>");
+       document.write("</tr>");
+
+       document.write("<tr class='captionRow'>");
+       document.write("<th width='60'>" + sectionColHead[0] + "</th>");
+       document.write("<th>" + sectionColHead[1] + "</th>");
+       document.write("<th width='120'>" + sectionColHead[2] + "</th>");
+       document.write("</tr>");
+       document.write("</thead>");
+
+       document.write("<tbody>");
+
+       for ( j = 0; j < sectionRowCount[i]; j++ )
+       {
+        if ( j > 0 && j % 2 == 1 ) { rowClass = "<tr class='altRowColor' style='height:19px;'>" } else { rowClass = "<tr style='height:19px;'>" }
+        document.write(rowClass);
+        document.write("<td><img border='0' src='../../CImage/blank.gif' name='s" + i + "r" + j + "c1'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c2'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c3'></div></td>");
+        document.write("</tr>");
+       }
+
+       document.write("</tbody>");
+      }
+
+     </script>
+
+    </table>
+
+   </div>
+
+  </form>
+
+ </body>
+                                                                                    paintYticks();<script language='javascript'>paintYlabels( m1_yMin, m1_yMax );<script language='javascript'>paintColorBar( m2_colors, m2_percent );<script language='javascript'>paintColorBar( m2_colors, m2_percent );<script language='javascript'>paintColorBar( m2_colors, m2_percent );<script language='javascript'>paintYticks();<script language='javascript'>paintYlabels( m2_yMin, m2_yMax );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintYticks();<script language='javascript'>paintYlabels( m3_yMin, m3_yMax );<script language="javascript">
+
+      for ( i = 0; i < sectionLabels.length; i++ )
+      {
+       document.write("<thead>");
+       document.write("<tr class='captionRow'>");
+       document.write("<th colspan='3' width='60' style='border-bottom: 1px solid #efefef;'>" + sectionLabels[i] + "</th>");
+       document.write("</tr>");
+
+       document.write("<tr class='captionRow'>");
+       document.write("<th width='60'>" + sectionColHead[0] + "</th>");
+       document.write("<th>" + sectionColHead[1] + "</th>");
+       document.write("<th width='120'>" + sectionColHead[2] + "</th>");
+       document.write("</tr>");
+       document.write("</thead>");
+
+       document.write("<tbody>");
+
+       for ( j = 0; j < sectionRowCount[i]; j++ )
+       {
+        if ( j > 0 && j % 2 == 1 ) { rowClass = "<tr class='altRowColor' style='height:19px;'>" } else { rowClass = "<tr style='height:19px;'>" }
+        document.write(rowClass);
+        document.write("<td><img border='0' src='../../CImage/blank.gif' name='s" + i + "r" + j + "c1'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c2'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c3'></div></td>");
+        document.write("</tr>");
+       }
+
+       document.write("</tbody>");
+      }
+
+     </script>
+
+    </table>
+
+   </div>
+
+  </form>
+
+ </body>
+                                                                                    paintYlabels( m1_yMin, m1_yMax );<script language='javascript'>paintColorBar( m2_colors, m2_percent );<script language='javascript'>paintColorBar( m2_colors, m2_percent );<script language='javascript'>paintColorBar( m2_colors, m2_percent );<script language='javascript'>paintYticks();<script language='javascript'>paintYlabels( m2_yMin, m2_yMax );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintYticks();<script language='javascript'>paintYlabels( m3_yMin, m3_yMax );<script language="javascript">
+
+      for ( i = 0; i < sectionLabels.length; i++ )
+      {
+       document.write("<thead>");
+       document.write("<tr class='captionRow'>");
+       document.write("<th colspan='3' width='60' style='border-bottom: 1px solid #efefef;'>" + sectionLabels[i] + "</th>");
+       document.write("</tr>");
+
+       document.write("<tr class='captionRow'>");
+       document.write("<th width='60'>" + sectionColHead[0] + "</th>");
+       document.write("<th>" + sectionColHead[1] + "</th>");
+       document.write("<th width='120'>" + sectionColHead[2] + "</th>");
+       document.write("</tr>");
+       document.write("</thead>");
+
+       document.write("<tbody>");
+
+       for ( j = 0; j < sectionRowCount[i]; j++ )
+       {
+        if ( j > 0 && j % 2 == 1 ) { rowClass = "<tr class='altRowColor' style='height:19px;'>" } else { rowClass = "<tr style='height:19px;'>" }
+        document.write(rowClass);
+        document.write("<td><img border='0' src='../../CImage/blank.gif' name='s" + i + "r" + j + "c1'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c2'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c3'></div></td>");
+        document.write("</tr>");
+       }
+
+       document.write("</tbody>");
+      }
+
+     </script>
+
+    </table>
+
+   </div>
+
+  </form>
+
+ </body>
+                                                                                                  paintColorBar( m2_colors, m2_percent );<script language='javascript'>paintColorBar( m2_colors, m2_percent );<script language='javascript'>paintColorBar( m2_colors, m2_percent );<script language='javascript'>paintYticks();<script language='javascript'>paintYlabels( m2_yMin, m2_yMax );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintYticks();<script language='javascript'>paintYlabels( m3_yMin, m3_yMax );<script language="javascript">
+
+      for ( i = 0; i < sectionLabels.length; i++ )
+      {
+       document.write("<thead>");
+       document.write("<tr class='captionRow'>");
+       document.write("<th colspan='3' width='60' style='border-bottom: 1px solid #efefef;'>" + sectionLabels[i] + "</th>");
+       document.write("</tr>");
+
+       document.write("<tr class='captionRow'>");
+       document.write("<th width='60'>" + sectionColHead[0] + "</th>");
+       document.write("<th>" + sectionColHead[1] + "</th>");
+       document.write("<th width='120'>" + sectionColHead[2] + "</th>");
+       document.write("</tr>");
+       document.write("</thead>");
+
+       document.write("<tbody>");
+
+       for ( j = 0; j < sectionRowCount[i]; j++ )
+       {
+        if ( j > 0 && j % 2 == 1 ) { rowClass = "<tr class='altRowColor' style='height:19px;'>" } else { rowClass = "<tr style='height:19px;'>" }
+        document.write(rowClass);
+        document.write("<td><img border='0' src='../../CImage/blank.gif' name='s" + i + "r" + j + "c1'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c2'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c3'></div></td>");
+        document.write("</tr>");
+       }
+
+       document.write("</tbody>");
+      }
+
+     </script>
+
+    </table>
+
+   </div>
+
+  </form>
+
+ </body>
+                                                                                                  paintColorBar( m2_colors, m2_percent );<script language='javascript'>paintColorBar( m2_colors, m2_percent );<script language='javascript'>paintYticks();<script language='javascript'>paintYlabels( m2_yMin, m2_yMax );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintYticks();<script language='javascript'>paintYlabels( m3_yMin, m3_yMax );<script language="javascript">
+
+      for ( i = 0; i < sectionLabels.length; i++ )
+      {
+       document.write("<thead>");
+       document.write("<tr class='captionRow'>");
+       document.write("<th colspan='3' width='60' style='border-bottom: 1px solid #efefef;'>" + sectionLabels[i] + "</th>");
+       document.write("</tr>");
+
+       document.write("<tr class='captionRow'>");
+       document.write("<th width='60'>" + sectionColHead[0] + "</th>");
+       document.write("<th>" + sectionColHead[1] + "</th>");
+       document.write("<th width='120'>" + sectionColHead[2] + "</th>");
+       document.write("</tr>");
+       document.write("</thead>");
+
+       document.write("<tbody>");
+
+       for ( j = 0; j < sectionRowCount[i]; j++ )
+       {
+        if ( j > 0 && j % 2 == 1 ) { rowClass = "<tr class='altRowColor' style='height:19px;'>" } else { rowClass = "<tr style='height:19px;'>" }
+        document.write(rowClass);
+        document.write("<td><img border='0' src='../../CImage/blank.gif' name='s" + i + "r" + j + "c1'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c2'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c3'></div></td>");
+        document.write("</tr>");
+       }
+
+       document.write("</tbody>");
+      }
+
+     </script>
+
+    </table>
+
+   </div>
+
+  </form>
+
+ </body>
+                                                                                                  paintColorBar( m2_colors, m2_percent );<script language='javascript'>paintYticks();<script language='javascript'>paintYlabels( m2_yMin, m2_yMax );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintYticks();<script language='javascript'>paintYlabels( m3_yMin, m3_yMax );<script language="javascript">
+
+      for ( i = 0; i < sectionLabels.length; i++ )
+      {
+       document.write("<thead>");
+       document.write("<tr class='captionRow'>");
+       document.write("<th colspan='3' width='60' style='border-bottom: 1px solid #efefef;'>" + sectionLabels[i] + "</th>");
+       document.write("</tr>");
+
+       document.write("<tr class='captionRow'>");
+       document.write("<th width='60'>" + sectionColHead[0] + "</th>");
+       document.write("<th>" + sectionColHead[1] + "</th>");
+       document.write("<th width='120'>" + sectionColHead[2] + "</th>");
+       document.write("</tr>");
+       document.write("</thead>");
+
+       document.write("<tbody>");
+
+       for ( j = 0; j < sectionRowCount[i]; j++ )
+       {
+        if ( j > 0 && j % 2 == 1 ) { rowClass = "<tr class='altRowColor' style='height:19px;'>" } else { rowClass = "<tr style='height:19px;'>" }
+        document.write(rowClass);
+        document.write("<td><img border='0' src='../../CImage/blank.gif' name='s" + i + "r" + j + "c1'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c2'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c3'></div></td>");
+        document.write("</tr>");
+       }
+
+       document.write("</tbody>");
+      }
+
+     </script>
+
+    </table>
+
+   </div>
+
+  </form>
+
+ </body>
+                                                                                    paintYticks();<script language='javascript'>paintYlabels( m2_yMin, m2_yMax );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintYticks();<script language='javascript'>paintYlabels( m3_yMin, m3_yMax );<script language="javascript">
+
+      for ( i = 0; i < sectionLabels.length; i++ )
+      {
+       document.write("<thead>");
+       document.write("<tr class='captionRow'>");
+       document.write("<th colspan='3' width='60' style='border-bottom: 1px solid #efefef;'>" + sectionLabels[i] + "</th>");
+       document.write("</tr>");
+
+       document.write("<tr class='captionRow'>");
+       document.write("<th width='60'>" + sectionColHead[0] + "</th>");
+       document.write("<th>" + sectionColHead[1] + "</th>");
+       document.write("<th width='120'>" + sectionColHead[2] + "</th>");
+       document.write("</tr>");
+       document.write("</thead>");
+
+       document.write("<tbody>");
+
+       for ( j = 0; j < sectionRowCount[i]; j++ )
+       {
+        if ( j > 0 && j % 2 == 1 ) { rowClass = "<tr class='altRowColor' style='height:19px;'>" } else { rowClass = "<tr style='height:19px;'>" }
+        document.write(rowClass);
+        document.write("<td><img border='0' src='../../CImage/blank.gif' name='s" + i + "r" + j + "c1'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c2'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c3'></div></td>");
+        document.write("</tr>");
+       }
+
+       document.write("</tbody>");
+      }
+
+     </script>
+
+    </table>
+
+   </div>
+
+  </form>
+
+ </body>
+                                                                                    paintYlabels( m2_yMin, m2_yMax );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintYticks();<script language='javascript'>paintYlabels( m3_yMin, m3_yMax );<script language="javascript">
+
+      for ( i = 0; i < sectionLabels.length; i++ )
+      {
+       document.write("<thead>");
+       document.write("<tr class='captionRow'>");
+       document.write("<th colspan='3' width='60' style='border-bottom: 1px solid #efefef;'>" + sectionLabels[i] + "</th>");
+       document.write("</tr>");
+
+       document.write("<tr class='captionRow'>");
+       document.write("<th width='60'>" + sectionColHead[0] + "</th>");
+       document.write("<th>" + sectionColHead[1] + "</th>");
+       document.write("<th width='120'>" + sectionColHead[2] + "</th>");
+       document.write("</tr>");
+       document.write("</thead>");
+
+       document.write("<tbody>");
+
+       for ( j = 0; j < sectionRowCount[i]; j++ )
+       {
+        if ( j > 0 && j % 2 == 1 ) { rowClass = "<tr class='altRowColor' style='height:19px;'>" } else { rowClass = "<tr style='height:19px;'>" }
+        document.write(rowClass);
+        document.write("<td><img border='0' src='../../CImage/blank.gif' name='s" + i + "r" + j + "c1'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c2'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c3'></div></td>");
+        document.write("</tr>");
+       }
+
+       document.write("</tbody>");
+      }
+
+     </script>
+
+    </table>
+
+   </div>
+
+  </form>
+
+ </body>
+                                                                                                  paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintYticks();<script language='javascript'>paintYlabels( m3_yMin, m3_yMax );<script language="javascript">
+
+      for ( i = 0; i < sectionLabels.length; i++ )
+      {
+       document.write("<thead>");
+       document.write("<tr class='captionRow'>");
+       document.write("<th colspan='3' width='60' style='border-bottom: 1px solid #efefef;'>" + sectionLabels[i] + "</th>");
+       document.write("</tr>");
+
+       document.write("<tr class='captionRow'>");
+       document.write("<th width='60'>" + sectionColHead[0] + "</th>");
+       document.write("<th>" + sectionColHead[1] + "</th>");
+       document.write("<th width='120'>" + sectionColHead[2] + "</th>");
+       document.write("</tr>");
+       document.write("</thead>");
+
+       document.write("<tbody>");
+
+       for ( j = 0; j < sectionRowCount[i]; j++ )
+       {
+        if ( j > 0 && j % 2 == 1 ) { rowClass = "<tr class='altRowColor' style='height:19px;'>" } else { rowClass = "<tr style='height:19px;'>" }
+        document.write(rowClass);
+        document.write("<td><img border='0' src='../../CImage/blank.gif' name='s" + i + "r" + j + "c1'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c2'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c3'></div></td>");
+        document.write("</tr>");
+       }
+
+       document.write("</tbody>");
+      }
+
+     </script>
+
+    </table>
+
+   </div>
+
+  </form>
+
+ </body>
+                                                                                                  paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintYticks();<script language='javascript'>paintYlabels( m3_yMin, m3_yMax );<script language="javascript">
+
+      for ( i = 0; i < sectionLabels.length; i++ )
+      {
+       document.write("<thead>");
+       document.write("<tr class='captionRow'>");
+       document.write("<th colspan='3' width='60' style='border-bottom: 1px solid #efefef;'>" + sectionLabels[i] + "</th>");
+       document.write("</tr>");
+
+       document.write("<tr class='captionRow'>");
+       document.write("<th width='60'>" + sectionColHead[0] + "</th>");
+       document.write("<th>" + sectionColHead[1] + "</th>");
+       document.write("<th width='120'>" + sectionColHead[2] + "</th>");
+       document.write("</tr>");
+       document.write("</thead>");
+
+       document.write("<tbody>");
+
+       for ( j = 0; j < sectionRowCount[i]; j++ )
+       {
+        if ( j > 0 && j % 2 == 1 ) { rowClass = "<tr class='altRowColor' style='height:19px;'>" } else { rowClass = "<tr style='height:19px;'>" }
+        document.write(rowClass);
+        document.write("<td><img border='0' src='../../CImage/blank.gif' name='s" + i + "r" + j + "c1'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c2'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c3'></div></td>");
+        document.write("</tr>");
+       }
+
+       document.write("</tbody>");
+      }
+
+     </script>
+
+    </table>
+
+   </div>
+
+  </form>
+
+ </body>
+                                                                                                  paintColorBar( m3_colors, m3_percent );<script language='javascript'>paintYticks();<script language='javascript'>paintYlabels( m3_yMin, m3_yMax );<script language="javascript">
+
+      for ( i = 0; i < sectionLabels.length; i++ )
+      {
+       document.write("<thead>");
+       document.write("<tr class='captionRow'>");
+       document.write("<th colspan='3' width='60' style='border-bottom: 1px solid #efefef;'>" + sectionLabels[i] + "</th>");
+       document.write("</tr>");
+
+       document.write("<tr class='captionRow'>");
+       document.write("<th width='60'>" + sectionColHead[0] + "</th>");
+       document.write("<th>" + sectionColHead[1] + "</th>");
+       document.write("<th width='120'>" + sectionColHead[2] + "</th>");
+       document.write("</tr>");
+       document.write("</thead>");
+
+       document.write("<tbody>");
+
+       for ( j = 0; j < sectionRowCount[i]; j++ )
+       {
+        if ( j > 0 && j % 2 == 1 ) { rowClass = "<tr class='altRowColor' style='height:19px;'>" } else { rowClass = "<tr style='height:19px;'>" }
+        document.write(rowClass);
+        document.write("<td><img border='0' src='../../CImage/blank.gif' name='s" + i + "r" + j + "c1'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c2'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c3'></div></td>");
+        document.write("</tr>");
+       }
+
+       document.write("</tbody>");
+      }
+
+     </script>
+
+    </table>
+
+   </div>
+
+  </form>
+
+ </body>
+                                                                                    paintYticks();<script language='javascript'>paintYlabels( m3_yMin, m3_yMax );<script language="javascript">
+
+      for ( i = 0; i < sectionLabels.length; i++ )
+      {
+       document.write("<thead>");
+       document.write("<tr class='captionRow'>");
+       document.write("<th colspan='3' width='60' style='border-bottom: 1px solid #efefef;'>" + sectionLabels[i] + "</th>");
+       document.write("</tr>");
+
+       document.write("<tr class='captionRow'>");
+       document.write("<th width='60'>" + sectionColHead[0] + "</th>");
+       document.write("<th>" + sectionColHead[1] + "</th>");
+       document.write("<th width='120'>" + sectionColHead[2] + "</th>");
+       document.write("</tr>");
+       document.write("</thead>");
+
+       document.write("<tbody>");
+
+       for ( j = 0; j < sectionRowCount[i]; j++ )
+       {
+        if ( j > 0 && j % 2 == 1 ) { rowClass = "<tr class='altRowColor' style='height:19px;'>" } else { rowClass = "<tr style='height:19px;'>" }
+        document.write(rowClass);
+        document.write("<td><img border='0' src='../../CImage/blank.gif' name='s" + i + "r" + j + "c1'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c2'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c3'></div></td>");
+        document.write("</tr>");
+       }
+
+       document.write("</tbody>");
+      }
+
+     </script>
+
+    </table>
+
+   </div>
+
+  </form>
+
+ </body>
+                                                                                    paintYlabels( m3_yMin, m3_yMax );<script language="javascript">
+
+      for ( i = 0; i < sectionLabels.length; i++ )
+      {
+       document.write("<thead>");
+       document.write("<tr class='captionRow'>");
+       document.write("<th colspan='3' width='60' style='border-bottom: 1px solid #efefef;'>" + sectionLabels[i] + "</th>");
+       document.write("</tr>");
+
+       document.write("<tr class='captionRow'>");
+       document.write("<th width='60'>" + sectionColHead[0] + "</th>");
+       document.write("<th>" + sectionColHead[1] + "</th>");
+       document.write("<th width='120'>" + sectionColHead[2] + "</th>");
+       document.write("</tr>");
+       document.write("</thead>");
+
+       document.write("<tbody>");
+
+       for ( j = 0; j < sectionRowCount[i]; j++ )
+       {
+        if ( j > 0 && j % 2 == 1 ) { rowClass = "<tr class='altRowColor' style='height:19px;'>" } else { rowClass = "<tr style='height:19px;'>" }
+        document.write(rowClass);
+        document.write("<td><img border='0' src='../../CImage/blank.gif' name='s" + i + "r" + j + "c1'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c2'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c3'></div></td>");
+        document.write("</tr>");
+       }
+
+       document.write("</tbody>");
+      }
+
+     </script>
+
+    </table>
+
+   </div>
+
+  </form>
+
+ </body>
+
+
+      for ( i = 0; i < sectionLabels.length; i++ )
+      {
+       document.write("<thead>");
+       document.write("<tr class='captionRow'>");
+       document.write("<th colspan='3' width='60' style='border-bottom: 1px solid #efefef;'>" + sectionLabels[i] + "</th>");
+       document.write("</tr>");
+
+       document.write("<tr class='captionRow'>");
+       document.write("<th width='60'>" + sectionColHead[0] + "</th>");
+       document.write("<th>" + sectionColHead[1] + "</th>");
+       document.write("<th width='120'>" + sectionColHead[2] + "</th>");
+       document.write("</tr>");
+       document.write("</thead>");
+
+       document.write("<tbody>");
+
+       for ( j = 0; j < sectionRowCount[i]; j++ )
+       {
+        if ( j > 0 && j % 2 == 1 ) { rowClass = "<tr class='altRowColor' style='height:19px;'>" } else { rowClass = "<tr style='height:19px;'>" }
+        document.write(rowClass);
+        document.write("<td><img border='0' src='../../CImage/blank.gif' name='s" + i + "r" + j + "c1'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c2'></td>");
+        document.write("<td><div id='s" + i + "r" + j + "c3'></div></td>");
+        document.write("</tr>");
+       }
+
+       document.write("</tbody>");
+      }
+
+     
+ 

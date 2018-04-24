@@ -1,0 +1,141 @@
+﻿
+
+
+
+
+
+
+function script____1025755212() {src(""../UI_lib.js"");}<script language='javascript'>
+
+  barArray = new Array();
+
+  // icon name, event description, event count, helpID
+
+  Cx_0dummy
+
+
+  topCount = 1;
+
+  function getTopCount()
+  {
+   for ( i = 0; i <script language=javascript>
+
+         for ( i = 0; i < barArray.length; i++ )
+         {
+           document.write("<tr>")
+           document.write("<td class=dialogLineItem align=center valign=top><img border='0' src='../../CImage/" + barArray[i][0] + "'></td>")
+           document.write("<td class=dialogLineItem valign=top><a href='#'         alarmHelp('" + barArray[i][3] + "')>" + barArray[i][1] + "</a></td>")
+           document.write("<td class=dialogLineItem valign=top><img border='0' src='../Images/redBox.gif' height='14' width='" + ( widthPerEvent * barArray[i][2] ) + "'></td>")
+           document.write("<td class=dialogLineItem align=center valign=top>" + barArray[i][2] + "</td>")
+           document.write("</tr>")
+         }
+
+          </script>
+
+          <tr>
+          <td class=dialogLineItem colspan='4' align=center valign=top>
+          <input type='button' value='Cx_0dummy' style='width:120px;' onClick="setActionType(1);">
+          <input type='button' value='Cx_0dummy' style='width:120px;' onClick="setActionType(2);">
+          <input type='button' value='Cx_0dummy' style='width:120px;' onClick="setActionType(3);">
+          <input type='button' value='Cx_0dummy' style='width:120px;' onClick="setActionType(4);">
+          </td>
+          </tr>
+
+        </table>
+
+
+        </td>
+        </tr>
+      </table>
+
+
+      </td>
+      </tr>
+    </table>
+
+   </td>
+    </tr>
+  </table>
+
+  <input type='hidden' value='1' name='actionType'>
+ </form>
+
+</body>
+
+
+  barArray = new Array();
+
+  // icon name, event description, event count, helpID
+
+  Cx_0dummy
+
+
+  topCount = 1;
+
+  function getTopCount()
+  {
+   for ( i = 0; i <script language=javascript>
+
+         for ( i = 0; i < barArray.length; i++ )
+         {
+           document.write("<tr>")
+           document.write("<td class=dialogLineItem align=center valign=top><img border='0' src='../../CImage/" + barArray[i][0] + "'></td>")
+           document.write("<td class=dialogLineItem valign=top><a href='#'         alarmHelp('" + barArray[i][3] + "')>" + barArray[i][1] + "</a></td>")
+           document.write("<td class=dialogLineItem valign=top><img border='0' src='../Images/redBox.gif' height='14' width='" + ( widthPerEvent * barArray[i][2] ) + "'></td>")
+           document.write("<td class=dialogLineItem align=center valign=top>" + barArray[i][2] + "</td>")
+           document.write("</tr>")
+         }
+
+          </script>
+
+          <tr>
+          <td class=dialogLineItem colspan='4' align=center valign=top>
+          <input type='button' value='Cx_0dummy' style='width:120px;' onClick="setActionType(1);">
+          <input type='button' value='Cx_0dummy' style='width:120px;' onClick="setActionType(2);">
+          <input type='button' value='Cx_0dummy' style='width:120px;' onClick="setActionType(3);">
+          <input type='button' value='Cx_0dummy' style='width:120px;' onClick="setActionType(4);">
+          </td>
+          </tr>
+
+        </table>
+
+
+        </td>
+        </tr>
+      </table>
+
+
+      </td>
+      </tr>
+    </table>
+
+   </td>
+    </tr>
+  </table>
+
+  <input type='hidden' value='1' name='actionType'>
+ </form>
+
+</body>
+
+
+         for ( i = 0; i < barArray.length; i++ )
+         {
+           document.write("<tr>")
+           document.write("<td class=dialogLineItem align=center valign=top><img border='0' src='../../CImage/" + barArray[i][0] + "'></td>")
+           document.write("<td class=dialogLineItem valign=top><a href='#'         alarmHelp('" + barArray[i][3] + "')>" + barArray[i][1] + "</a></td>")
+           document.write("<td class=dialogLineItem valign=top><img border='0' src='../Images/redBox.gif' height='14' width='" + ( widthPerEvent * barArray[i][2] ) + "'></td>")
+           document.write("<td class=dialogLineItem align=center valign=top>" + barArray[i][2] + "</td>")
+           document.write("</tr>")
+         }
+
+                                                                                     function onClick___274995467() {setActionType(1);}                                                                       function onClick___274995310() {setActionType(2);}                                                                        function onClick___274995405() {setActionType(3);}                                                                       function onClick___274995504() {setActionType(4);}
+
+
+
+
+
+
+
+
+ 

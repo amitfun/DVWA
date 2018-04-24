@@ -1,0 +1,538 @@
+﻿
+
+
+
+function script____1025755212() {src(""../UI_lib.js"");}<script language=javascript1.1>
+               
+   function checkSettings()
+   {
+    var devtype = 0;
+
+    Cx_0dummy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    if ("" == document.theForm.DevName.value)
+    {
+     alert( 'Cx_0dummy');
+     return false;
+    }
+    if (1 == devtype)
+    {
+     if ("" == document.theForm.Hostname.value)
+     {
+      alert( 'Cx_0dummy');
+      return false;
+     }
+    }
+
+    Cx_0dummy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    return true;
+   }
+
+   function enableFeatures()
+   {
+    var devtype = 0;
+
+    Cx_0dummy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    if (0 == devtype)
+    {
+     document.theForm.Hostname.value = "Cx_0dummy";
+     document.theForm.Hostname.disabled = true;
+     if ("Cx_0dummy" == document.theForm.Command.value)
+      document.theForm.Command.value = "";
+     document.theForm.Command.disabled = false;
+     document.theForm.ShutdownOS .disabled = false;
+     document.theForm.Execute.disabled = false;
+    }
+    else if (1 == devtype)
+    {
+     if ("Cx_0dummy" == document.theForm.Hostname.value)
+      document.theForm.Hostname.value = "";
+     if ("Cx_0dummy" == document.theForm.Command.value)
+      document.theForm.Command.value = "";
+     document.theForm.Hostname.disabled = false;
+     document.theForm.Command.disabled = false;
+     document.theForm.ShutdownOS .disabled = false;
+     document.theForm.Execute.disabled = false;
+    }
+    else
+    {
+     document.theForm.Hostname.value = "Cx_0dummy";
+     document.theForm.Hostname.disabled = true;
+     document.theForm.Command.value = "Cx_0dummy";
+     document.theForm.Command.disabled = true;
+     document.theForm.ShutdownOS .disabled = true;
+     document.theForm.Execute.disabled = true;
+    }
+   }
+
+   function doDeleteDevice()
+   {
+    if (confirm( "Cx_0dummy"))
+    {
+     dev = document.theForm.Device.value;
+     document.theForm.action = "/goforms/formDeleteDevice?Device=" + dev;
+     document.theForm.onSubmit = "return true";
+     document.theForm.submit();
+    }
+   }
+
+          
+ </script>
+
+               
+   function checkSettings()
+   {
+    var devtype = 0;
+
+    Cx_0dummy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    if ("" == document.theForm.DevName.value)
+    {
+     alert( 'Cx_0dummy');
+     return false;
+    }
+    if (1 == devtype)
+    {
+     if ("" == document.theForm.Hostname.value)
+     {
+      alert( 'Cx_0dummy');
+      return false;
+     }
+    }
+
+    Cx_0dummy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    return true;
+   }
+
+   function enableFeatures()
+   {
+    var devtype = 0;
+
+    Cx_0dummy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    if (0 == devtype)
+    {
+     document.theForm.Hostname.value = "Cx_0dummy";
+     document.theForm.Hostname.disabled = true;
+     if ("Cx_0dummy" == document.theForm.Command.value)
+      document.theForm.Command.value = "";
+     document.theForm.Command.disabled = false;
+     document.theForm.ShutdownOS .disabled = false;
+     document.theForm.Execute.disabled = false;
+    }
+    else if (1 == devtype)
+    {
+     if ("Cx_0dummy" == document.theForm.Hostname.value)
+      document.theForm.Hostname.value = "";
+     if ("Cx_0dummy" == document.theForm.Command.value)
+      document.theForm.Command.value = "";
+     document.theForm.Hostname.disabled = false;
+     document.theForm.Command.disabled = false;
+     document.theForm.ShutdownOS .disabled = false;
+     document.theForm.Execute.disabled = false;
+    }
+    else
+    {
+     document.theForm.Hostname.value = "Cx_0dummy";
+     document.theForm.Hostname.disabled = true;
+     document.theForm.Command.value = "Cx_0dummy";
+     document.theForm.Command.disabled = true;
+     document.theForm.ShutdownOS .disabled = true;
+     document.theForm.Execute.disabled = true;
+    }
+   }
+
+   function doDeleteDevice()
+   {
+    if (confirm( "Cx_0dummy"))
+    {
+     dev = document.theForm.Device.value;
+     document.theForm.action = "/goforms/formDeleteDevice?Device=" + dev;
+     document.theForm.onSubmit = "return true";
+     document.theForm.submit();
+    }
+   }
+
+          
+                                      function onLoad____1810181966() {enableFeatures();}                                             function onSubmit___1665829023() {return checkSettings();}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

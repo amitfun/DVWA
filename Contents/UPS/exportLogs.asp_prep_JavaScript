@@ -1,0 +1,372 @@
+﻿
+
+
+
+
+
+
+
+function script___186578037() {src(""../pickdate.js"");}<script language="javascript1.1" src="../UI_lib.js"><script language="javascript1.1">
+             
+  function closeExportWin()
+  {
+   if (document.ExportForm.LogType.value == "Data")
+    window.location = 'ups_data.asp';
+   else
+    window.location = 'ups_eventLogs.asp?SORTCOL=2&SORTORD=2';
+  }
+
+  function verifyData()
+  {
+   var iChars = "!@#$%^&*()+=-[]\\\';,/{}|\":<>?";
+
+   if (document.ExportForm.actionType.value == 1 || document.ExportForm.actionType.value == "1;")
+   {
+
+    for (var i = 0; i < document.ExportForm.fileName.value.length; i++) 
+    {
+       if (iChars.indexOf(document.ExportForm.fileName.value.charAt(i)) != -1) 
+     {
+        alert ("Invalid File Name.");
+        return false;
+       }
+    }
+   }
+
+  
+   if (document.ExportForm.startDate.value == "")
+   {
+    alert( 'Cx_0dummy ');
+    return false;
+   }
+   else if (document.ExportForm.endDate.value == "")
+   {
+    alert( 'Cx_0dummy ');
+    return false;
+   }
+   else if ((document.ExportForm.actionType.value == 1 || document.ExportForm.actionType.value == "1;") && document.ExportForm.fileName.value == "")
+   {
+    alert( 'Cx_0dummy ');
+    document.ExportForm.fileName.focus();
+    return false;
+   }
+   else
+   {
+    beginOn = document.ExportForm.startDate.value;
+    imonthdaysep = 0;
+    idayyearsep = 0;
+
+    imonthdaysep = beginOn.indexOf("/");
+    beginOn = beginOn.substring(imonthdaysep + 1);
+    idayyearsep = beginOn.indexOf("/");
+    idayyearsep = idayyearsep + imonthdaysep + 1;
+
+    beginOn = document.ExportForm.startDate.value;
+
+    document.ExportForm.bMonth.value = beginOn.substring(0,imonthdaysep);
+    document.ExportForm.bDay.value = beginOn.substring(imonthdaysep+1,idayyearsep);
+    document.ExportForm.bYear.value = beginOn.substring(idayyearsep+1,beginOn.length);
+
+    endOn = document.ExportForm.endDate.value;
+
+    imonthdaysep = endOn.indexOf("/");
+    beginOn = endOn.substring(imonthdaysep + 1);
+    idayyearsep = endOn.indexOf("/");
+    idayyearsep = idayyearsep + imonthdaysep + 1;
+
+    endOn = document.ExportForm.endDate.value;
+
+    document.ExportForm.eMonth.value = endOn.substring(0,imonthdaysep);
+    document.ExportForm.eDay.value = endOn.substring(imonthdaysep+1,idayyearsep);
+    document.ExportForm.eYear.value = endOn.substring(idayyearsep+1,endOn.length);
+
+    if (document.ExportForm.bYear.value > document.ExportForm.eYear.value)
+    {
+     alert( 'Cx_0dummy ');
+     return false;
+    }
+    else if (document.ExportForm.bYear.value == document.ExportForm.eYear.value)
+    {
+     if (document.ExportForm.bMonth.value > document.ExportForm.eMonth.value)
+     {
+      alert( 'Cx_0dummy ');
+      return false;
+     }
+     else if (document.ExportForm.bMonth.value == document.ExportForm.eMonth.value)
+     {
+      if (document.ExportForm.bDay.value > document.ExportForm.eDay.value)
+      {
+       alert( 'Cx_0dummy ');
+       return false;
+      }
+     }
+    }
+
+
+    return true;
+   }
+   return false; //just in case
+  }
+
+  function doActive(selection)
+  {
+   switch (selection)
+   {
+    case 1: document.ExportForm.fileName.disabled = false;
+      document.ExportForm.actionType.value = 1;
+    break;
+
+    case 2: document.ExportForm.fileName.disabled = true;
+      document.ExportForm.actionType.value = 2;
+    break;
+
+    default:
+    break;
+   }
+  }
+
+      
+ </script>
+function script____1025755212() {src(""../UI_lib.js"");}<script language="javascript1.1">
+             
+  function closeExportWin()
+  {
+   if (document.ExportForm.LogType.value == "Data")
+    window.location = 'ups_data.asp';
+   else
+    window.location = 'ups_eventLogs.asp?SORTCOL=2&SORTORD=2';
+  }
+
+  function verifyData()
+  {
+   var iChars = "!@#$%^&*()+=-[]\\\';,/{}|\":<>?";
+
+   if (document.ExportForm.actionType.value == 1 || document.ExportForm.actionType.value == "1;")
+   {
+
+    for (var i = 0; i < document.ExportForm.fileName.value.length; i++) 
+    {
+       if (iChars.indexOf(document.ExportForm.fileName.value.charAt(i)) != -1) 
+     {
+        alert ("Invalid File Name.");
+        return false;
+       }
+    }
+   }
+
+  
+   if (document.ExportForm.startDate.value == "")
+   {
+    alert( 'Cx_0dummy ');
+    return false;
+   }
+   else if (document.ExportForm.endDate.value == "")
+   {
+    alert( 'Cx_0dummy ');
+    return false;
+   }
+   else if ((document.ExportForm.actionType.value == 1 || document.ExportForm.actionType.value == "1;") && document.ExportForm.fileName.value == "")
+   {
+    alert( 'Cx_0dummy ');
+    document.ExportForm.fileName.focus();
+    return false;
+   }
+   else
+   {
+    beginOn = document.ExportForm.startDate.value;
+    imonthdaysep = 0;
+    idayyearsep = 0;
+
+    imonthdaysep = beginOn.indexOf("/");
+    beginOn = beginOn.substring(imonthdaysep + 1);
+    idayyearsep = beginOn.indexOf("/");
+    idayyearsep = idayyearsep + imonthdaysep + 1;
+
+    beginOn = document.ExportForm.startDate.value;
+
+    document.ExportForm.bMonth.value = beginOn.substring(0,imonthdaysep);
+    document.ExportForm.bDay.value = beginOn.substring(imonthdaysep+1,idayyearsep);
+    document.ExportForm.bYear.value = beginOn.substring(idayyearsep+1,beginOn.length);
+
+    endOn = document.ExportForm.endDate.value;
+
+    imonthdaysep = endOn.indexOf("/");
+    beginOn = endOn.substring(imonthdaysep + 1);
+    idayyearsep = endOn.indexOf("/");
+    idayyearsep = idayyearsep + imonthdaysep + 1;
+
+    endOn = document.ExportForm.endDate.value;
+
+    document.ExportForm.eMonth.value = endOn.substring(0,imonthdaysep);
+    document.ExportForm.eDay.value = endOn.substring(imonthdaysep+1,idayyearsep);
+    document.ExportForm.eYear.value = endOn.substring(idayyearsep+1,endOn.length);
+
+    if (document.ExportForm.bYear.value > document.ExportForm.eYear.value)
+    {
+     alert( 'Cx_0dummy ');
+     return false;
+    }
+    else if (document.ExportForm.bYear.value == document.ExportForm.eYear.value)
+    {
+     if (document.ExportForm.bMonth.value > document.ExportForm.eMonth.value)
+     {
+      alert( 'Cx_0dummy ');
+      return false;
+     }
+     else if (document.ExportForm.bMonth.value == document.ExportForm.eMonth.value)
+     {
+      if (document.ExportForm.bDay.value > document.ExportForm.eDay.value)
+      {
+       alert( 'Cx_0dummy ');
+       return false;
+      }
+     }
+    }
+
+
+    return true;
+   }
+   return false; //just in case
+  }
+
+  function doActive(selection)
+  {
+   switch (selection)
+   {
+    case 1: document.ExportForm.fileName.disabled = false;
+      document.ExportForm.actionType.value = 1;
+    break;
+
+    case 2: document.ExportForm.fileName.disabled = true;
+      document.ExportForm.actionType.value = 2;
+    break;
+
+    default:
+    break;
+   }
+  }
+
+      
+ </script>
+
+             
+  function closeExportWin()
+  {
+   if (document.ExportForm.LogType.value == "Data")
+    window.location = 'ups_data.asp';
+   else
+    window.location = 'ups_eventLogs.asp?SORTCOL=2&SORTORD=2';
+  }
+
+  function verifyData()
+  {
+   var iChars = "!@#$%^&*()+=-[]\\\';,/{}|\":<>?";
+
+   if (document.ExportForm.actionType.value == 1 || document.ExportForm.actionType.value == "1;")
+   {
+
+    for (var i = 0; i < document.ExportForm.fileName.value.length; i++) 
+    {
+       if (iChars.indexOf(document.ExportForm.fileName.value.charAt(i)) != -1) 
+     {
+        alert ("Invalid File Name.");
+        return false;
+       }
+    }
+   }
+
+  
+   if (document.ExportForm.startDate.value == "")
+   {
+    alert( 'Cx_0dummy ');
+    return false;
+   }
+   else if (document.ExportForm.endDate.value == "")
+   {
+    alert( 'Cx_0dummy ');
+    return false;
+   }
+   else if ((document.ExportForm.actionType.value == 1 || document.ExportForm.actionType.value == "1;") && document.ExportForm.fileName.value == "")
+   {
+    alert( 'Cx_0dummy ');
+    document.ExportForm.fileName.focus();
+    return false;
+   }
+   else
+   {
+    beginOn = document.ExportForm.startDate.value;
+    imonthdaysep = 0;
+    idayyearsep = 0;
+
+    imonthdaysep = beginOn.indexOf("/");
+    beginOn = beginOn.substring(imonthdaysep + 1);
+    idayyearsep = beginOn.indexOf("/");
+    idayyearsep = idayyearsep + imonthdaysep + 1;
+
+    beginOn = document.ExportForm.startDate.value;
+
+    document.ExportForm.bMonth.value = beginOn.substring(0,imonthdaysep);
+    document.ExportForm.bDay.value = beginOn.substring(imonthdaysep+1,idayyearsep);
+    document.ExportForm.bYear.value = beginOn.substring(idayyearsep+1,beginOn.length);
+
+    endOn = document.ExportForm.endDate.value;
+
+    imonthdaysep = endOn.indexOf("/");
+    beginOn = endOn.substring(imonthdaysep + 1);
+    idayyearsep = endOn.indexOf("/");
+    idayyearsep = idayyearsep + imonthdaysep + 1;
+
+    endOn = document.ExportForm.endDate.value;
+
+    document.ExportForm.eMonth.value = endOn.substring(0,imonthdaysep);
+    document.ExportForm.eDay.value = endOn.substring(imonthdaysep+1,idayyearsep);
+    document.ExportForm.eYear.value = endOn.substring(idayyearsep+1,endOn.length);
+
+    if (document.ExportForm.bYear.value > document.ExportForm.eYear.value)
+    {
+     alert( 'Cx_0dummy ');
+     return false;
+    }
+    else if (document.ExportForm.bYear.value == document.ExportForm.eYear.value)
+    {
+     if (document.ExportForm.bMonth.value > document.ExportForm.eMonth.value)
+     {
+      alert( 'Cx_0dummy ');
+      return false;
+     }
+     else if (document.ExportForm.bMonth.value == document.ExportForm.eMonth.value)
+     {
+      if (document.ExportForm.bDay.value > document.ExportForm.eDay.value)
+      {
+       alert( 'Cx_0dummy ');
+       return false;
+      }
+     }
+    }
+
+
+    return true;
+   }
+   return false; //just in case
+  }
+
+  function doActive(selection)
+  {
+   switch (selection)
+   {
+    case 1: document.ExportForm.fileName.disabled = false;
+      document.ExportForm.actionType.value = 1;
+    break;
+
+    case 2: document.ExportForm.fileName.disabled = true;
+      document.ExportForm.actionType.value = 2;
+    break;
+
+    default:
+    break;
+   }
+  }
+
+      
+                                               function onSubmit____1853018129() {return verifyData();}function href___1347217266() {show_calendar('ExportForm.startDate');}                                                  function onmouseover____743197727() {window.status='Date Picker';return true;}                                                                                                          function onmouseout___963817947() {window.status='';return true;}function href____232526049() {show_calendar('ExportForm.endDate');}                                                function onmouseover____743197727() {window.status='Date Picker';return true;}                                                                                                        function onmouseout___963817947() {window.status='';return true;}                                  function onclick___623061678() {doActive(1);}                                                                                    function onclick____1205144289() {doActive(2);}
+ 

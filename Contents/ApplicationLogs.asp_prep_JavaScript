@@ -1,0 +1,255 @@
+﻿
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function script____553241801() {src(""UI_lib.js"");}<script language="javascript1.1">
+              
+ function doExport()
+ {
+  //generalDialog = openCenteredWindow('UPS/exportLogs.asp?logType=Application', 'exportAppLogs', 550, 225, '', 'true', '', 'opener');
+  window.location = 'exportLogs.asp?logType=Application';
+ }
+
+    function verifyClear()
+    {
+     return confirm("Cx_0dummy");
+    }
+
+    function refreshPage()
+    {
+     window.location = window.location;
+    }
+
+ function doRequest(col, sortcol, sortord)
+ {
+  //sortord=1: ascending sortord=2: descending
+  if ( col == sortcol && "1" ==  sortord )
+  {
+   top.main.window.location = "ApplicationLogs.asp?SORTCOL=" + col + "&SORTORD=2&TIME=" + Cx_0dummy + "&PAGE=1&ITEMSPERPAGE=" + Cx_0dummy;
+  }
+  else
+  {
+   top.main.window.location = "ApplicationLogs.asp?SORTCOL=" + col + "&SORTORD=1&TIME=" + Cx_0dummy + "&PAGE=1&ITEMSPERPAGE=" + Cx_0dummy;
+  }
+ }
+         
+   </script>
+
+
+              
+ function doExport()
+ {
+  //generalDialog = openCenteredWindow('UPS/exportLogs.asp?logType=Application', 'exportAppLogs', 550, 225, '', 'true', '', 'opener');
+  window.location = 'exportLogs.asp?logType=Application';
+ }
+
+    function verifyClear()
+    {
+     return confirm("Cx_0dummy");
+    }
+
+    function refreshPage()
+    {
+     window.location = window.location;
+    }
+
+ function doRequest(col, sortcol, sortord)
+ {
+  //sortord=1: ascending sortord=2: descending
+  if ( col == sortcol && "1" ==  sortord )
+  {
+   top.main.window.location = "ApplicationLogs.asp?SORTCOL=" + col + "&SORTORD=2&TIME=" + Cx_0dummy + "&PAGE=1&ITEMSPERPAGE=" + Cx_0dummy;
+  }
+  else
+  {
+   top.main.window.location = "ApplicationLogs.asp?SORTCOL=" + col + "&SORTORD=1&TIME=" + Cx_0dummy + "&PAGE=1&ITEMSPERPAGE=" + Cx_0dummy;
+  }
+ }
+         
+   
+
+
+
+
+
+
+
+
+
+                                 function href____1498690255() {doRequest('0', 'Cx_0dummy', 'Cx_0dummy');}
+
+
+                                   function href___458763468() {doRequest('1', 'Cx_0dummy', 'Cx_0dummy');}
+
+
+                                  function href___1298123623() {doRequest('2', 'Cx_0dummy', 'Cx_0dummy');}
+
+
+                                  function href___1298123623() {doRequest('2', 'Cx_0dummy', 'Cx_0dummy');}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                   function onclick___1339748554() {refreshPage();}
+                                                                                                function onClick____855896779() {doExport();}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,555 @@
+2012-02-21 05:33:40,442 [pool-1-thread-1] (CxScanJob.java:87) INFO  - Packing project
+2012-02-21 05:33:40,649 [pool-1-thread-1] (CxScanJob.java:106) INFO  - Project name is "Sample_12671_lines"
+2012-02-21 05:33:41,229 [pool-1-thread-1] (CxScanJob.java:273) INFO  - Check CLI version support: 1.2.7
+2012-02-21 05:33:41,260 [pool-1-thread-1] (CxScanJob.java:288) INFO  - Log in
+2012-02-21 05:33:41,271 [pool-1-thread-1] (CxScanJob.java:118) INFO  - Retrieving scan configurations
+2012-02-21 05:33:41,309 [pool-1-thread-1] (CxScanJob.java:139) INFO  - Request scan
+2012-02-21 05:33:41,311 [pool-1-thread-1] (CxScanJob.java:432) INFO  - isVisible to others flag: true
+2012-02-21 05:33:42,035 [pool-1-thread-1] (CxScanJob.java:489) TRACE - Project scan request response:RunScanResult(scanId:87ccb6b7-9d08-4324-aa9c-539f8351225b,projectId:34)
+2012-02-21 05:33:42,046 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 87ccb6b7-9d08-4324-aa9c-539f8351225b | QUEUED | 0 | 0 |  | 0 |  |  | 2012-2-21 5:22:50 | 2014-2-21 5:22:50 | -1 |  | 34| 0 | 34 | 0 })
+2012-02-21 05:33:42,048 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-02-21 05:33:42,049 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-02-21 05:33:42,050 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-02-21 05:33:52,061 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 87ccb6b7-9d08-4324-aa9c-539f8351225b | WORKING | 0 | 0 | null | 0 |  | null | 2012-2-21 5:22:50 | 2014-2-21 5:22:50 | -1 | N/A | 34| 0 | 34 | 0 })
+2012-02-21 05:33:52,062 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-02-21 05:33:52,063 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: WORKING
+2012-02-21 05:33:52,064 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING
+ (0%) 
+2012-02-21 05:34:02,073 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 87ccb6b7-9d08-4324-aa9c-539f8351225b | WORKING | 9 | 4 | Parsing source code, Stage 1 | 11 | Stage # 5 of 22 | Processing # 7 of 61 | 2012-2-21 5:22:50 | 2014-2-21 5:22:50 | -1 | ApplicationLogs.asp | 34| 0 | 34 | 0 })
+2012-02-21 05:34:02,074 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 9%
+2012-02-21 05:34:02,075 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Parsing source code, Stage 1" - Stage # 5 of 22
+2012-02-21 05:34:02,075 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Parsing source code, Stage 1"
+Stage # 5 of 22 (11%) Processing # 7 of 61
+2012-02-21 05:34:12,087 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 87ccb6b7-9d08-4324-aa9c-539f8351225b | WORKING | 9 | 4 | Parsing source code, Stage 1 | 39 | Stage # 5 of 22 | Processing # 24 of 61 | 2012-2-21 5:22:50 | 2014-2-21 5:22:50 | -1 | addScheduledShutdown.asp | 34| 0 | 34 | 0 })
+2012-02-21 05:34:12,088 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 9%
+2012-02-21 05:34:12,089 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Parsing source code, Stage 1" - Stage # 5 of 22
+2012-02-21 05:34:12,089 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Parsing source code, Stage 1"
+Stage # 5 of 22 (39%) Processing # 24 of 61
+2012-02-21 05:34:22,099 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 87ccb6b7-9d08-4324-aa9c-539f8351225b | WORKING | 9 | 4 | Parsing source code, Stage 1 | 57 | Stage # 5 of 22 | Processing # 35 of 61 | 2012-2-21 5:22:50 | 2014-2-21 5:22:50 | -1 | exportLogs.asp | 34| 0 | 34 | 0 })
+2012-02-21 05:34:22,101 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 9%
+2012-02-21 05:34:22,102 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Parsing source code, Stage 1" - Stage # 5 of 22
+2012-02-21 05:34:22,102 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Parsing source code, Stage 1"
+Stage # 5 of 22 (57%) Processing # 35 of 61
+2012-02-21 05:34:32,113 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 87ccb6b7-9d08-4324-aa9c-539f8351225b | WORKING | 9 | 4 | Parsing source code, Stage 1 | 73 | Stage # 5 of 22 | Processing # 45 of 61 | 2012-2-21 5:22:50 | 2014-2-21 5:22:50 | -1 | shutdown.asp | 34| 0 | 34 | 0 })
+2012-02-21 05:34:32,113 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 9%
+2012-02-21 05:34:32,114 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Parsing source code, Stage 1" - Stage # 5 of 22
+2012-02-21 05:34:32,115 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Parsing source code, Stage 1"
+Stage # 5 of 22 (73%) Processing # 45 of 61
+2012-02-21 05:34:42,125 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 87ccb6b7-9d08-4324-aa9c-539f8351225b | WORKING | 22 | 10 | Analyzing code flows | 19 | Stage # 11 of 22 | Processing # 12 of 61 | 2012-2-21 5:22:50 | 2014-2-21 5:22:50 | -1 | maintAddEdit.asp | 34| 0 | 34 | 0 })
+2012-02-21 05:34:42,130 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 22%
+2012-02-21 05:34:42,131 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Analyzing code flows" - Stage # 11 of 22
+2012-02-21 05:34:42,132 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Analyzing code flows"
+Stage # 11 of 22 (19%) Processing # 12 of 61
+2012-02-21 05:34:52,143 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 87ccb6b7-9d08-4324-aa9c-539f8351225b | WORKING | 22 | 10 | Analyzing code flows | 55 | Stage # 11 of 22 | Processing # 34 of 61 | 2012-2-21 5:22:50 | 2014-2-21 5:22:50 | -1 | event_actions.asp | 34| 0 | 34 | 0 })
+2012-02-21 05:34:52,144 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 22%
+2012-02-21 05:34:52,145 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Analyzing code flows" - Stage # 11 of 22
+2012-02-21 05:34:52,146 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Analyzing code flows"
+Stage # 11 of 22 (55%) Processing # 34 of 61
+2012-02-21 05:35:02,155 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 87ccb6b7-9d08-4324-aa9c-539f8351225b | WORKING | 22 | 10 | Analyzing code flows | 95 | Stage # 11 of 22 | Processing # 58 of 61 | 2012-2-21 5:22:50 | 2014-2-21 5:22:50 | -1 | user_details.asp | 34| 0 | 34 | 0 })
+2012-02-21 05:35:02,156 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 22%
+2012-02-21 05:35:02,157 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Analyzing code flows" - Stage # 11 of 22
+2012-02-21 05:35:02,158 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Analyzing code flows"
+Stage # 11 of 22 (95%) Processing # 58 of 61
+2012-02-21 05:35:12,166 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 87ccb6b7-9d08-4324-aa9c-539f8351225b | WORKING | 40 | 18 | Optimizing internal representation, Stage 4 | 0 | Stage # 19 of 22 | Processing # 0 of 1030 | 2012-2-21 5:22:50 | 2014-2-21 5:22:50 | -1 | DefaultConstructor:CxVbsASTClass105 | 34| 0 | 34 | 0 })
+2012-02-21 05:35:12,167 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 40%
+2012-02-21 05:35:12,168 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Optimizing internal representation, Stage 4" - Stage # 19 of 22
+2012-02-21 05:35:12,169 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Optimizing internal representation, Stage 4"
+Stage # 19 of 22 (0%) Processing # 0 of 1030
+2012-02-21 05:35:22,178 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 87ccb6b7-9d08-4324-aa9c-539f8351225b | WORKING | 43 | 19 | Optimizing internal representation, Stage 5 | 55 |  | Processing # 1088 of 1976 | 2012-2-21 5:22:50 | 2014-2-21 5:22:50 | -1 | N/A | 34| 0 | 34 | 34 })
+2012-02-21 05:35:22,179 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 43%
+2012-02-21 05:35:22,180 [pool-2-thread-1] (WaitScanCompletionJob.java:106) INFO  - Current stage:  "Optimizing internal representation, Stage 5"
+2012-02-21 05:35:22,181 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Optimizing internal representation, Stage 5"
+ (55%) Processing # 1088 of 1976
+2012-02-21 05:35:32,194 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 87ccb6b7-9d08-4324-aa9c-539f8351225b | WORKING | 56 | 20 | Querying | 12 | Running query: Client_Untrusted_Activex | Processing # 15 of 119 | 2012-2-21 5:22:50 | 2014-2-21 5:22:50 | -1 | Client_Untrusted_Activex | 34| 0 | 34 | 34 })
+2012-02-21 05:35:32,195 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 56%
+2012-02-21 05:35:32,195 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Querying" - Running query: Client_Untrusted_Activex
+2012-02-21 05:35:32,196 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Querying"
+Running query: Client_Untrusted_Activex (12%) Processing # 15 of 119
+2012-02-21 05:35:42,217 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 87ccb6b7-9d08-4324-aa9c-539f8351225b | WORKING | 69 | 20 | Querying | 39 | Running query: Visible_Pointers | Processing # 47 of 119 | 2012-2-21 5:22:50 | 2014-2-21 5:22:50 | -1 | Visible_Pointers | 34| 0 | 34 | 34 })
+2012-02-21 05:35:42,217 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 69%
+2012-02-21 05:35:42,218 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Querying" - Running query: Visible_Pointers
+2012-02-21 05:35:42,219 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Querying"
+Running query: Visible_Pointers (39%) Processing # 47 of 119
+2012-02-21 05:35:52,232 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 87ccb6b7-9d08-4324-aa9c-539f8351225b | WORKING | 78 | 20 | Querying | 57 | Running query: Reflected_XSS_All_Clients | Processing # 69 of 119 | 2012-2-21 5:22:50 | 2014-2-21 5:22:50 | -1 | Reflected_XSS_All_Clients | 34| 0 | 34 | 34 })
+2012-02-21 05:35:52,233 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 78%
+2012-02-21 05:35:52,234 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Querying" - Running query: Reflected_XSS_All_Clients
+2012-02-21 05:35:52,234 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Querying"
+Running query: Reflected_XSS_All_Clients (57%) Processing # 69 of 119
+2012-02-21 05:36:02,244 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 87ccb6b7-9d08-4324-aa9c-539f8351225b | WORKING | 99 | 20 | Querying | 98 | Running query: TraceEnabled | Processing # 117 of 119 | 2012-2-21 5:22:50 | 2014-2-21 5:22:50 | -1 | TraceEnabled | 34| 0 | 34 | 34 })
+2012-02-21 05:36:02,245 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 99%
+2012-02-21 05:36:02,246 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Querying" - Running query: TraceEnabled
+2012-02-21 05:36:02,247 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Querying"
+Running query: TraceEnabled (98%) Processing # 117 of 119
+2012-02-21 05:36:12,256 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 87ccb6b7-9d08-4324-aa9c-539f8351225b | FINISHED | 100 | 2147483647 |  | 0 | Finish saving results |  | 2012-2-21 5:22:50 | 2012-2-21 5:25:14 | -1 |  | 34| 34 | 34 | 34 })
+2012-02-21 05:36:12,257 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 100%
+2012-02-21 05:36:12,258 [pool-2-thread-1] (WaitScanCompletionJob.java:108) INFO  - Current stage: Finish saving results
+2012-02-21 05:36:12,258 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - FINISHED
+Finish saving results (0%) 
+2012-02-21 05:36:12,259 [pool-2-thread-1] (WaitScanCompletionJob.java:126) INFO  - Finish saving results
+2012-02-21 05:36:12,260 [pool-1-thread-1] (CxScanJob.java:170) INFO  - Retrieving results
+2012-03-03 06:32:32,520 [pool-1-thread-1] (CxScanJob.java:87) INFO  - Packing project
+2012-03-03 06:32:34,027 [pool-1-thread-1] (CxScanJob.java:106) INFO  - Project name is "Sample_12671_lines"
+2012-03-03 06:32:34,576 [pool-1-thread-1] (CxScanJob.java:273) INFO  - Check CLI version support: 1.2.7
+2012-03-03 06:32:34,608 [pool-1-thread-1] (CxScanJob.java:288) INFO  - Log in
+2012-03-03 06:32:34,620 [pool-1-thread-1] (CxScanJob.java:118) INFO  - Retrieving scan configurations
+2012-03-03 06:32:34,645 [pool-1-thread-1] (CxScanJob.java:139) INFO  - Request scan
+2012-03-03 06:32:34,646 [pool-1-thread-1] (CxScanJob.java:432) INFO  - isVisible to others flag: true
+2012-03-03 06:32:35,424 [pool-1-thread-1] (CxScanJob.java:489) TRACE - Project scan request response:RunScanResult(scanId:0b1f50e6-372a-4658-a738-f5f37350fa8f,projectId:44)
+2012-03-03 06:32:35,436 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 0b1f50e6-372a-4658-a738-f5f37350fa8f | QUEUED | 0 | 0 |  | 0 |  |  | 2012-3-3 6:31:42 | 2014-3-3 6:31:42 | -1 |  | 44| 0 | 44 | 0 })
+2012-03-03 06:32:35,438 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-03-03 06:32:35,439 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-03-03 06:32:35,440 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-03-03 06:32:45,449 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 0b1f50e6-372a-4658-a738-f5f37350fa8f | WORKING | 0 | 0 | null | 0 |  | null | 2012-3-3 6:31:42 | 2014-3-3 6:31:42 | -1 | N/A | 44| 0 | 44 | 0 })
+2012-03-03 06:32:45,450 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-03-03 06:32:45,451 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: WORKING
+2012-03-03 06:32:45,452 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING
+ (0%) 
+2012-03-03 06:32:55,464 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 0b1f50e6-372a-4658-a738-f5f37350fa8f | WORKING | 9 | 4 | Parsing source code, Stage 1 | 4 | Stage # 5 of 22 | Processing # 3 of 62 | 2012-3-3 6:31:42 | 2014-3-3 6:31:42 | -1 | admin_Users.asp | 44| 0 | 44 | 0 })
+2012-03-03 06:32:55,465 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 9%
+2012-03-03 06:32:55,466 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Parsing source code, Stage 1" - Stage # 5 of 22
+2012-03-03 06:32:55,467 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Parsing source code, Stage 1"
+Stage # 5 of 22 (4%) Processing # 3 of 62
+2012-03-03 06:33:05,477 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 0b1f50e6-372a-4658-a738-f5f37350fa8f | WORKING | 22 | 10 | Analyzing code flows | 56 | Stage # 11 of 22 | Processing # 35 of 62 | 2012-3-3 6:31:42 | 2014-3-3 6:31:42 | -1 | exportLogs.asp | 44| 0 | 44 | 0 })
+2012-03-03 06:33:05,479 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 22%
+2012-03-03 06:33:05,480 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Analyzing code flows" - Stage # 11 of 22
+2012-03-03 06:33:05,480 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Analyzing code flows"
+Stage # 11 of 22 (56%) Processing # 35 of 62
+2012-03-03 06:33:15,490 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 0b1f50e6-372a-4658-a738-f5f37350fa8f | WORKING | 34 | 15 | Optimizing internal representation, Stage 1 | 36 | Stage # 16 of 22 | Processing # 3933 of 10643 | 2012-3-3 6:31:42 | 2014-3-3 6:31:42 | -1 | Stage # 16 of 22 | 44| 0 | 44 | 0 })
+2012-03-03 06:33:15,491 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 34%
+2012-03-03 06:33:15,492 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Optimizing internal representation, Stage 1" - Stage # 16 of 22
+2012-03-03 06:33:15,493 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Optimizing internal representation, Stage 1"
+Stage # 16 of 22 (36%) Processing # 3933 of 10643
+2012-03-03 06:33:25,505 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 0b1f50e6-372a-4658-a738-f5f37350fa8f | WORKING | 38 | 17 | Optimizing internal representation, Stage 3 | 84 | Stage # 18 of 22 | Processing # 384 of 457 | 2012-3-3 6:31:42 | 2014-3-3 6:31:42 | -1 | DefaultConstructor:CxVbsASTClass751765724 | 44| 0 | 44 | 0 })
+2012-03-03 06:33:25,506 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 38%
+2012-03-03 06:33:25,507 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Optimizing internal representation, Stage 3" - Stage # 18 of 22
+2012-03-03 06:33:25,508 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Optimizing internal representation, Stage 3"
+Stage # 18 of 22 (84%) Processing # 384 of 457
+2012-03-03 06:33:35,528 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 0b1f50e6-372a-4658-a738-f5f37350fa8f | WORKING | 50 | 20 | Querying | 0 | Running query: Client_DoS_By_Sleep | Processing # 1 of 119 | 2012-3-3 6:31:42 | 2014-3-3 6:31:42 | -1 | Client_DoS_By_Sleep | 44| 0 | 44 | 44 })
+2012-03-03 06:33:35,530 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 50%
+2012-03-03 06:33:35,532 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Querying" - Running query: Client_DoS_By_Sleep
+2012-03-03 06:33:35,533 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Querying"
+Running query: Client_DoS_By_Sleep (0%) Processing # 1 of 119
+2012-03-03 06:33:45,548 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 0b1f50e6-372a-4658-a738-f5f37350fa8f | WORKING | 57 | 20 | Querying | 14 | Running query: Weak_Password_Authentication | Processing # 17 of 119 | 2012-3-3 6:31:42 | 2014-3-3 6:31:42 | -1 | Weak_Password_Authentication | 44| 0 | 44 | 44 })
+2012-03-03 06:33:45,550 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 57%
+2012-03-03 06:33:45,550 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Querying" - Running query: Weak_Password_Authentication
+2012-03-03 06:33:45,551 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Querying"
+Running query: Weak_Password_Authentication (14%) Processing # 17 of 119
+2012-03-03 06:33:55,593 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 0b1f50e6-372a-4658-a738-f5f37350fa8f | WORKING | 69 | 20 | Querying | 39 | Running query: Visible_Pointers | Processing # 47 of 119 | 2012-3-3 6:31:42 | 2014-3-3 6:31:42 | -1 | Visible_Pointers | 44| 0 | 44 | 44 })
+2012-03-03 06:33:55,594 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 69%
+2012-03-03 06:33:55,595 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Querying" - Running query: Visible_Pointers
+2012-03-03 06:33:55,595 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Querying"
+Running query: Visible_Pointers (39%) Processing # 47 of 119
+2012-03-03 06:34:05,607 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 0b1f50e6-372a-4658-a738-f5f37350fa8f | WORKING | 85 | 20 | Querying | 71 | Running query: Session_Poisoning | Processing # 85 of 119 | 2012-3-3 6:31:42 | 2014-3-3 6:31:42 | -1 | Session_Poisoning | 44| 0 | 44 | 44 })
+2012-03-03 06:34:05,608 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 85%
+2012-03-03 06:34:05,609 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Querying" - Running query: Session_Poisoning
+2012-03-03 06:34:05,610 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Querying"
+Running query: Session_Poisoning (71%) Processing # 85 of 119
+2012-03-03 06:34:15,620 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 0b1f50e6-372a-4658-a738-f5f37350fa8f | FINISHED | 100 | 2147483647 |  | 0 | Finish saving results |  | 2012-3-3 6:31:42 | 2012-3-3 6:33:22 | -1 |  | 44| 44 | 44 | 44 })
+2012-03-03 06:34:15,621 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 100%
+2012-03-03 06:34:15,622 [pool-2-thread-1] (WaitScanCompletionJob.java:108) INFO  - Current stage: Finish saving results
+2012-03-03 06:34:15,624 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - FINISHED
+Finish saving results (0%) 
+2012-03-03 06:34:15,624 [pool-2-thread-1] (WaitScanCompletionJob.java:126) INFO  - Finish saving results
+2012-03-03 06:34:15,625 [pool-1-thread-1] (CxScanJob.java:170) INFO  - Retrieving results
+2012-03-04 08:30:40,439 [pool-1-thread-1] (CxScanJob.java:87) INFO  - Packing project
+2012-03-04 08:30:40,787 [pool-1-thread-1] (CxScanJob.java:106) INFO  - Project name is "Sample_12671_lines"
+2012-03-04 08:30:41,350 [pool-1-thread-1] (CxScanJob.java:273) INFO  - Check CLI version support: 1.2.7
+2012-03-04 08:30:41,383 [pool-1-thread-1] (CxScanJob.java:288) INFO  - Log in
+2012-03-04 08:30:41,396 [pool-1-thread-1] (CxScanJob.java:118) INFO  - Retrieving scan configurations
+2012-03-04 08:30:41,423 [pool-1-thread-1] (CxScanJob.java:139) INFO  - Request scan
+2012-03-04 08:30:41,424 [pool-1-thread-1] (CxScanJob.java:432) INFO  - isVisible to others flag: true
+2012-03-04 08:30:42,389 [pool-1-thread-1] (CxScanJob.java:489) TRACE - Project scan request response:RunScanResult(scanId:212e60d8-109d-4326-b148-b8bb3cbc3255,projectId:45)
+2012-03-04 08:30:42,401 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 212e60d8-109d-4326-b148-b8bb3cbc3255 | QUEUED | 0 | 0 |  | 0 |  |  | 2012-3-4 8:29:48 | 2014-3-4 8:29:48 | -1 |  | 45| 0 | 45 | 0 })
+2012-03-04 08:30:42,407 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-03-04 08:30:42,409 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-03-04 08:30:42,411 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-03-04 08:30:52,423 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 212e60d8-109d-4326-b148-b8bb3cbc3255 | WORKING | 0 | 0 | null | 0 |  | null | 2012-3-4 8:29:48 | 2014-3-4 8:29:48 | -1 | N/A | 45| 0 | 45 | 0 })
+2012-03-04 08:30:52,424 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-03-04 08:30:52,425 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: WORKING
+2012-03-04 08:30:52,426 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING
+ (0%) 
+2012-03-04 08:31:02,437 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 212e60d8-109d-4326-b148-b8bb3cbc3255 | WORKING | 9 | 4 | Parsing source code, Stage 1 | 90 | Stage # 5 of 22 | Processing # 56 of 62 | 2012-3-4 8:29:48 | 2014-3-4 8:29:48 | -1 | ups_overviewMeter1.asp | 45| 0 | 45 | 0 })
+2012-03-04 08:31:02,438 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 9%
+2012-03-04 08:31:02,439 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Parsing source code, Stage 1" - Stage # 5 of 22
+2012-03-04 08:31:02,439 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Parsing source code, Stage 1"
+Stage # 5 of 22 (90%) Processing # 56 of 62
+2012-03-04 08:31:12,450 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 212e60d8-109d-4326-b148-b8bb3cbc3255 | WORKING | 22 | 10 | Analyzing code flows | 54 | Stage # 11 of 22 | Processing # 34 of 62 | 2012-3-4 8:29:48 | 2014-3-4 8:29:48 | -1 | event_actions.asp | 45| 0 | 45 | 0 })
+2012-03-04 08:31:12,451 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 22%
+2012-03-04 08:31:12,451 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Analyzing code flows" - Stage # 11 of 22
+2012-03-04 08:31:12,452 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Analyzing code flows"
+Stage # 11 of 22 (54%) Processing # 34 of 62
+2012-03-04 08:31:22,489 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 212e60d8-109d-4326-b148-b8bb3cbc3255 | WORKING | 22 | 10 | Analyzing code flows | 91 | Stage # 11 of 22 | Processing # 57 of 62 | 2012-3-4 8:29:48 | 2014-3-4 8:29:48 | -1 | ups_variables.asp | 45| 0 | 45 | 0 })
+2012-03-04 08:31:22,491 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 22%
+2012-03-04 08:31:22,492 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Analyzing code flows" - Stage # 11 of 22
+2012-03-04 08:31:22,493 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Analyzing code flows"
+Stage # 11 of 22 (91%) Processing # 57 of 62
+2012-03-04 08:31:32,504 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 212e60d8-109d-4326-b148-b8bb3cbc3255 | WORKING | 40 | 18 | Optimizing internal representation, Stage 4 | 28 | Stage # 19 of 22 | Processing # 292 of 1009 | 2012-3-4 8:29:48 | 2014-3-4 8:29:48 | -1 | CxVbsASTClass1526219844.CxVbsMethod | 45| 0 | 45 | 0 })
+2012-03-04 08:31:32,505 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 40%
+2012-03-04 08:31:32,506 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Optimizing internal representation, Stage 4" - Stage # 19 of 22
+2012-03-04 08:31:32,506 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Optimizing internal representation, Stage 4"
+Stage # 19 of 22 (28%) Processing # 292 of 1009
+2012-03-04 08:31:42,538 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 212e60d8-109d-4326-b148-b8bb3cbc3255 | WORKING | 43 | 19 | Optimizing internal representation, Stage 5 | 55 |  | Processing # 1012 of 1828 | 2012-3-4 8:29:48 | 2014-3-4 8:29:48 | -1 | N/A | 45| 0 | 45 | 45 })
+2012-03-04 08:31:42,539 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 43%
+2012-03-04 08:31:42,540 [pool-2-thread-1] (WaitScanCompletionJob.java:106) INFO  - Current stage:  "Optimizing internal representation, Stage 5"
+2012-03-04 08:31:42,541 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Optimizing internal representation, Stage 5"
+ (55%) Processing # 1012 of 1828
+2012-03-04 08:31:52,567 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 212e60d8-109d-4326-b148-b8bb3cbc3255 | WORKING | 53 | 20 | Querying | 7 | Running query: DOM_Cookie_Poisoning | Processing # 9 of 119 | 2012-3-4 8:29:48 | 2014-3-4 8:29:48 | -1 | DOM_Cookie_Poisoning | 45| 0 | 45 | 45 })
+2012-03-04 08:31:52,568 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 53%
+2012-03-04 08:31:52,569 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Querying" - Running query: DOM_Cookie_Poisoning
+2012-03-04 08:31:52,571 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Querying"
+Running query: DOM_Cookie_Poisoning (7%) Processing # 9 of 119
+2012-03-04 08:32:02,587 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 212e60d8-109d-4326-b148-b8bb3cbc3255 | WORKING | 69 | 20 | Querying | 39 | Running query: Visible_Pointers | Processing # 47 of 119 | 2012-3-4 8:29:48 | 2014-3-4 8:29:48 | -1 | Visible_Pointers | 45| 0 | 45 | 45 })
+2012-03-04 08:32:02,588 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 69%
+2012-03-04 08:32:02,589 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Querying" - Running query: Visible_Pointers
+2012-03-04 08:32:02,590 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Querying"
+Running query: Visible_Pointers (39%) Processing # 47 of 119
+2012-03-04 08:32:12,615 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 212e60d8-109d-4326-b148-b8bb3cbc3255 | WORKING | 75 | 20 | Querying | 50 | Running query: UTF7_XSS | Processing # 60 of 119 | 2012-3-4 8:29:48 | 2014-3-4 8:29:48 | -1 | UTF7_XSS | 45| 0 | 45 | 45 })
+2012-03-04 08:32:12,616 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 75%
+2012-03-04 08:32:12,617 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Querying" - Running query: UTF7_XSS
+2012-03-04 08:32:12,618 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Querying"
+Running query: UTF7_XSS (50%) Processing # 60 of 119
+2012-03-04 08:32:22,644 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 212e60d8-109d-4326-b148-b8bb3cbc3255 | WORKING | 86 | 20 | Querying | 73 | Running query: URL_Canonicalization_Issue | Processing # 88 of 119 | 2012-3-4 8:29:48 | 2014-3-4 8:29:48 | -1 | URL_Canonicalization_Issue | 45| 0 | 45 | 45 })
+2012-03-04 08:32:22,646 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 86%
+2012-03-04 08:32:22,647 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Querying" - Running query: URL_Canonicalization_Issue
+2012-03-04 08:32:22,648 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Querying"
+Running query: URL_Canonicalization_Issue (73%) Processing # 88 of 119
+2012-03-04 08:32:32,662 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 212e60d8-109d-4326-b148-b8bb3cbc3255 | FINISHED | 100 | 2147483647 |  | 0 | Finish saving results |  | 2012-3-4 8:29:48 | 2012-3-4 8:31:39 | -1 |  | 45| 45 | 45 | 45 })
+2012-03-04 08:32:32,663 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 100%
+2012-03-04 08:32:32,664 [pool-2-thread-1] (WaitScanCompletionJob.java:108) INFO  - Current stage: Finish saving results
+2012-03-04 08:32:32,664 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - FINISHED
+Finish saving results (0%) 
+2012-03-04 08:32:32,665 [pool-2-thread-1] (WaitScanCompletionJob.java:126) INFO  - Finish saving results
+2012-03-04 08:32:32,666 [pool-1-thread-1] (CxScanJob.java:170) INFO  - Retrieving results
+2012-04-01 00:16:10,608 [pool-1-thread-1] (CxScanJob.java:87) INFO  - Packing project
+2012-04-01 00:16:23,244 [pool-1-thread-1] (CxScanJob.java:106) INFO  - Project name is "Sample_12671_lines"
+2012-04-01 00:16:23,844 [pool-1-thread-1] (CxScanJob.java:273) INFO  - Check CLI version support: 1.2.7
+2012-04-01 00:16:23,882 [pool-1-thread-1] (CxScanJob.java:288) INFO  - Log in
+2012-04-01 00:16:23,894 [pool-1-thread-1] (CxScanJob.java:118) INFO  - Retrieving scan configurations
+2012-04-01 00:16:23,918 [pool-1-thread-1] (CxScanJob.java:139) INFO  - Request scan
+2012-04-01 00:16:23,920 [pool-1-thread-1] (CxScanJob.java:432) INFO  - isVisible to others flag: true
+2012-04-01 00:16:26,136 [pool-1-thread-1] (CxScanJob.java:489) TRACE - Project scan request response:RunScanResult(scanId:d99026d0-5e1b-45a5-8850-accde008b489,projectId:45)
+2012-04-01 00:16:26,149 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ d99026d0-5e1b-45a5-8850-accde008b489 | QUEUED | 0 | 0 |  | 0 |  |  | 2012-4-1 0:16:25 | 2014-4-1 0:16:25 | -1 |  | 45| 0 | 45 | 0 })
+2012-04-01 00:16:26,151 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-04-01 00:16:26,152 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-04-01 00:16:26,153 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-04-01 00:16:36,152 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ d99026d0-5e1b-45a5-8850-accde008b489 | WORKING | 0 | 0 | null | 0 |  | null | 2012-4-1 0:16:25 | 2014-4-1 0:16:25 | -1 | N/A | 45| 0 | 45 | 0 })
+2012-04-01 00:16:36,153 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-04-01 00:16:36,154 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: WORKING
+2012-04-01 00:16:36,155 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING
+ (0%) 
+2012-04-01 00:16:46,154 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ d99026d0-5e1b-45a5-8850-accde008b489 | WORKING | 9 | 4 | Parsing source code, Stage 1 | 27 | Stage # 5 of 22 | Processing # 17 of 62 | 2012-4-1 0:16:25 | 2014-4-1 0:16:25 | -1 | menu1.asp | 45| 0 | 45 | 0 })
+2012-04-01 00:16:46,159 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 9%
+2012-04-01 00:16:46,160 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Parsing source code, Stage 1" - Stage # 5 of 22
+2012-04-01 00:16:46,162 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Parsing source code, Stage 1"
+Stage # 5 of 22 (27%) Processing # 17 of 62
+2012-04-01 00:16:56,162 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ d99026d0-5e1b-45a5-8850-accde008b489 | WORKING | 22 | 10 | Analyzing code flows | 38 | Stage # 11 of 22 | Processing # 24 of 62 | 2012-4-1 0:16:25 | 2014-4-1 0:16:25 | -1 | addScheduledShutdown.asp | 45| 0 | 45 | 0 })
+2012-04-01 00:16:56,165 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 22%
+2012-04-01 00:16:56,166 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Analyzing code flows" - Stage # 11 of 22
+2012-04-01 00:16:56,167 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Analyzing code flows"
+Stage # 11 of 22 (38%) Processing # 24 of 62
+2012-04-01 00:17:06,170 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ d99026d0-5e1b-45a5-8850-accde008b489 | WORKING | 22 | 10 | Analyzing code flows | 67 | Stage # 11 of 22 | Processing # 42 of 62 | 2012-4-1 0:16:25 | 2014-4-1 0:16:25 | -1 | setup_notification.asp | 45| 0 | 45 | 0 })
+2012-04-01 00:17:06,171 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 22%
+2012-04-01 00:17:06,172 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Analyzing code flows" - Stage # 11 of 22
+2012-04-01 00:17:06,173 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Analyzing code flows"
+Stage # 11 of 22 (67%) Processing # 42 of 62
+2012-04-01 00:17:16,172 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ d99026d0-5e1b-45a5-8850-accde008b489 | WORKING | 38 | 17 | Optimizing internal representation, Stage 3 | 42 | Stage # 18 of 22 | Processing # 192 of 457 | 2012-4-1 0:16:25 | 2014-4-1 0:16:25 | -1 | JSContainer_1298823982.onclick___20 | 45| 0 | 45 | 0 })
+2012-04-01 00:17:16,173 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 38%
+2012-04-01 00:17:16,174 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Optimizing internal representation, Stage 3" - Stage # 18 of 22
+2012-04-01 00:17:16,175 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Optimizing internal representation, Stage 3"
+Stage # 18 of 22 (42%) Processing # 192 of 457
+2012-04-01 00:17:26,184 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ d99026d0-5e1b-45a5-8850-accde008b489 | WORKING | 43 | 19 | Optimizing internal representation, Stage 5 | 49 | Stage # 20 of 22 | Processing # 912 of 1828 | 2012-4-1 0:16:25 | 2014-4-1 0:16:25 | -1 | Stage # 20 of 22 | 45| 0 | 45 | 0 })
+2012-04-01 00:17:26,185 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 43%
+2012-04-01 00:17:26,186 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Optimizing internal representation, Stage 5" - Stage # 20 of 22
+2012-04-01 00:17:26,187 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Optimizing internal representation, Stage 5"
+Stage # 20 of 22 (49%) Processing # 912 of 1828
+2012-04-01 00:17:36,198 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ d99026d0-5e1b-45a5-8850-accde008b489 | WORKING | 52 | 20 | Querying | 4 | Running query: Client_Unstructured_Error_Handling | Processing # 5 of 119 | 2012-4-1 0:16:25 | 2014-4-1 0:16:25 | -1 | Client_Unstructured_Error_Handling | 45| 0 | 45 | 46 })
+2012-04-01 00:17:36,199 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 52%
+2012-04-01 00:17:36,200 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Querying" - Running query: Client_Unstructured_Error_Handling
+2012-04-01 00:17:36,202 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Querying"
+Running query: Client_Unstructured_Error_Handling (4%) Processing # 5 of 119
+2012-04-01 00:17:46,216 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ d99026d0-5e1b-45a5-8850-accde008b489 | WORKING | 69 | 20 | Querying | 39 | Running query: Visible_Pointers | Processing # 47 of 119 | 2012-4-1 0:16:25 | 2014-4-1 0:16:25 | -1 | Visible_Pointers | 45| 0 | 45 | 46 })
+2012-04-01 00:17:46,219 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 69%
+2012-04-01 00:17:46,220 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Querying" - Running query: Visible_Pointers
+2012-04-01 00:17:46,221 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Querying"
+Running query: Visible_Pointers (39%) Processing # 47 of 119
+2012-04-01 00:17:56,229 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ d99026d0-5e1b-45a5-8850-accde008b489 | WORKING | 72 | 20 | Querying | 44 | Running query: Heuristic_SQL_Injection | Processing # 53 of 119 | 2012-4-1 0:16:25 | 2014-4-1 0:16:25 | -1 | Heuristic_SQL_Injection | 45| 0 | 45 | 46 })
+2012-04-01 00:17:56,229 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 72%
+2012-04-01 00:17:56,230 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Querying" - Running query: Heuristic_SQL_Injection
+2012-04-01 00:17:56,232 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Querying"
+Running query: Heuristic_SQL_Injection (44%) Processing # 53 of 119
+2012-04-01 00:18:06,267 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ d99026d0-5e1b-45a5-8850-accde008b489 | WORKING | 83 | 20 | Querying | 67 | Running query: Improper_Exception_Handling | Processing # 80 of 119 | 2012-4-1 0:16:25 | 2014-4-1 0:16:25 | -1 | Improper_Exception_Handling | 45| 0 | 45 | 46 })
+2012-04-01 00:18:06,268 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 83%
+2012-04-01 00:18:06,270 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Querying" - Running query: Improper_Exception_Handling
+2012-04-01 00:18:06,272 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Querying"
+Running query: Improper_Exception_Handling (67%) Processing # 80 of 119
+2012-04-01 00:18:16,280 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ d99026d0-5e1b-45a5-8850-accde008b489 | WORKING | 99 | 20 | Querying | 99 | Running query: Reflected_XSS_Specific_Clients | Processing # 118 of 119 | 2012-4-1 0:16:25 | 2014-4-1 0:16:25 | -1 | Reflected_XSS_Specific_Clients | 45| 0 | 45 | 46 })
+2012-04-01 00:18:16,281 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 99%
+2012-04-01 00:18:16,282 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Querying" - Running query: Reflected_XSS_Specific_Clients
+2012-04-01 00:18:16,283 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Querying"
+Running query: Reflected_XSS_Specific_Clients (99%) Processing # 118 of 119
+2012-04-01 00:18:26,289 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ d99026d0-5e1b-45a5-8850-accde008b489 | FINISHED | 100 | 2147483647 |  | 0 | Finish saving results |  | 2012-4-1 0:16:25 | 2012-4-1 0:18:19 | -1 |  | 45| 46 | 45 | 46 })
+2012-04-01 00:18:26,290 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 100%
+2012-04-01 00:18:26,291 [pool-2-thread-1] (WaitScanCompletionJob.java:108) INFO  - Current stage: Finish saving results
+2012-04-01 00:18:26,292 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - FINISHED
+Finish saving results (0%) 
+2012-04-01 00:18:26,293 [pool-2-thread-1] (WaitScanCompletionJob.java:126) INFO  - Finish saving results
+2012-04-01 00:18:26,294 [pool-1-thread-1] (CxScanJob.java:170) INFO  - Retrieving results
+2012-04-05 15:28:52,816 [pool-1-thread-1] (CxScanJob.java:87) INFO  - Packing project
+2012-04-05 15:28:53,442 [pool-1-thread-1] (CxScanJob.java:106) INFO  - Project name is "Sample_12671_lines"
+2012-04-05 15:28:54,069 [pool-1-thread-1] (CxScanJob.java:273) INFO  - Check CLI version support: 1.2.7
+2012-04-05 15:28:54,104 [pool-1-thread-1] (CxScanJob.java:288) INFO  - Log in
+2012-04-05 15:28:54,132 [pool-1-thread-1] (CxScanJob.java:118) INFO  - Retrieving scan configurations
+2012-04-05 15:28:54,160 [pool-1-thread-1] (CxScanJob.java:139) INFO  - Request scan
+2012-04-05 15:28:54,162 [pool-1-thread-1] (CxScanJob.java:432) INFO  - isVisible to others flag: true
+2012-04-05 15:28:55,043 [pool-1-thread-1] (CxScanJob.java:489) TRACE - Project scan request response:RunScanResult(scanId:f11dd5bc-0ab6-4c6e-b960-0853548a6aa6,projectId:106)
+2012-04-05 15:28:55,058 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ f11dd5bc-0ab6-4c6e-b960-0853548a6aa6 | QUEUED | 0 | 0 |  | 0 |  |  | 2012-4-5 15:28:55 | 2014-4-5 15:28:55 | -1 |  | 106| 0 | 106 | 0 })
+2012-04-05 15:28:55,059 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-04-05 15:28:55,060 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-04-05 15:28:55,061 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-04-05 15:29:05,071 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ f11dd5bc-0ab6-4c6e-b960-0853548a6aa6 | WORKING | 6 | 3 | Analyzing source code | 0 | Stage # 4 of 22 | Processing # 0 of 1 | 2012-4-5 15:28:55 | 2014-4-5 15:28:55 | -1 | Stage # 4 of 22 | 106| 0 | 106 | 0 })
+2012-04-05 15:29:05,072 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 6%
+2012-04-05 15:29:05,073 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Analyzing source code" - Stage # 4 of 22
+2012-04-05 15:29:05,074 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Analyzing source code"
+Stage # 4 of 22 (0%) Processing # 0 of 1
+2012-04-05 15:29:15,085 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ f11dd5bc-0ab6-4c6e-b960-0853548a6aa6 | WORKING | 9 | 4 | Parsing source code, Stage 1 | 59 | Stage # 5 of 22 | Processing # 37 of 62 | 2012-4-5 15:28:55 | 2014-4-5 15:28:55 | -1 | ls_settings.asp | 106| 0 | 106 | 0 })
+2012-04-05 15:29:15,086 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 9%
+2012-04-05 15:29:15,087 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Parsing source code, Stage 1" - Stage # 5 of 22
+2012-04-05 15:29:15,088 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Parsing source code, Stage 1"
+Stage # 5 of 22 (59%) Processing # 37 of 62
+2012-04-05 15:29:25,100 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ f11dd5bc-0ab6-4c6e-b960-0853548a6aa6 | WORKING | 22 | 10 | Analyzing code flows | 50 | Stage # 11 of 22 | Processing # 31 of 62 | 2012-4-5 15:28:55 | 2014-4-5 15:28:55 | -1 | devices.asp | 106| 0 | 106 | 0 })
+2012-04-05 15:29:25,101 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 22%
+2012-04-05 15:29:25,103 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Analyzing code flows" - Stage # 11 of 22
+2012-04-05 15:29:25,104 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Analyzing code flows"
+Stage # 11 of 22 (50%) Processing # 31 of 62
+2012-04-05 15:29:35,121 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ f11dd5bc-0ab6-4c6e-b960-0853548a6aa6 | WORKING | 36 | 16 | Optimizing internal representation, Stage 2 | 0 | Stage # 17 of 22 | Processing # 0 of 1 | 2012-4-5 15:28:55 | 2014-4-5 15:28:55 | -1 | Stage # 17 of 22 | 106| 0 | 106 | 0 })
+2012-04-05 15:29:35,122 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 36%
+2012-04-05 15:29:35,123 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Optimizing internal representation, Stage 2" - Stage # 17 of 22
+2012-04-05 15:29:35,124 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Optimizing internal representation, Stage 2"
+Stage # 17 of 22 (0%) Processing # 0 of 1
+2012-04-05 15:29:45,137 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ f11dd5bc-0ab6-4c6e-b960-0853548a6aa6 | WORKING | 38 | 17 | Optimizing internal representation, Stage 3 | 70 | Stage # 18 of 22 | Processing # 320 of 457 | 2012-4-5 15:28:55 | 2014-4-5 15:28:55 | -1 | DefaultConstructor:CxVbsClass2122966966 | 106| 0 | 106 | 0 })
+2012-04-05 15:29:45,139 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 38%
+2012-04-05 15:29:45,141 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Optimizing internal representation, Stage 3" - Stage # 18 of 22
+2012-04-05 15:29:45,142 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Optimizing internal representation, Stage 3"
+Stage # 18 of 22 (70%) Processing # 320 of 457
+2012-04-05 15:29:55,176 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ f11dd5bc-0ab6-4c6e-b960-0853548a6aa6 | WORKING | 43 | 19 | Optimizing internal representation, Stage 5 | 55 |  | Processing # 1012 of 1828 | 2012-4-5 15:28:55 | 2014-4-5 15:28:55 | -1 | N/A | 106| 0 | 106 | 93 })
+2012-04-05 15:29:55,178 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 43%
+2012-04-05 15:29:55,179 [pool-2-thread-1] (WaitScanCompletionJob.java:106) INFO  - Current stage:  "Optimizing internal representation, Stage 5"
+2012-04-05 15:29:55,180 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Optimizing internal representation, Stage 5"
+ (55%) Processing # 1012 of 1828
+2012-04-05 15:30:05,192 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ f11dd5bc-0ab6-4c6e-b960-0853548a6aa6 | WORKING | 53 | 20 | Querying | 7 | Running query: DOM_Code_Injection | Processing # 8 of 110 | 2012-4-5 15:28:55 | 2014-4-5 15:28:55 | -1 | DOM_Code_Injection | 106| 0 | 106 | 93 })
+2012-04-05 15:30:05,197 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 53%
+2012-04-05 15:30:05,200 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Querying" - Running query: DOM_Code_Injection
+2012-04-05 15:30:05,202 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Querying"
+Running query: DOM_Code_Injection (7%) Processing # 8 of 110
+2012-04-05 15:30:15,223 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ f11dd5bc-0ab6-4c6e-b960-0853548a6aa6 | WORKING | 71 | 20 | Querying | 42 | Running query: Visible_Pointers | Processing # 47 of 110 | 2012-4-5 15:28:55 | 2014-4-5 15:28:55 | -1 | Visible_Pointers | 106| 0 | 106 | 93 })
+2012-04-05 15:30:15,224 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 71%
+2012-04-05 15:30:15,225 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Querying" - Running query: Visible_Pointers
+2012-04-05 15:30:15,226 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Querying"
+Running query: Visible_Pointers (42%) Processing # 47 of 110
+2012-04-05 15:30:25,246 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ f11dd5bc-0ab6-4c6e-b960-0853548a6aa6 | WORKING | 74 | 20 | Querying | 48 | Running query: Heuristic_XSRF | Processing # 53 of 110 | 2012-4-5 15:28:55 | 2014-4-5 15:28:55 | -1 | Heuristic_XSRF | 106| 0 | 106 | 93 })
+2012-04-05 15:30:25,248 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 74%
+2012-04-05 15:30:25,249 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Querying" - Running query: Heuristic_XSRF
+2012-04-05 15:30:25,250 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Querying"
+Running query: Heuristic_XSRF (48%) Processing # 53 of 110
+2012-04-05 15:30:35,289 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ f11dd5bc-0ab6-4c6e-b960-0853548a6aa6 | WORKING | 81 | 20 | Querying | 63 | Running query: Reflected_XSS_All_Clients | Processing # 70 of 110 | 2012-4-5 15:28:55 | 2014-4-5 15:28:55 | -1 | Reflected_XSS_All_Clients | 106| 0 | 106 | 93 })
+2012-04-05 15:30:35,290 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 81%
+2012-04-05 15:30:35,292 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Querying" - Running query: Reflected_XSS_All_Clients
+2012-04-05 15:30:35,293 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Querying"
+Running query: Reflected_XSS_All_Clients (63%) Processing # 70 of 110
+2012-04-05 15:30:45,307 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ f11dd5bc-0ab6-4c6e-b960-0853548a6aa6 | WORKING | 92 | 20 | Querying | 85 | Running query: Use_of_Hard_coded_Cryptographic_Key | Processing # 94 of 110 | 2012-4-5 15:28:55 | 2014-4-5 15:28:55 | -1 | Use_of_Hard_coded_Cryptographic_Key | 106| 0 | 106 | 93 })
+2012-04-05 15:30:45,309 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 92%
+2012-04-05 15:30:45,310 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Querying" - Running query: Use_of_Hard_coded_Cryptographic_Key
+2012-04-05 15:30:45,311 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Querying"
+Running query: Use_of_Hard_coded_Cryptographic_Key (85%) Processing # 94 of 110
+2012-04-05 15:30:55,325 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ f11dd5bc-0ab6-4c6e-b960-0853548a6aa6 | FINISHED | 100 | 2147483647 |  | 0 | Finish saving results |  | 2012-4-5 15:28:55 | 2012-4-5 15:30:54 | -1 |  | 106| 93 | 106 | 93 })
+2012-04-05 15:30:55,328 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 100%
+2012-04-05 15:30:55,330 [pool-2-thread-1] (WaitScanCompletionJob.java:108) INFO  - Current stage: Finish saving results
+2012-04-05 15:30:55,330 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - FINISHED
+Finish saving results (0%) 
+2012-04-05 15:30:55,331 [pool-2-thread-1] (WaitScanCompletionJob.java:126) INFO  - Finish saving results
+2012-04-05 15:30:55,332 [pool-1-thread-1] (CxScanJob.java:170) INFO  - Retrieving results
+2012-04-19 04:23:23,010 [pool-1-thread-1] (CxScanJob.java:87) INFO  - Packing project
+2012-04-19 04:23:23,629 [pool-1-thread-1] (CxScanJob.java:106) INFO  - Project name is "Sample_12671_lines"
+2012-04-19 04:23:24,532 [pool-1-thread-1] (CxScanJob.java:273) INFO  - Check CLI version support: 1.2.7
+2012-04-19 04:23:24,606 [pool-1-thread-1] (CxScanJob.java:288) INFO  - Log in
+2012-04-19 04:23:24,625 [pool-1-thread-1] (CxScanJob.java:118) INFO  - Retrieving scan configurations
+2012-04-19 04:23:24,665 [pool-1-thread-1] (CxScanJob.java:139) INFO  - Request scan
+2012-04-19 04:23:24,667 [pool-1-thread-1] (CxScanJob.java:432) INFO  - isVisible to others flag: true
+2012-04-19 04:23:25,918 [pool-1-thread-1] (CxScanJob.java:489) TRACE - Project scan request response:RunScanResult(scanId:5167f710-a03c-455b-a2be-bb5e0c9a00ed,projectId:116)
+2012-04-19 04:23:25,936 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 5167f710-a03c-455b-a2be-bb5e0c9a00ed | QUEUED | 0 | 0 |  | 0 |  |  | 2012-4-19 4:23:25 | 2014-4-19 4:23:25 | -1 |  | 116| 0 | 116 | 0 })
+2012-04-19 04:23:25,937 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-04-19 04:23:25,938 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-04-19 04:23:25,939 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-04-19 04:23:35,958 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 5167f710-a03c-455b-a2be-bb5e0c9a00ed | WORKING | 0 | 0 | null | 0 |  | null | 2012-4-19 4:23:25 | 2014-4-19 4:23:25 | -1 | N/A | 116| 0 | 116 | 0 })
+2012-04-19 04:23:35,959 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-04-19 04:23:35,961 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: WORKING
+2012-04-19 04:23:35,962 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING
+ (0%) 
+2012-04-19 04:23:45,980 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 5167f710-a03c-455b-a2be-bb5e0c9a00ed | WORKING | 6 | 3 | Analyzing source code | 0 | Stage # 4 of 22 | Processing # 0 of 1 | 2012-4-19 4:23:25 | 2014-4-19 4:23:25 | -1 | Stage # 4 of 22 | 116| 0 | 116 | 0 })
+2012-04-19 04:23:45,981 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 6%
+2012-04-19 04:23:45,982 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Analyzing source code" - Stage # 4 of 22
+2012-04-19 04:23:45,983 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Analyzing source code"
+Stage # 4 of 22 (0%) Processing # 0 of 1
+2012-04-19 04:23:55,996 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 5167f710-a03c-455b-a2be-bb5e0c9a00ed | WORKING | 22 | 10 | Analyzing code flows | 38 | Stage # 11 of 22 | Processing # 24 of 62 | 2012-4-19 4:23:25 | 2014-4-19 4:23:25 | -1 | addScheduledShutdown.asp | 116| 0 | 116 | 0 })
+2012-04-19 04:23:56,006 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 22%
+2012-04-19 04:23:56,007 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Analyzing code flows" - Stage # 11 of 22
+2012-04-19 04:23:56,008 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Analyzing code flows"
+Stage # 11 of 22 (38%) Processing # 24 of 62
+2012-04-19 04:24:06,023 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 5167f710-a03c-455b-a2be-bb5e0c9a00ed | WORKING | 22 | 10 | Analyzing code flows | 67 | Stage # 11 of 22 | Processing # 42 of 62 | 2012-4-19 4:23:25 | 2014-4-19 4:23:25 | -1 | setup_notification.asp | 116| 0 | 116 | 0 })
+2012-04-19 04:24:06,025 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 22%
+2012-04-19 04:24:06,026 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Analyzing code flows" - Stage # 11 of 22
+2012-04-19 04:24:06,027 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Analyzing code flows"
+Stage # 11 of 22 (67%) Processing # 42 of 62
+2012-04-19 04:24:16,047 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 5167f710-a03c-455b-a2be-bb5e0c9a00ed | WORKING | 34 | 15 | Optimizing internal representation, Stage 1 | 36 | Stage # 16 of 22 | Processing # 3933 of 10643 | 2012-4-19 4:23:25 | 2014-4-19 4:23:25 | -1 | Stage # 16 of 22 | 116| 0 | 116 | 0 })
+2012-04-19 04:24:16,048 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 34%
+2012-04-19 04:24:16,049 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Optimizing internal representation, Stage 1" - Stage # 16 of 22
+2012-04-19 04:24:16,051 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Optimizing internal representation, Stage 1"
+Stage # 16 of 22 (36%) Processing # 3933 of 10643
+2012-04-19 04:24:26,069 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 5167f710-a03c-455b-a2be-bb5e0c9a00ed | WORKING | 38 | 17 | Optimizing internal representation, Stage 3 | 56 | Stage # 18 of 22 | Processing # 256 of 457 | 2012-4-19 4:23:25 | 2014-4-19 4:23:25 | -1 | JSContainer_382223596.cssStyleSetClipHeight | 116| 0 | 116 | 0 })
+2012-04-19 04:24:26,076 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 38%
+2012-04-19 04:24:26,078 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Optimizing internal representation, Stage 3" - Stage # 18 of 22
+2012-04-19 04:24:26,079 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Optimizing internal representation, Stage 3"
+Stage # 18 of 22 (56%) Processing # 256 of 457
+2012-04-19 04:24:36,240 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 5167f710-a03c-455b-a2be-bb5e0c9a00ed | WORKING | 43 | 19 | Optimizing internal representation, Stage 5 | 49 | Stage # 20 of 22 | Processing # 912 of 1828 | 2012-4-19 4:23:25 | 2014-4-19 4:23:25 | -1 | Stage # 20 of 22 | 116| 0 | 116 | 0 })
+2012-04-19 04:24:36,242 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 43%
+2012-04-19 04:24:36,243 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Optimizing internal representation, Stage 5" - Stage # 20 of 22
+2012-04-19 04:24:36,244 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Optimizing internal representation, Stage 5"
+Stage # 20 of 22 (49%) Processing # 912 of 1828
+2012-04-19 04:24:46,258 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 5167f710-a03c-455b-a2be-bb5e0c9a00ed | WORKING | 50 | 20 | Querying | 0 | Running query: Client_DoS_By_Sleep | Processing # 1 of 119 | 2012-4-19 4:23:25 | 2014-4-19 4:23:25 | -1 | Client_DoS_By_Sleep | 116| 0 | 116 | 113 })
+2012-04-19 04:24:46,260 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 50%
+2012-04-19 04:24:46,261 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Querying" - Running query: Client_DoS_By_Sleep
+2012-04-19 04:24:46,262 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Querying"
+Running query: Client_DoS_By_Sleep (0%) Processing # 1 of 119
+2012-04-19 04:24:56,283 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 5167f710-a03c-455b-a2be-bb5e0c9a00ed | WORKING | 57 | 20 | Querying | 14 | Running query: Weak_Password_Authentication | Processing # 17 of 119 | 2012-4-19 4:23:25 | 2014-4-19 4:23:25 | -1 | Weak_Password_Authentication | 116| 0 | 116 | 113 })
+2012-04-19 04:24:56,284 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 57%
+2012-04-19 04:24:56,285 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Querying" - Running query: Weak_Password_Authentication
+2012-04-19 04:24:56,286 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Querying"
+Running query: Weak_Password_Authentication (14%) Processing # 17 of 119
+2012-04-19 04:25:06,332 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 5167f710-a03c-455b-a2be-bb5e0c9a00ed | WORKING | 69 | 20 | Querying | 39 | Running query: Visible_Pointers | Processing # 47 of 119 | 2012-4-19 4:23:25 | 2014-4-19 4:23:25 | -1 | Visible_Pointers | 116| 0 | 116 | 113 })
+2012-04-19 04:25:06,334 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 69%
+2012-04-19 04:25:06,335 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Querying" - Running query: Visible_Pointers
+2012-04-19 04:25:06,337 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Querying"
+Running query: Visible_Pointers (39%) Processing # 47 of 119
+2012-04-19 04:25:16,476 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 5167f710-a03c-455b-a2be-bb5e0c9a00ed | WORKING | 73 | 20 | Querying | 47 | Running query: LDAP_Injection | Processing # 56 of 119 | 2012-4-19 4:23:25 | 2014-4-19 4:23:25 | -1 | LDAP_Injection | 116| 0 | 116 | 113 })
+2012-04-19 04:25:16,477 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 73%
+2012-04-19 04:25:16,478 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Querying" - Running query: LDAP_Injection
+2012-04-19 04:25:16,479 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Querying"
+Running query: LDAP_Injection (47%) Processing # 56 of 119
+2012-04-19 04:25:26,507 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 5167f710-a03c-455b-a2be-bb5e0c9a00ed | WORKING | 87 | 20 | Querying | 75 | Running query: Buffer_Overflow | Processing # 90 of 119 | 2012-4-19 4:23:25 | 2014-4-19 4:23:25 | -1 | Buffer_Overflow | 116| 0 | 116 | 113 })
+2012-04-19 04:25:26,509 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 87%
+2012-04-19 04:25:26,511 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Querying" - Running query: Buffer_Overflow
+2012-04-19 04:25:26,512 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Querying"
+Running query: Buffer_Overflow (75%) Processing # 90 of 119
+2012-04-19 04:25:36,530 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 5167f710-a03c-455b-a2be-bb5e0c9a00ed | WORKING | 99 | 20 | Querying | 99 | Running query: TraceEnabled | Processing # 118 of 119 | 2012-4-19 4:23:25 | 2014-4-19 4:23:25 | -1 | TraceEnabled | 116| 0 | 116 | 113 })
+2012-04-19 04:25:36,531 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 99%
+2012-04-19 04:25:36,532 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Querying" - Running query: TraceEnabled
+2012-04-19 04:25:36,533 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Querying"
+Running query: TraceEnabled (99%) Processing # 118 of 119
+2012-04-19 04:25:46,550 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 5167f710-a03c-455b-a2be-bb5e0c9a00ed | FINISHED | 100 | 2147483647 |  | 0 | Finish saving results |  | 2012-4-19 4:23:25 | 2012-4-19 4:25:38 | -1 |  | 116| 113 | 116 | 113 })
+2012-04-19 04:25:46,552 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 100%
+2012-04-19 04:25:46,553 [pool-2-thread-1] (WaitScanCompletionJob.java:108) INFO  - Current stage: Finish saving results
+2012-04-19 04:25:46,554 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - FINISHED
+Finish saving results (0%) 
+2012-04-19 04:25:46,555 [pool-2-thread-1] (WaitScanCompletionJob.java:126) INFO  - Finish saving results
+2012-04-19 04:25:46,556 [pool-1-thread-1] (CxScanJob.java:170) INFO  - Retrieving results
+2012-05-07 07:00:54,055 [pool-1-thread-1] (CxScanJob.java:87) INFO  - Packing project
+2012-05-07 07:00:54,912 [pool-1-thread-1] (CxScanJob.java:106) INFO  - Project name is "Sample_12671_lines"
+2012-05-07 07:00:55,592 [pool-1-thread-1] (CxScanJob.java:273) INFO  - Check CLI version support: 1.2.7
+2012-05-07 07:00:55,629 [pool-1-thread-1] (CxScanJob.java:288) INFO  - Log in
+2012-05-07 07:00:55,658 [pool-1-thread-1] (CxScanJob.java:118) INFO  - Retrieving scan configurations
+2012-05-07 07:00:55,689 [pool-1-thread-1] (CxScanJob.java:139) INFO  - Request scan
+2012-05-07 07:00:55,692 [pool-1-thread-1] (CxScanJob.java:432) INFO  - isVisible to others flag: true
+2012-05-07 07:00:56,668 [pool-1-thread-1] (CxScanJob.java:489) TRACE - Project scan request response:RunScanResult(scanId:681f3f5b-d712-4b92-809f-f1c0b162bdf3,projectId:118)
+2012-05-07 07:00:56,684 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 681f3f5b-d712-4b92-809f-f1c0b162bdf3 | QUEUED | 0 | 0 |  | 0 |  |  | 2012-5-7 7:0:56 | 2014-5-7 7:0:56 | -1 |  | 118| 0 | 118 | 0 })
+2012-05-07 07:00:56,687 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-05-07 07:00:56,689 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-05-07 07:00:56,690 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-05-07 07:01:06,719 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 681f3f5b-d712-4b92-809f-f1c0b162bdf3 | WORKING | 0 | 0 | null | 0 |  | null | 2012-5-7 7:0:56 | 2014-5-7 7:0:56 | -1 | N/A | 118| 0 | 118 | 0 })
+2012-05-07 07:01:06,721 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-05-07 07:01:06,722 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: WORKING
+2012-05-07 07:01:06,723 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING
+ (0%) 
+2012-05-07 07:01:16,752 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 681f3f5b-d712-4b92-809f-f1c0b162bdf3 | WORKING | 9 | 4 | Parsing source code, Stage 1 | 3 | Stage # 5 of 22 | Processing # 2 of 62 | 2012-5-7 7:0:56 | 2014-5-7 7:0:56 | -1 | admin_Upgrade.asp | 118| 0 | 118 | 0 })
+2012-05-07 07:01:16,753 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 9%
+2012-05-07 07:01:16,754 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Parsing source code, Stage 1" - Stage # 5 of 22
+2012-05-07 07:01:16,755 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Parsing source code, Stage 1"
+Stage # 5 of 22 (3%) Processing # 2 of 62
+2012-05-07 07:01:26,787 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 681f3f5b-d712-4b92-809f-f1c0b162bdf3 | WORKING | 22 | 10 | Analyzing code flows | 12 | Stage # 11 of 22 | Processing # 8 of 62 | 2012-5-7 7:0:56 | 2014-5-7 7:0:56 | -1 | contents.asp | 118| 0 | 118 | 0 })
+2012-05-07 07:01:26,788 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 22%
+2012-05-07 07:01:26,789 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Analyzing code flows" - Stage # 11 of 22
+2012-05-07 07:01:26,790 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Analyzing code flows"
+Stage # 11 of 22 (12%) Processing # 8 of 62
+2012-05-07 07:01:36,819 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 681f3f5b-d712-4b92-809f-f1c0b162bdf3 | WORKING | 22 | 10 | Analyzing code flows | 50 | Stage # 11 of 22 | Processing # 31 of 62 | 2012-5-7 7:0:56 | 2014-5-7 7:0:56 | -1 | devices.asp | 118| 0 | 118 | 0 })
+2012-05-07 07:01:36,820 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 22%
+2012-05-07 07:01:36,821 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Analyzing code flows" - Stage # 11 of 22
+2012-05-07 07:01:36,822 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Analyzing code flows"
+Stage # 11 of 22 (50%) Processing # 31 of 62
+2012-05-07 07:01:46,859 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 681f3f5b-d712-4b92-809f-f1c0b162bdf3 | WORKING | 22 | 10 | Analyzing code flows | 79 | Stage # 11 of 22 | Processing # 49 of 62 | 2012-5-7 7:0:56 | 2014-5-7 7:0:56 | -1 | ups_alarmsHPUX.asp | 118| 0 | 118 | 0 })
+2012-05-07 07:01:46,860 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 22%
+2012-05-07 07:01:46,860 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Analyzing code flows" - Stage # 11 of 22
+2012-05-07 07:01:46,861 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Analyzing code flows"
+Stage # 11 of 22 (79%) Processing # 49 of 62
+2012-05-07 07:01:56,890 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 681f3f5b-d712-4b92-809f-f1c0b162bdf3 | WORKING | 38 | 17 | Optimizing internal representation, Stage 3 | 28 | Stage # 18 of 22 | Processing # 128 of 457 | 2012-5-7 7:0:56 | 2014-5-7 7:0:56 | -1 | DefaultConstructor:JSContainer_1676872603 | 118| 0 | 118 | 0 })
+2012-05-07 07:01:56,891 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 38%
+2012-05-07 07:01:56,892 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Optimizing internal representation, Stage 3" - Stage # 18 of 22
+2012-05-07 07:01:56,893 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Optimizing internal representation, Stage 3"
+Stage # 18 of 22 (28%) Processing # 128 of 457
+2012-05-07 07:02:06,922 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 681f3f5b-d712-4b92-809f-f1c0b162bdf3 | WORKING | 40 | 18 | Optimizing internal representation, Stage 4 | 34 | Stage # 19 of 22 | Processing # 347 of 1009 | 2012-5-7 7:0:56 | 2014-5-7 7:0:56 | -1 | CxVbsASTClass1571425773.CxVbsMethod | 118| 0 | 118 | 0 })
+2012-05-07 07:02:06,923 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 40%
+2012-05-07 07:02:06,924 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Optimizing internal representation, Stage 4" - Stage # 19 of 22
+2012-05-07 07:02:06,926 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Optimizing internal representation, Stage 4"
+Stage # 19 of 22 (34%) Processing # 347 of 1009
+2012-05-07 07:02:16,954 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 681f3f5b-d712-4b92-809f-f1c0b162bdf3 | WORKING | 43 | 19 | Optimizing internal representation, Stage 5 | 55 | Stage # 20 of 22 | Processing # 1012 of 1828 | 2012-5-7 7:0:56 | 2014-5-7 7:0:56 | -1 | Stage # 20 of 22 | 118| 0 | 118 | 0 })
+2012-05-07 07:02:16,955 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 43%
+2012-05-07 07:02:16,956 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Optimizing internal representation, Stage 5" - Stage # 20 of 22
+2012-05-07 07:02:16,957 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Optimizing internal representation, Stage 5"
+Stage # 20 of 22 (55%) Processing # 1012 of 1828
+2012-05-07 07:02:26,994 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 681f3f5b-d712-4b92-809f-f1c0b162bdf3 | WORKING | 50 | 20 | Querying | 0 | Running query: Client_DoS_By_Sleep | Processing # 1 of 110 | 2012-5-7 7:0:56 | 2014-5-7 7:0:56 | -1 | Client_DoS_By_Sleep | 118| 0 | 118 | 116 })
+2012-05-07 07:02:26,995 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 50%
+2012-05-07 07:02:26,995 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Querying" - Running query: Client_DoS_By_Sleep
+2012-05-07 07:02:26,996 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Querying"
+Running query: Client_DoS_By_Sleep (0%) Processing # 1 of 110
+2012-05-07 07:02:37,123 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 681f3f5b-d712-4b92-809f-f1c0b162bdf3 | WORKING | 55 | 20 | Querying | 10 | Running query: DOM_Open_Redirect | Processing # 11 of 110 | 2012-5-7 7:0:56 | 2014-5-7 7:0:56 | -1 | DOM_Open_Redirect | 118| 0 | 118 | 116 })
+2012-05-07 07:02:37,125 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 55%
+2012-05-07 07:02:37,126 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Querying" - Running query: DOM_Open_Redirect
+2012-05-07 07:02:37,127 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Querying"
+Running query: DOM_Open_Redirect (10%) Processing # 11 of 110
+2012-05-07 07:02:47,163 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 681f3f5b-d712-4b92-809f-f1c0b162bdf3 | WORKING | 71 | 20 | Querying | 42 | Running query: Visible_Pointers | Processing # 47 of 110 | 2012-5-7 7:0:56 | 2014-5-7 7:0:56 | -1 | Visible_Pointers | 118| 0 | 118 | 116 })
+2012-05-07 07:02:47,164 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 71%
+2012-05-07 07:02:47,165 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Querying" - Running query: Visible_Pointers
+2012-05-07 07:02:47,166 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Querying"
+Running query: Visible_Pointers (42%) Processing # 47 of 110
+2012-05-07 07:02:57,197 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 681f3f5b-d712-4b92-809f-f1c0b162bdf3 | WORKING | 74 | 20 | Querying | 48 | Running query: Heuristic_XSRF | Processing # 53 of 110 | 2012-5-7 7:0:56 | 2014-5-7 7:0:56 | -1 | Heuristic_XSRF | 118| 0 | 118 | 116 })
+2012-05-07 07:02:57,199 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 74%
+2012-05-07 07:02:57,200 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Querying" - Running query: Heuristic_XSRF
+2012-05-07 07:02:57,201 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Querying"
+Running query: Heuristic_XSRF (48%) Processing # 53 of 110
+2012-05-07 07:03:07,224 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 681f3f5b-d712-4b92-809f-f1c0b162bdf3 | WORKING | 77 | 20 | Querying | 55 | Running query: XPath_Injection | Processing # 61 of 110 | 2012-5-7 7:0:56 | 2014-5-7 7:0:56 | -1 | XPath_Injection | 118| 0 | 118 | 116 })
+2012-05-07 07:03:07,226 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 77%
+2012-05-07 07:03:07,226 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Querying" - Running query: XPath_Injection
+2012-05-07 07:03:07,227 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Querying"
+Running query: XPath_Injection (55%) Processing # 61 of 110
+2012-05-07 07:03:17,256 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 681f3f5b-d712-4b92-809f-f1c0b162bdf3 | WORKING | 90 | 20 | Querying | 80 | Running query: Open_Redirect | Processing # 89 of 110 | 2012-5-7 7:0:56 | 2014-5-7 7:0:56 | -1 | Open_Redirect | 118| 0 | 118 | 116 })
+2012-05-07 07:03:17,258 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 90%
+2012-05-07 07:03:17,259 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Querying" - Running query: Open_Redirect
+2012-05-07 07:03:17,259 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Querying"
+Running query: Open_Redirect (80%) Processing # 89 of 110
+2012-05-07 07:03:27,279 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 681f3f5b-d712-4b92-809f-f1c0b162bdf3 | WORKING | 99 | 20 | Querying | 99 | Running query: Untrusted_Activex | Processing # 109 of 110 | 2012-5-7 7:0:56 | 2014-5-7 7:0:56 | -1 | Untrusted_Activex | 118| 0 | 118 | 116 })
+2012-05-07 07:03:27,279 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 99%
+2012-05-07 07:03:27,280 [pool-2-thread-1] (WaitScanCompletionJob.java:104) INFO  - Current stage:  "Querying" - Running query: Untrusted_Activex
+2012-05-07 07:03:27,281 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - WORKING "Querying"
+Running query: Untrusted_Activex (99%) Processing # 109 of 110
+2012-05-07 07:03:37,298 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 681f3f5b-d712-4b92-809f-f1c0b162bdf3 | FINISHED | 100 | 2147483647 |  | 0 | Finish saving results |  | 2012-5-7 7:0:56 | 2012-5-7 7:3:29 | -1 |  | 118| 116 | 118 | 116 })
+2012-05-07 07:03:37,299 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 100%
+2012-05-07 07:03:37,300 [pool-2-thread-1] (WaitScanCompletionJob.java:108) INFO  - Current stage: Finish saving results
+2012-05-07 07:03:37,301 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - FINISHED
+Finish saving results (0%) 
+2012-05-07 07:03:37,301 [pool-2-thread-1] (WaitScanCompletionJob.java:126) INFO  - Finish saving results
+2012-05-07 07:03:37,302 [pool-1-thread-1] (CxScanJob.java:170) INFO  - Retrieving results

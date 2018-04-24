@@ -1,0 +1,100 @@
+﻿
+
+
+
+
+
+function script____1025755212() {src(""../UI_lib.js"");}<script language='javascript'>
+
+  function SetActionType( type )
+  {
+   document.home_overview_css.actionType.value = type;
+   switch( type )
+   {
+    case 1: //help
+     break;
+   }
+  }
+
+  function VerifyData()
+  {
+   return true;
+  }
+
+
+
+ </script>
+
+
+  function SetActionType( type )
+  {
+   document.home_overview_css.actionType.value = type;
+   switch( type )
+   {
+    case 1: //help
+     break;
+   }
+  }
+
+  function VerifyData()
+  {
+   return true;
+  }
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function iframe___936419232() {src("overviewCSS.asp");}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

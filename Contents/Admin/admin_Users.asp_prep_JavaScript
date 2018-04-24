@@ -1,0 +1,325 @@
+﻿
+
+
+
+function script____1025755212() {src(""../UI_lib.js"");}<script language="javascript1.1">
+            
+ function setActionType(type)
+ {
+  document.userForm.actionType.value = type;
+ }
+
+ function VerifyData()
+ {
+  var currentUser = "Cx_0dummy";
+  var bNoAdmin = true;
+
+  if (document.userForm.actionType.value == 1)
+  {
+   for (i=0; i<10; i++)
+   {
+    if ( eval("document.userForm.name" + i + ".value") == "" )
+    {
+     if ( eval("document.userForm.userName" + i + ".value") != "" )
+     {
+      alert( 'Cx_0dummy ');
+      eval("document.userForm.name" + i + ".focus()");
+      return false;
+     }
+
+     if ( eval("document.userForm.pass" + i + ".value") != ""
+      || eval("document.userForm.rpass" + i + ".value") != ""
+      || eval("document.userForm.admin" + i + ".checked") )
+     {
+      alert( 'Cx_0dummy ');
+      eval("document.userForm.name" + i + ".focus()");
+      return false;
+     }
+    }
+    else if ( eval("document.userForm.name" + i + ".value") != eval("document.userForm.userName" + i + ".value"))
+    {
+     if ( eval("document.userForm.pass" + i + ".value") == ""
+      || eval("document.userForm.rpass" + i + ".value") == "" )
+     {
+      alert( 'Cx_0dummy ');
+      eval("document.userForm.pass" + i + ".focus()");
+      return false;
+     }
+    }
+
+    if ( eval("document.userForm.pass" + i + ".value") != eval("document.userForm.rpass" + i + ".value") )
+    {
+     alert( 'Cx_0dummy ');
+     eval("document.userForm.pass" + i + ".value = ''");
+     eval("document.userForm.rpass" + i + ".value = ''");
+     return false;
+    }
+
+    if ( eval("document.userForm.name" + i + ".value") == currentUser
+    && !eval("document.userForm.admin" + i + ".checked") )
+    {
+     alert( 'Cx_0dummy' );
+     eval("document.userForm.admin" + i + ".checked = true");
+     return false;
+    }
+
+
+    if ( eval("document.userForm.admin" + i + ".checked") )
+     bNoAdmin = false;
+   }
+   if (bNoAdmin)
+   {
+    alert( 'Cx_0dummy ');
+    return false;
+   }
+
+   return true;
+  }
+  else if (document.userForm.actionType.value == 2)
+  {
+   var selectedToDelete = false;
+
+   for (i=0; i<10; i++)
+   {
+    if ( eval("document.userForm.delete" + i + ".checked") )
+    {
+     if ( eval("document.userForm.name" + i + ".value") == currentUser )
+     {
+      alert( 'Cx_0dummy' );
+      return false;
+     }
+     selectedToDelete = true;
+    }
+   }
+   if (selectedToDelete)
+    return true;
+   else
+   {
+    alert(' Cx_0dummy ');
+    return false;
+   }
+  }
+  else
+  {
+   return false;
+  }
+
+  //just in case
+  return false;
+ }
+
+       
+  </script>
+
+
+            
+ function setActionType(type)
+ {
+  document.userForm.actionType.value = type;
+ }
+
+ function VerifyData()
+ {
+  var currentUser = "Cx_0dummy";
+  var bNoAdmin = true;
+
+  if (document.userForm.actionType.value == 1)
+  {
+   for (i=0; i<10; i++)
+   {
+    if ( eval("document.userForm.name" + i + ".value") == "" )
+    {
+     if ( eval("document.userForm.userName" + i + ".value") != "" )
+     {
+      alert( 'Cx_0dummy ');
+      eval("document.userForm.name" + i + ".focus()");
+      return false;
+     }
+
+     if ( eval("document.userForm.pass" + i + ".value") != ""
+      || eval("document.userForm.rpass" + i + ".value") != ""
+      || eval("document.userForm.admin" + i + ".checked") )
+     {
+      alert( 'Cx_0dummy ');
+      eval("document.userForm.name" + i + ".focus()");
+      return false;
+     }
+    }
+    else if ( eval("document.userForm.name" + i + ".value") != eval("document.userForm.userName" + i + ".value"))
+    {
+     if ( eval("document.userForm.pass" + i + ".value") == ""
+      || eval("document.userForm.rpass" + i + ".value") == "" )
+     {
+      alert( 'Cx_0dummy ');
+      eval("document.userForm.pass" + i + ".focus()");
+      return false;
+     }
+    }
+
+    if ( eval("document.userForm.pass" + i + ".value") != eval("document.userForm.rpass" + i + ".value") )
+    {
+     alert( 'Cx_0dummy ');
+     eval("document.userForm.pass" + i + ".value = ''");
+     eval("document.userForm.rpass" + i + ".value = ''");
+     return false;
+    }
+
+    if ( eval("document.userForm.name" + i + ".value") == currentUser
+    && !eval("document.userForm.admin" + i + ".checked") )
+    {
+     alert( 'Cx_0dummy' );
+     eval("document.userForm.admin" + i + ".checked = true");
+     return false;
+    }
+
+
+    if ( eval("document.userForm.admin" + i + ".checked") )
+     bNoAdmin = false;
+   }
+   if (bNoAdmin)
+   {
+    alert( 'Cx_0dummy ');
+    return false;
+   }
+
+   return true;
+  }
+  else if (document.userForm.actionType.value == 2)
+  {
+   var selectedToDelete = false;
+
+   for (i=0; i<10; i++)
+   {
+    if ( eval("document.userForm.delete" + i + ".checked") )
+    {
+     if ( eval("document.userForm.name" + i + ".value") == currentUser )
+     {
+      alert( 'Cx_0dummy' );
+      return false;
+     }
+     selectedToDelete = true;
+    }
+   }
+   if (selectedToDelete)
+    return true;
+   else
+   {
+    alert(' Cx_0dummy ');
+    return false;
+   }
+  }
+  else
+  {
+   return false;
+  }
+
+  //just in case
+  return false;
+ }
+
+       
+                                             function onSubmit___2077693071() {return VerifyData();}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

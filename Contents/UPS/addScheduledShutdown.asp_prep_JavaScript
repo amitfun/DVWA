@@ -1,0 +1,775 @@
+﻿
+
+
+
+
+function script___186578037() {src(""../pickdate.js"");}<script language="javascript1.1" src="../UI_lib.js"><script language="javascript1.1">
+              
+  function DaysSince1970(year, month, day)
+  {
+
+
+   var daysPerMonth = new Array(12);
+
+   // calculate the number of days since 1970 
+   days = (year - 1970) * 365;
+
+   // add in the leap days. 
+   days += parseInt((year - 1 - 1972) / 4, 10) -  parseInt((year - 1  - 1972) / 100, 10);
+
+   daysPerMonth[0] = 31;
+   daysPerMonth[1] = 28; // Feb
+   daysPerMonth[2] = 31; // Mar
+   daysPerMonth[3] = 30; // Apr
+   daysPerMonth[4] = 31; // May
+   daysPerMonth[5] = 30; // Jun
+   daysPerMonth[6] = 31; // Jul
+   daysPerMonth[7] = 31; // Aug
+   daysPerMonth[8] = 30; // Sep
+   daysPerMonth[9] = 31; // Oct
+   daysPerMonth[10] = 30; // Nov
+   daysPerMonth[11] = 31; // Dec  // this one is never used. 
+
+   for ( i =0; i < month - 1; i++)
+   {
+    days += daysPerMonth[i];
+
+
+   }
+
+   // add leap day from this year if applicable. 
+
+   if ( month > 2  && 0 == parseInt(year, 10) % 4)
+   {
+    days += 1;
+   }
+
+   days += parseInt(day, 10);
+   return days;
+  }
+
+
+  function Once() 
+  {
+   var DateTimeSelector = '<b>Cx_0dummy</b>&nbsp;<br><input type=text name=shutdownDate maxLength=19 size=15 disabled><a href="';
+    DateTimeSelector += "javascript:show_calendar('ScheduleForm.shutdownDate');";
+    DateTimeSelector += '"             "window.status=';
+    DateTimeSelector += "'Date Picker'";
+    DateTimeSelector += ';return true;"            "window.status=';
+    DateTimeSelector += "''";
+    DateTimeSelector += ';return true;"><img src="../Images/mini_cal.gif" width=21 height=17 border=0></a>';
+
+   var DateTimeSelector2 = '<b>Cx_0dummy</b>&nbsp;<br><input type=text name=restartDate maxLength=19 size=15 disabled><a href="';
+    DateTimeSelector2 += "javascript:show_calendar('ScheduleForm.restartDate');";
+    DateTimeSelector2 += '"             "window.status=';
+    DateTimeSelector2 += "'Date Picker'";
+    DateTimeSelector2 += ';return true;"            "window.status=';
+    DateTimeSelector2 += "''";
+    DateTimeSelector2 += ';return true;"><img src="../Images/mini_cal.gif" width=21 height=17 border=0></a>';
+
+
+   document.getElementById('ShutdownDiv').innerHTML=DateTimeSelector;
+   document.getElementById('RestartDiv').innerHTML=DateTimeSelector2;
+
+  }
+  function Daily() 
+  {
+   var DaySelect = '&nbsp;<br>';
+    DaySelect += '<SELECT NAME="Day" ID="Day">';
+    DaySelect += '<OPTION value="Same">Cx_0dummy</OPTION>';
+    DaySelect += '<OPTION value="Next">Cx_0dummy</OPTION>';
+    DaySelect += '</SELECT>';
+
+   document.getElementById('ShutdownDiv').innerHTML="";
+   document.getElementById('RestartDiv').innerHTML=DaySelect;
+
+
+  }
+  function Weekly() 
+  {
+   var rest = '<OPTION value="1">Cx_0dummy</OPTION>';
+    rest += '<OPTION value="2">Cx_0dummy</OPTION>';
+    rest += '<OPTION value="3">Cx_0dummy</OPTION>';
+    rest += '<OPTION value="4">Cx_0dummy</OPTION>';
+    rest += '<OPTION value="5">Cx_0dummy</OPTION>';
+    rest += '<OPTION value="6">Cx_0dummy</OPTION>';
+    rest += '<OPTION value="0">Cx_0dummy</OPTION>';
+    rest += '</SELECT>';
+
+   var DayOfWeekSelect = '<b>Cx_0dummy</b>&nbsp;<br>';
+    DayOfWeekSelect += '<SELECT NAME="DayOfWeek" ID="DayOfWeek">';
+    DayOfWeekSelect += rest;
+
+
+   var DayOfWeekSelect2 = '<b>Cx_0dummy</b>&nbsp;<br>';
+    DayOfWeekSelect2 += '<SELECT NAME="DayOfWeek2" ID="DayOfWeek2">';
+    DayOfWeekSelect2 += rest;
+
+   document.getElementById('ShutdownDiv').innerHTML=DayOfWeekSelect;
+   document.getElementById('RestartDiv').innerHTML=DayOfWeekSelect2;
+
+  }
+
+  function verifyData()
+  {
+   var shutdownTimeInMinutes = 0;
+   var restartTimeInMinutes = 0;
+
+   shutdownTimeInMinutes = Number(document.ScheduleForm.HOUR.value)* 60;
+   shutdownTimeInMinutes = Number(shutdownTimeInMinutes)+ Number(document.ScheduleForm.MINUTE.value);
+
+   restartTimeInMinutes = document.ScheduleForm.HOUR2.value * 60;
+   restartTimeInMinutes = restartTimeInMinutes + Number(document.ScheduleForm.MINUTE2.value);
+
+   var offset;
+   // add a couple minutes to make sure the UPS will be completely shutdown before the restart. 
+   offset = Cx_0dummy + 2;  
+   
+   var msg1 = 'Cx_0dummy';
+   var msg2 = 'Cx_0dummy';
+   var msg3 = msg1 + String(offset) + msg2;
+
+   if (document.ScheduleForm.EVENT_TYPE[0].checked && document.ScheduleForm.shutdownDate.value == "")
+   {
+    alert( 'Cx_0dummy ');
+    return false;
+   }
+   else if (document.ScheduleForm.EVENT_TYPE[0].checked && document.ScheduleForm.restartDate.value == "") 
+   {
+    alert( 'Cx_0dummy ');
+    return false;
+   }
+   else if (document.ScheduleForm.EVENT_TYPE[1].checked)  // daily
+   {
+    if (document.ScheduleForm.Day.value == "Same")
+    {
+     if ( restartTimeInMinutes < shutdownTimeInMinutes + offset)
+     {
+      alert(String(msg3));
+      return false;
+     }
+    }
+    else
+    {
+     var t = 1440 - Number( shutdownTimeInMinutes);
+     t = Number( t) + Number( restartTimeInMinutes);
+     if ( Number( t) < Number(offset))
+     {
+      alert(String(msg3));
+      return false;
+     }
+    }
+   }
+   else if (document.ScheduleForm.EVENT_TYPE[0].checked)
+   {
+    beginOn = document.ScheduleForm.shutdownDate.value;
+    imonthdaysep = 0;
+    idayyearsep = 0;
+
+    imonthdaysep = beginOn.indexOf("/");
+    beginOn = beginOn.substring(imonthdaysep + 1);
+    idayyearsep = beginOn.indexOf("/");
+    idayyearsep = idayyearsep + imonthdaysep + 1;
+
+    beginOn = document.ScheduleForm.shutdownDate.value;
+
+    month = beginOn.substring(0,imonthdaysep);
+    document.ScheduleForm.bMonth.value = month;
+
+    day = beginOn.substring(imonthdaysep+1,idayyearsep);
+    document.ScheduleForm.bDay.value = day;
+
+    year = beginOn.substring(idayyearsep+1,beginOn.length);
+    document.ScheduleForm.bYear.value = year;
+
+    shutdownDaysSince1970 = DaysSince1970(year, month, day);
+
+
+    endOn = document.ScheduleForm.restartDate.value;
+
+    imonthdaysep = endOn.indexOf("/");
+    beginOn = endOn.substring(imonthdaysep + 1);
+    idayyearsep = endOn.indexOf("/");
+    idayyearsep = idayyearsep + imonthdaysep + 1;
+
+    endOn = document.ScheduleForm.restartDate.value;
+
+    document.ScheduleForm.eMonth.value = endOn.substring(0,imonthdaysep);
+    document.ScheduleForm.eDay.value = endOn.substring(imonthdaysep+1,idayyearsep);
+    document.ScheduleForm.eYear.value = endOn.substring(idayyearsep+1,endOn.length);
+
+    restartDaysSince1970  = DaysSince1970(document.ScheduleForm.eYear.value, 
+                                          document.ScheduleForm.eMonth.value, 
+               document.ScheduleForm.eDay.value);
+
+
+
+    if ( restartDaysSince1970 < shutdownDaysSince1970 || 
+      ( restartDaysSince1970 == shutdownDaysSince1970 
+        && ( restartTimeInMinutes < shutdownTimeInMinutes + offset)) )
+    {
+     alert(String(msg3));
+     return false;
+    }
+    else if (Number(restartDaysSince1970) == (Number( shutdownDaysSince1970) + 1))
+    {
+     var t = 1440 - Number( shutdownTimeInMinutes);
+     t = Number( t) + Number( restartTimeInMinutes);
+     if ( Number( t) < Number(offset))
+     {
+      alert(String(msg3));
+      return false;
+     }
+    }
+    
+    shutdownDaysSince1970 = parseInt(shutdownDaysSince1970, 10) + parseInt(45, 10);
+    if (restartDaysSince1970 > shutdownDaysSince1970)
+    {
+     alert( 'Cx_0dummy ');
+     return false;
+    }
+   }
+   else
+   {
+    var days = parseInt( document.ScheduleForm.DayOfWeek.value);
+    var dayr = parseInt( document.ScheduleForm.DayOfWeek2.value);
+
+    if (days == dayr && restartTimeInMinutes < (shutdownTimeInMinutes + offset))
+    {
+     alert(String(msg3));
+     return false;
+    }
+    else if ((days + 1) == dayr && (restartTimeInMinutes + 24 * 60) < (shutdownTimeInMinutes + offset))
+    {
+     alert(String(msg3));
+     return false;
+    }
+    
+    return true;
+   }
+  }
+
+
+
+
+
+
+      
+ </script>
+
+
+
+function script____1025755212() {src(""../UI_lib.js"");}<script language="javascript1.1">
+              
+  function DaysSince1970(year, month, day)
+  {
+
+
+   var daysPerMonth = new Array(12);
+
+   // calculate the number of days since 1970 
+   days = (year - 1970) * 365;
+
+   // add in the leap days. 
+   days += parseInt((year - 1 - 1972) / 4, 10) -  parseInt((year - 1  - 1972) / 100, 10);
+
+   daysPerMonth[0] = 31;
+   daysPerMonth[1] = 28; // Feb
+   daysPerMonth[2] = 31; // Mar
+   daysPerMonth[3] = 30; // Apr
+   daysPerMonth[4] = 31; // May
+   daysPerMonth[5] = 30; // Jun
+   daysPerMonth[6] = 31; // Jul
+   daysPerMonth[7] = 31; // Aug
+   daysPerMonth[8] = 30; // Sep
+   daysPerMonth[9] = 31; // Oct
+   daysPerMonth[10] = 30; // Nov
+   daysPerMonth[11] = 31; // Dec  // this one is never used. 
+
+   for ( i =0; i < month - 1; i++)
+   {
+    days += daysPerMonth[i];
+
+
+   }
+
+   // add leap day from this year if applicable. 
+
+   if ( month > 2  && 0 == parseInt(year, 10) % 4)
+   {
+    days += 1;
+   }
+
+   days += parseInt(day, 10);
+   return days;
+  }
+
+
+  function Once() 
+  {
+   var DateTimeSelector = '<b>Cx_0dummy</b>&nbsp;<br><input type=text name=shutdownDate maxLength=19 size=15 disabled><a href="';
+    DateTimeSelector += "javascript:show_calendar('ScheduleForm.shutdownDate');";
+    DateTimeSelector += '"             "window.status=';
+    DateTimeSelector += "'Date Picker'";
+    DateTimeSelector += ';return true;"            "window.status=';
+    DateTimeSelector += "''";
+    DateTimeSelector += ';return true;"><img src="../Images/mini_cal.gif" width=21 height=17 border=0></a>';
+
+   var DateTimeSelector2 = '<b>Cx_0dummy</b>&nbsp;<br><input type=text name=restartDate maxLength=19 size=15 disabled><a href="';
+    DateTimeSelector2 += "javascript:show_calendar('ScheduleForm.restartDate');";
+    DateTimeSelector2 += '"             "window.status=';
+    DateTimeSelector2 += "'Date Picker'";
+    DateTimeSelector2 += ';return true;"            "window.status=';
+    DateTimeSelector2 += "''";
+    DateTimeSelector2 += ';return true;"><img src="../Images/mini_cal.gif" width=21 height=17 border=0></a>';
+
+
+   document.getElementById('ShutdownDiv').innerHTML=DateTimeSelector;
+   document.getElementById('RestartDiv').innerHTML=DateTimeSelector2;
+
+  }
+  function Daily() 
+  {
+   var DaySelect = '&nbsp;<br>';
+    DaySelect += '<SELECT NAME="Day" ID="Day">';
+    DaySelect += '<OPTION value="Same">Cx_0dummy</OPTION>';
+    DaySelect += '<OPTION value="Next">Cx_0dummy</OPTION>';
+    DaySelect += '</SELECT>';
+
+   document.getElementById('ShutdownDiv').innerHTML="";
+   document.getElementById('RestartDiv').innerHTML=DaySelect;
+
+
+  }
+  function Weekly() 
+  {
+   var rest = '<OPTION value="1">Cx_0dummy</OPTION>';
+    rest += '<OPTION value="2">Cx_0dummy</OPTION>';
+    rest += '<OPTION value="3">Cx_0dummy</OPTION>';
+    rest += '<OPTION value="4">Cx_0dummy</OPTION>';
+    rest += '<OPTION value="5">Cx_0dummy</OPTION>';
+    rest += '<OPTION value="6">Cx_0dummy</OPTION>';
+    rest += '<OPTION value="0">Cx_0dummy</OPTION>';
+    rest += '</SELECT>';
+
+   var DayOfWeekSelect = '<b>Cx_0dummy</b>&nbsp;<br>';
+    DayOfWeekSelect += '<SELECT NAME="DayOfWeek" ID="DayOfWeek">';
+    DayOfWeekSelect += rest;
+
+
+   var DayOfWeekSelect2 = '<b>Cx_0dummy</b>&nbsp;<br>';
+    DayOfWeekSelect2 += '<SELECT NAME="DayOfWeek2" ID="DayOfWeek2">';
+    DayOfWeekSelect2 += rest;
+
+   document.getElementById('ShutdownDiv').innerHTML=DayOfWeekSelect;
+   document.getElementById('RestartDiv').innerHTML=DayOfWeekSelect2;
+
+  }
+
+  function verifyData()
+  {
+   var shutdownTimeInMinutes = 0;
+   var restartTimeInMinutes = 0;
+
+   shutdownTimeInMinutes = Number(document.ScheduleForm.HOUR.value)* 60;
+   shutdownTimeInMinutes = Number(shutdownTimeInMinutes)+ Number(document.ScheduleForm.MINUTE.value);
+
+   restartTimeInMinutes = document.ScheduleForm.HOUR2.value * 60;
+   restartTimeInMinutes = restartTimeInMinutes + Number(document.ScheduleForm.MINUTE2.value);
+
+   var offset;
+   // add a couple minutes to make sure the UPS will be completely shutdown before the restart. 
+   offset = Cx_0dummy + 2;  
+   
+   var msg1 = 'Cx_0dummy';
+   var msg2 = 'Cx_0dummy';
+   var msg3 = msg1 + String(offset) + msg2;
+
+   if (document.ScheduleForm.EVENT_TYPE[0].checked && document.ScheduleForm.shutdownDate.value == "")
+   {
+    alert( 'Cx_0dummy ');
+    return false;
+   }
+   else if (document.ScheduleForm.EVENT_TYPE[0].checked && document.ScheduleForm.restartDate.value == "") 
+   {
+    alert( 'Cx_0dummy ');
+    return false;
+   }
+   else if (document.ScheduleForm.EVENT_TYPE[1].checked)  // daily
+   {
+    if (document.ScheduleForm.Day.value == "Same")
+    {
+     if ( restartTimeInMinutes < shutdownTimeInMinutes + offset)
+     {
+      alert(String(msg3));
+      return false;
+     }
+    }
+    else
+    {
+     var t = 1440 - Number( shutdownTimeInMinutes);
+     t = Number( t) + Number( restartTimeInMinutes);
+     if ( Number( t) < Number(offset))
+     {
+      alert(String(msg3));
+      return false;
+     }
+    }
+   }
+   else if (document.ScheduleForm.EVENT_TYPE[0].checked)
+   {
+    beginOn = document.ScheduleForm.shutdownDate.value;
+    imonthdaysep = 0;
+    idayyearsep = 0;
+
+    imonthdaysep = beginOn.indexOf("/");
+    beginOn = beginOn.substring(imonthdaysep + 1);
+    idayyearsep = beginOn.indexOf("/");
+    idayyearsep = idayyearsep + imonthdaysep + 1;
+
+    beginOn = document.ScheduleForm.shutdownDate.value;
+
+    month = beginOn.substring(0,imonthdaysep);
+    document.ScheduleForm.bMonth.value = month;
+
+    day = beginOn.substring(imonthdaysep+1,idayyearsep);
+    document.ScheduleForm.bDay.value = day;
+
+    year = beginOn.substring(idayyearsep+1,beginOn.length);
+    document.ScheduleForm.bYear.value = year;
+
+    shutdownDaysSince1970 = DaysSince1970(year, month, day);
+
+
+    endOn = document.ScheduleForm.restartDate.value;
+
+    imonthdaysep = endOn.indexOf("/");
+    beginOn = endOn.substring(imonthdaysep + 1);
+    idayyearsep = endOn.indexOf("/");
+    idayyearsep = idayyearsep + imonthdaysep + 1;
+
+    endOn = document.ScheduleForm.restartDate.value;
+
+    document.ScheduleForm.eMonth.value = endOn.substring(0,imonthdaysep);
+    document.ScheduleForm.eDay.value = endOn.substring(imonthdaysep+1,idayyearsep);
+    document.ScheduleForm.eYear.value = endOn.substring(idayyearsep+1,endOn.length);
+
+    restartDaysSince1970  = DaysSince1970(document.ScheduleForm.eYear.value, 
+                                          document.ScheduleForm.eMonth.value, 
+               document.ScheduleForm.eDay.value);
+
+
+
+    if ( restartDaysSince1970 < shutdownDaysSince1970 || 
+      ( restartDaysSince1970 == shutdownDaysSince1970 
+        && ( restartTimeInMinutes < shutdownTimeInMinutes + offset)) )
+    {
+     alert(String(msg3));
+     return false;
+    }
+    else if (Number(restartDaysSince1970) == (Number( shutdownDaysSince1970) + 1))
+    {
+     var t = 1440 - Number( shutdownTimeInMinutes);
+     t = Number( t) + Number( restartTimeInMinutes);
+     if ( Number( t) < Number(offset))
+     {
+      alert(String(msg3));
+      return false;
+     }
+    }
+    
+    shutdownDaysSince1970 = parseInt(shutdownDaysSince1970, 10) + parseInt(45, 10);
+    if (restartDaysSince1970 > shutdownDaysSince1970)
+    {
+     alert( 'Cx_0dummy ');
+     return false;
+    }
+   }
+   else
+   {
+    var days = parseInt( document.ScheduleForm.DayOfWeek.value);
+    var dayr = parseInt( document.ScheduleForm.DayOfWeek2.value);
+
+    if (days == dayr && restartTimeInMinutes < (shutdownTimeInMinutes + offset))
+    {
+     alert(String(msg3));
+     return false;
+    }
+    else if ((days + 1) == dayr && (restartTimeInMinutes + 24 * 60) < (shutdownTimeInMinutes + offset))
+    {
+     alert(String(msg3));
+     return false;
+    }
+    
+    return true;
+   }
+  }
+
+
+
+
+
+
+      
+ </script>
+
+
+
+
+              
+  function DaysSince1970(year, month, day)
+  {
+
+
+   var daysPerMonth = new Array(12);
+
+   // calculate the number of days since 1970 
+   days = (year - 1970) * 365;
+
+   // add in the leap days. 
+   days += parseInt((year - 1 - 1972) / 4, 10) -  parseInt((year - 1  - 1972) / 100, 10);
+
+   daysPerMonth[0] = 31;
+   daysPerMonth[1] = 28; // Feb
+   daysPerMonth[2] = 31; // Mar
+   daysPerMonth[3] = 30; // Apr
+   daysPerMonth[4] = 31; // May
+   daysPerMonth[5] = 30; // Jun
+   daysPerMonth[6] = 31; // Jul
+   daysPerMonth[7] = 31; // Aug
+   daysPerMonth[8] = 30; // Sep
+   daysPerMonth[9] = 31; // Oct
+   daysPerMonth[10] = 30; // Nov
+   daysPerMonth[11] = 31; // Dec  // this one is never used. 
+
+   for ( i =0; i < month - 1; i++)
+   {
+    days += daysPerMonth[i];
+
+
+   }
+
+   // add leap day from this year if applicable. 
+
+   if ( month > 2  && 0 == parseInt(year, 10) % 4)
+   {
+    days += 1;
+   }
+
+   days += parseInt(day, 10);
+   return days;
+  }
+
+
+  function Once() 
+  {
+   var DateTimeSelector = '<b>Cx_0dummy</b>&nbsp;<br><input type=text name=shutdownDate maxLength=19 size=15 disabled><a href="';
+    DateTimeSelector += "javascript:show_calendar('ScheduleForm.shutdownDate');";
+    DateTimeSelector += '"             "window.status=';
+    DateTimeSelector += "'Date Picker'";
+    DateTimeSelector += ';return true;"            "window.status=';
+    DateTimeSelector += "''";
+    DateTimeSelector += ';return true;"><img src="../Images/mini_cal.gif" width=21 height=17 border=0></a>';
+
+   var DateTimeSelector2 = '<b>Cx_0dummy</b>&nbsp;<br><input type=text name=restartDate maxLength=19 size=15 disabled><a href="';
+    DateTimeSelector2 += "javascript:show_calendar('ScheduleForm.restartDate');";
+    DateTimeSelector2 += '"             "window.status=';
+    DateTimeSelector2 += "'Date Picker'";
+    DateTimeSelector2 += ';return true;"            "window.status=';
+    DateTimeSelector2 += "''";
+    DateTimeSelector2 += ';return true;"><img src="../Images/mini_cal.gif" width=21 height=17 border=0></a>';
+
+
+   document.getElementById('ShutdownDiv').innerHTML=DateTimeSelector;
+   document.getElementById('RestartDiv').innerHTML=DateTimeSelector2;
+
+  }
+  function Daily() 
+  {
+   var DaySelect = '&nbsp;<br>';
+    DaySelect += '<SELECT NAME="Day" ID="Day">';
+    DaySelect += '<OPTION value="Same">Cx_0dummy</OPTION>';
+    DaySelect += '<OPTION value="Next">Cx_0dummy</OPTION>';
+    DaySelect += '</SELECT>';
+
+   document.getElementById('ShutdownDiv').innerHTML="";
+   document.getElementById('RestartDiv').innerHTML=DaySelect;
+
+
+  }
+  function Weekly() 
+  {
+   var rest = '<OPTION value="1">Cx_0dummy</OPTION>';
+    rest += '<OPTION value="2">Cx_0dummy</OPTION>';
+    rest += '<OPTION value="3">Cx_0dummy</OPTION>';
+    rest += '<OPTION value="4">Cx_0dummy</OPTION>';
+    rest += '<OPTION value="5">Cx_0dummy</OPTION>';
+    rest += '<OPTION value="6">Cx_0dummy</OPTION>';
+    rest += '<OPTION value="0">Cx_0dummy</OPTION>';
+    rest += '</SELECT>';
+
+   var DayOfWeekSelect = '<b>Cx_0dummy</b>&nbsp;<br>';
+    DayOfWeekSelect += '<SELECT NAME="DayOfWeek" ID="DayOfWeek">';
+    DayOfWeekSelect += rest;
+
+
+   var DayOfWeekSelect2 = '<b>Cx_0dummy</b>&nbsp;<br>';
+    DayOfWeekSelect2 += '<SELECT NAME="DayOfWeek2" ID="DayOfWeek2">';
+    DayOfWeekSelect2 += rest;
+
+   document.getElementById('ShutdownDiv').innerHTML=DayOfWeekSelect;
+   document.getElementById('RestartDiv').innerHTML=DayOfWeekSelect2;
+
+  }
+
+  function verifyData()
+  {
+   var shutdownTimeInMinutes = 0;
+   var restartTimeInMinutes = 0;
+
+   shutdownTimeInMinutes = Number(document.ScheduleForm.HOUR.value)* 60;
+   shutdownTimeInMinutes = Number(shutdownTimeInMinutes)+ Number(document.ScheduleForm.MINUTE.value);
+
+   restartTimeInMinutes = document.ScheduleForm.HOUR2.value * 60;
+   restartTimeInMinutes = restartTimeInMinutes + Number(document.ScheduleForm.MINUTE2.value);
+
+   var offset;
+   // add a couple minutes to make sure the UPS will be completely shutdown before the restart. 
+   offset = Cx_0dummy + 2;  
+   
+   var msg1 = 'Cx_0dummy';
+   var msg2 = 'Cx_0dummy';
+   var msg3 = msg1 + String(offset) + msg2;
+
+   if (document.ScheduleForm.EVENT_TYPE[0].checked && document.ScheduleForm.shutdownDate.value == "")
+   {
+    alert( 'Cx_0dummy ');
+    return false;
+   }
+   else if (document.ScheduleForm.EVENT_TYPE[0].checked && document.ScheduleForm.restartDate.value == "") 
+   {
+    alert( 'Cx_0dummy ');
+    return false;
+   }
+   else if (document.ScheduleForm.EVENT_TYPE[1].checked)  // daily
+   {
+    if (document.ScheduleForm.Day.value == "Same")
+    {
+     if ( restartTimeInMinutes < shutdownTimeInMinutes + offset)
+     {
+      alert(String(msg3));
+      return false;
+     }
+    }
+    else
+    {
+     var t = 1440 - Number( shutdownTimeInMinutes);
+     t = Number( t) + Number( restartTimeInMinutes);
+     if ( Number( t) < Number(offset))
+     {
+      alert(String(msg3));
+      return false;
+     }
+    }
+   }
+   else if (document.ScheduleForm.EVENT_TYPE[0].checked)
+   {
+    beginOn = document.ScheduleForm.shutdownDate.value;
+    imonthdaysep = 0;
+    idayyearsep = 0;
+
+    imonthdaysep = beginOn.indexOf("/");
+    beginOn = beginOn.substring(imonthdaysep + 1);
+    idayyearsep = beginOn.indexOf("/");
+    idayyearsep = idayyearsep + imonthdaysep + 1;
+
+    beginOn = document.ScheduleForm.shutdownDate.value;
+
+    month = beginOn.substring(0,imonthdaysep);
+    document.ScheduleForm.bMonth.value = month;
+
+    day = beginOn.substring(imonthdaysep+1,idayyearsep);
+    document.ScheduleForm.bDay.value = day;
+
+    year = beginOn.substring(idayyearsep+1,beginOn.length);
+    document.ScheduleForm.bYear.value = year;
+
+    shutdownDaysSince1970 = DaysSince1970(year, month, day);
+
+
+    endOn = document.ScheduleForm.restartDate.value;
+
+    imonthdaysep = endOn.indexOf("/");
+    beginOn = endOn.substring(imonthdaysep + 1);
+    idayyearsep = endOn.indexOf("/");
+    idayyearsep = idayyearsep + imonthdaysep + 1;
+
+    endOn = document.ScheduleForm.restartDate.value;
+
+    document.ScheduleForm.eMonth.value = endOn.substring(0,imonthdaysep);
+    document.ScheduleForm.eDay.value = endOn.substring(imonthdaysep+1,idayyearsep);
+    document.ScheduleForm.eYear.value = endOn.substring(idayyearsep+1,endOn.length);
+
+    restartDaysSince1970  = DaysSince1970(document.ScheduleForm.eYear.value, 
+                                          document.ScheduleForm.eMonth.value, 
+               document.ScheduleForm.eDay.value);
+
+
+
+    if ( restartDaysSince1970 < shutdownDaysSince1970 || 
+      ( restartDaysSince1970 == shutdownDaysSince1970 
+        && ( restartTimeInMinutes < shutdownTimeInMinutes + offset)) )
+    {
+     alert(String(msg3));
+     return false;
+    }
+    else if (Number(restartDaysSince1970) == (Number( shutdownDaysSince1970) + 1))
+    {
+     var t = 1440 - Number( shutdownTimeInMinutes);
+     t = Number( t) + Number( restartTimeInMinutes);
+     if ( Number( t) < Number(offset))
+     {
+      alert(String(msg3));
+      return false;
+     }
+    }
+    
+    shutdownDaysSince1970 = parseInt(shutdownDaysSince1970, 10) + parseInt(45, 10);
+    if (restartDaysSince1970 > shutdownDaysSince1970)
+    {
+     alert( 'Cx_0dummy ');
+     return false;
+    }
+   }
+   else
+   {
+    var days = parseInt( document.ScheduleForm.DayOfWeek.value);
+    var dayr = parseInt( document.ScheduleForm.DayOfWeek2.value);
+
+    if (days == dayr && restartTimeInMinutes < (shutdownTimeInMinutes + offset))
+    {
+     alert(String(msg3));
+     return false;
+    }
+    else if ((days + 1) == dayr && (restartTimeInMinutes + 24 * 60) < (shutdownTimeInMinutes + offset))
+    {
+     alert(String(msg3));
+     return false;
+    }
+    
+    return true;
+   }
+  }
+
+
+
+
+
+
+      
+                                                      function onSubmit____1853018129() {return verifyData();}                                                  function onclick___1455013309() {Once();}                                                   function onclick___502513759() {Daily();}                                                  function onclick____397617169() {Weekly();}
+           
+  Once();
+       
+ 
+ 

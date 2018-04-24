@@ -1,0 +1,171 @@
+﻿
+
+
+
+
+
+
+
+function script____1025755212() {src(""../UI_lib.js"");}<script language="javascript1.1">
+              
+    function ValidateData()
+    {
+
+  if ( isNaN(parseInt(document.formSetupScript.Critical_Delay.value, 0)) || isNaN(parseInt(document.formSetupScript.Warning_Delay.value, 0))
+  || isNaN(parseInt(document.formSetupScript.Information_Delay.value, 0)) || isNaN(parseInt(document.formSetupScript.User1_Delay.value, 0))
+  || isNaN(parseInt(document.formSetupScript.User2_Delay.value, 0)) || (document.formSetupScript.Critical_Delay.value < 0)
+  || (document.formSetupScript.Warning_Delay.value < 0) || (document.formSetupScript.Information_Delay.value < 0)
+  || (document.formSetupScript.User1_Delay.value < 0) || (document.formSetupScript.User2_Delay.value < 0) )
+  {
+   alert("Cx_0dummy");
+   return false;
+  }
+
+  if (document.formSetupScript.CRITICAL_ENABLED.checked)
+   document.formSetupScript.Critical_Enabled.value = "1";
+  if (document.formSetupScript.WARNING_ENABLED.checked)
+   document.formSetupScript.Warning_Enabled.value = "1";
+  if (document.formSetupScript.INFORMATION_ENABLED.checked)
+   document.formSetupScript.Information_Enabled.value = "1";
+  if (document.formSetupScript.USER1_ENABLED.checked)
+   document.formSetupScript.User1_Enabled.value = "1";
+  if (document.formSetupScript.USER2_ENABLED.checked)
+   document.formSetupScript.User2_Enabled.value = "1";
+
+     return true;
+    }
+
+         
+   </script>
+
+              
+    function ValidateData()
+    {
+
+  if ( isNaN(parseInt(document.formSetupScript.Critical_Delay.value, 0)) || isNaN(parseInt(document.formSetupScript.Warning_Delay.value, 0))
+  || isNaN(parseInt(document.formSetupScript.Information_Delay.value, 0)) || isNaN(parseInt(document.formSetupScript.User1_Delay.value, 0))
+  || isNaN(parseInt(document.formSetupScript.User2_Delay.value, 0)) || (document.formSetupScript.Critical_Delay.value < 0)
+  || (document.formSetupScript.Warning_Delay.value < 0) || (document.formSetupScript.Information_Delay.value < 0)
+  || (document.formSetupScript.User1_Delay.value < 0) || (document.formSetupScript.User2_Delay.value < 0) )
+  {
+   alert("Cx_0dummy");
+   return false;
+  }
+
+  if (document.formSetupScript.CRITICAL_ENABLED.checked)
+   document.formSetupScript.Critical_Enabled.value = "1";
+  if (document.formSetupScript.WARNING_ENABLED.checked)
+   document.formSetupScript.Warning_Enabled.value = "1";
+  if (document.formSetupScript.INFORMATION_ENABLED.checked)
+   document.formSetupScript.Information_Enabled.value = "1";
+  if (document.formSetupScript.USER1_ENABLED.checked)
+   document.formSetupScript.User1_Enabled.value = "1";
+  if (document.formSetupScript.USER2_ENABLED.checked)
+   document.formSetupScript.User2_Enabled.value = "1";
+
+     return true;
+    }
+
+         
+                                                    function OnSubmit___1937438574() {return ValidateData();}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
